@@ -1,0 +1,19 @@
+.duration-label {
+  position: absolute;
+  font-size: 32px;
+  font-weight: bold;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transform: scale(0.9);
+  opacity: 0;
+  animation: pop 0.2s ease-out forwards;
+}
+
+@keyframes pop {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

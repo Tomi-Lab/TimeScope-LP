@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeScope Feature - Compare Time Ranges</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; background-color: #fcfcfd; height: 100vh; display: flex; align-items: center; justify-content: center; font-family: 'Inter', sans-serif; overflow: hidden; flex-direction: column; -webkit-font-smoothing: antialiased; }
+        
+        .calendar-wrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .calendar-window {
+            background-color: #ffffff;
+            width: 380px;
+            padding: 24px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.06), 0 0 0 1px rgba(0,0,0,0.03);
+            position: relative;
+        }
+
+        .header { font-size: 1.15rem; font-weight: 700; color: #18181b; margin-bottom: 20px; text-align: left; padding-left: 4px; letter-spacing: -0.01em; }
+        .weekdays { display: grid; grid-template-columns: repeat(7, 1fr); text-align: center; font-size: 0.8rem; font-weight: 600; color: #71717a; margin-bottom: 8px; }
+        .weekdays div:nth-child(1) { color: #e11d48; } .weekdays div:nth-child(7) { color: #2563eb; }
+        
+        .grid { display: grid; grid-template-columns: repeat(7, 1fr); row-gap: 6px; column-gap: 2px; }
+        .day { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 500; color: #18181b; position: relative; z-index: 1; transition: color 0.3s ease;}
+        .day:nth-child(7n+1) { color: #e11d48; } .day:nth-child(7n) { color: #2563eb; }
+        .day.empty { pointer-events: none; }
+        
+        /* Pseudo elements for track and circles */
+        .day::before { content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: transparent; z-index: -2; opacity: 0; transition: opacity 0.3s ease; }
+        .day::after { content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; border-radius: 50%; z-index: -1; opacity: 0; transition: opacity 0.3s ease; transform: scale(1); }
+
+        /* Range 1 Styling */
+        .day.range1::before { background-color: rgba(59, 130, 246, 0.15); } 
+        .day.range1.first::before { left: 50%; } .day.range1.last::before { right: 50%; }
+        .day.range1.first::after, .day.range1.last::after { background-color: #5a92e6; } 
+        
+        /* Range 2 Styling */
+        .day.range2::before { background-color: rgba(37, 99, 235, 0.22); } 
+        .day.range2.first::before { left: 50%; } .day.range2.last::before { right: 50%; }
+        .day.range2.first::after, .day.range2.last::after { background-color: #2563eb; box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3); } 
+
+        /* Animation States for Ranges */
+        .show-range1 .day.range1::before, .show-range1 .day.range1::after { opacity: 1; }
+        .show-range1 .day.range1.first, .show-range1 .day.range1.last { color: #ffffff !important; font-weight: 600; }
+
+        .show-range2 .day.range2::before, .show-range2 .day.range2::after { opacity: 1; }
+        .show-range2 .day.range2.first, .show-range2 .day.range2.last { color: #ffffff !important; font-weight: 600; }
+
+        /* Duration Badges */
+        .popup-badge {
+            position: absolute;
+            background: #ffffff;
+            border: 1px solid #e4e4e7;
+            color: #18181b;
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 6px 12px;
+            border-radius: 100px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            opacity: 0;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        /* Standard Duration Badges */
+        .badge1 { top: 32%; left: 50%; transform: translate(-50%, -50%) scale(0.7); }
+        .badge2 { top: 66%; left: 50%; transform: translate(-50%, -50%) scale(0.7); }
+
+        /* Delta Badge (+1 day) */
+        .badge-delta {
+            top: 79%; /* Placed right underneath badge2 */
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.7);
+            background: #eff6ff; /* Very faint blue */
+            border: 1px solid #bfdbfe; /* Muted blue border */
+            color: #2563eb; /* Matching Range 2 emphasis color */
+            font-size: 0.75rem;
+            padding: 4px 10px;
+            box-shadow: 0 6px 18px rgba(37, 99, 235, 0.15);
+        }
+
+        @keyframes popBadge {
+            0%   { opacity: 0; transform: translate(-50%, -50%) scale(0.7); }
+            50%  { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+            100% { opacity: 1; transform: translate(-50%, -50%) scale(1.0); }
+        }
+
+        .show-badges .badge1 { animation: popBadge 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+        .show-badges .badge2 { animation: popBadge 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards 0.1s; }
+        .show-delta .badge-delta { animation: popBadge 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+
+        /* Caption */
+        .caption {
+            position: absolute;
+            bottom: -50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #18181b;
+            background: #ffffff;
+            padding: 10px 24px;
+            border-radius: 100px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.03);
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        .caption.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="calendar-wrapper" id="wrapper">
+        <div class="calendar-window">
+            <div class="header">April 2026</div>
+            <div class="weekdays"><div>Su</div><div>Mo</div><div>Tu</div><div>We</div><div>Th</div><div>Fr</div><div>Sa</div></div>
+            <div class="grid" id="grid">
+                <!-- Javascript will generate this -->
+            </div>
+            
+            <div class="popup-badge badge1">10 days</div>
+            <div class="popup-badge badge2">11 days</div>
+            <div class="popup-badge badge-delta">+1 day</div>
+        </div>
+        
+        <div class="caption" id="caption">Make better decisions instantly</div>
+    </div>
+
+    <script>
+        const grid = document.getElementById('grid');
+        const emptyDays = 3; 
+        const totalDays = 30;
+
+        for (let i = 0; i < emptyDays; i++) {
+            grid.innerHTML += `<div class="day empty"></div>`;
+        }
+        
+        for (let i = 1; i <= totalDays; i++) {
+            let classes = "day";
+            if (i >= 1 && i <= 10) {
+                classes += " range1";
+                if (i === 1) classes += " first";
+                if (i === 10) classes += " last";
+            }
+            if (i >= 15 && i <= 25) {
+                classes += " range2";
+                if (i === 15) classes += " first";
+                if (i === 25) classes += " last";
+            }
+            grid.innerHTML += `<div class="${classes}">${i}</div>`;
+        }
+
+        const wrapper = document.getElementById('wrapper');
+        const cap = document.getElementById('caption');
+        const badges = document.querySelectorAll('.popup-badge');
+
+        function playLoop() {
+            // Sequence Reset
+            wrapper.className = 'calendar-wrapper';
+            cap.classList.remove('show');
+            badges.forEach(b => { b.style.animation = 'none'; void b.offsetWidth; b.style.animation = ''; });
+
+            setTimeout(() => {
+                // Range 1 fade in (transition takes 0.3s)
+                wrapper.classList.add('show-range1');
+                
+                setTimeout(() => {
+                    // Range 2 fade in (transition takes 0.3s)
+                    wrapper.classList.add('show-range2');
+                    
+                    setTimeout(() => {
+                        // Badges pop sequentially
+                        wrapper.classList.add('show-badges');
+                        
+                        setTimeout(() => {
+                            // Delta (+1 day) pop
+                            wrapper.classList.add('show-delta');
+                            
+                            // 0.8s Hold
+                            setTimeout(() => {
+                                // Show Caption
+                                cap.classList.add('show');
+                                
+                                // Hold for reading, then reset
+                                setTimeout(() => {
+                                    wrapper.classList.remove('show-range1', 'show-range2', 'show-badges', 'show-delta');
+                                    cap.classList.remove('show');
+                                    setTimeout(playLoop, 400); 
+                                }, 1300); 
+
+                            }, 800); // 0.8s hold after delta
+
+                        }, 400); // Delta pops shortly after main badges
+
+                    }, 400); // Badges pop shortly after second range
+
+                }, 400); // Second range appears shortly after first
+
+            }, 400); // Initial fast start Wait
+        }
+
+        window.addEventListener('load', playLoop);
+    </script>
+</body>
+</html>

@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeScope | See time. Instantly.</title>
+    <!-- Inter font for the clean modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Hybrid Theme System */
+            /* Dark Variables (Hero / Pro Card) */
+            --dark-bg: #000000;
+            --dark-elevated: #111111;
+            --dark-glass: rgba(0, 0, 0, 0.6);
+            --dark-border: #333333;
+            --dark-text-main: #ffffff;
+            --dark-text-muted: #a1a1aa;
+            
+            /* Light Variables (Main Content) */
+            --light-bg: #fcfcfd;
+            --light-elevated: #ffffff;
+            --light-border: #e4e4e7;
+            --light-text-main: #18181b;
+            --light-text-muted: #71717a;
+            
+            /* Accents & Buttons */
+            --accent-glow: rgba(255, 255, 255, 0.1);
+            --btn-dark-bg: #ffffff;
+            --btn-dark-text: #000000;
+            --btn-dark-hover: #e4e4e7;
+            
+            --btn-light-bg: #18181b;
+            --btn-light-text: #ffffff;
+            --btn-light-hover: #27272a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--light-text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            letter-spacing: -0.01em;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Button Utilities */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 14px 0 rgba(0,0,0,0.1);
+        }
+        
+        .cta-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .microcopy {
+            font-size: 0.75rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .microcopy::before {
+            content: '✓';
+            opacity: 0.7;
+        }
+
+        /* --- THEME: DARK (Hero Section) --- */
+        .theme-dark {
+            background-color: var(--dark-bg);
+            color: var(--dark-text-main);
+        }
+        
+        .theme-dark .btn-primary {
+            background: var(--btn-dark-bg);
+            color: var(--btn-dark-text);
+        }
+        .theme-dark .btn-primary:hover {
+            background: var(--btn-dark-hover);
+            transform: translateY(-2px);
+        }
+        .theme-dark .microcopy {
+            color: var(--dark-text-muted);
+        }
+
+        /* --- THEME: LIGHT (Rest of page) --- */
+        .btn-light-primary {
+            background: var(--btn-light-bg);
+            color: var(--btn-light-text);
+        }
+        .btn-light-primary:hover {
+            background: var(--btn-light-hover);
+            transform: translateY(-2px);
+        }
+        .btn-light-outline {
+            background: transparent;
+            color: var(--light-text-main);
+            border: 1px solid var(--light-border);
+            box-shadow: none;
+        }
+        .btn-light-outline:hover {
+            background: #f4f4f5;
+        }
+        .microcopy-light {
+            color: var(--light-text-muted);
+        }
+
+        /* Nav (Inside Dark Theme) */
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5%;
+            background: var(--dark-glass);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--dark-border);
+            z-index: 100;
+            color: var(--dark-text-main);
+        }
+
+        .logo { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.03em; }
+
+        .lang-switch {
+            display: flex;
+            background: var(--dark-elevated);
+            border: 1px solid var(--dark-border);
+            border-radius: 20px;
+            padding: 2px;
+        }
+        .lang-switch button {
+            background: transparent;
+            border: none;
+            padding: 4px 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--dark-text-muted);
+            border-radius: 18px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .lang-switch button.active {
+            background: #27272a;
+            color: var(--dark-text-main);
+        }
+
+        /* 1. Hero Section (Dark) */
+        .hero {
+            padding: 140px 0 0; /* Tighter height to show GIF immediately */
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: clamp(3.5rem, 7vw, 5.5rem);
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            line-height: 1.05;
+            margin-bottom: 20px;
+            background: linear-gradient(180deg, #FFFFFF 0%, #A0A0A0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            color: var(--dark-text-muted);
+            font-weight: 500;
+            margin: 0 auto 32px;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+
+        /* Hero Mockup for GIF */
+        .hero-mockup-wrapper {
+            perspective: 1200px;
+            padding: 0 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .hero-mockup {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: var(--dark-elevated);
+            border: 1px solid var(--dark-border);
+            border-radius: 16px 16px 0 0;
+            border-bottom: none;
+            box-shadow: 0 25px 80px -12px rgba(255,255,255,0.08);
+            transform: rotateX(8deg) translateY(20px);
+            transform-style: preserve-3d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark-text-muted);
+            font-weight: 500;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .hero-mockup:hover {
+            transform: rotateX(0deg) translateY(0);
+        }
+        
+        /* 2. Problem (Light Transition) */
+        .problem {
+            padding: 100px 0;
+            text-align: center;
+        }
+        .problem h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            color: var(--light-text-main);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.2;
+        }
+        .problem p {
+            font-size: 1.2rem;
+            color: var(--light-text-muted);
+            margin-top: 16px;
+        }
+
+        /* 3. Solution (Light) */
+        .solution {
+            padding: 40px 0 80px;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .card {
+            background: var(--light-elevated);
+            border: 1px solid var(--light-border);
+            border-radius: 16px;
+            padding: 32px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.06);
+        }
+        .card-icon { font-size: 1.8rem; margin-bottom: 16px; }
+        .card h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 8px; }
+        .card p { color: var(--light-text-muted); font-size: 1rem; }
+
+        /* 4. Features showcase */
+        .features { padding: 80px 0; }
+        .feature-row {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+            margin-bottom: 120px;
+        }
+        .feature-row:nth-child(even) { flex-direction: row-reverse; }
+        .feature-text { flex: 1; }
+        .feature-text h3 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 16px;
+        }
+        .feature-text p {
+            font-size: 1.15rem;
+            color: var(--light-text-muted);
+        }
+        .feature-visual {
+            flex: 1.2;
+            aspect-ratio: 16 / 10;
+            background: var(--light-elevated);
+            border: 1px solid var(--light-border);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--light-text-muted);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            font-weight: 500;
+        }
+
+        /* 4.5 Intermediate CTA Banner */
+        .mid-cta {
+            margin: 60px 0 100px;
+            background: #f4f4f5;
+            border-radius: 16px;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        .mid-cta h2 { font-size: 2rem; letter-spacing: -0.03em; margin-bottom: 24px; }
+
+        /* 5. Pricing (Free vs Pro) */
+        .pricing {
+            padding: 100px 0;
+            text-align: center;
+        }
+        .section-header h2 { font-size: 2.5rem; letter-spacing: -0.03em; margin-bottom: 8px; }
+        .section-header p { color: var(--light-text-muted); font-size: 1.1rem; }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            max-width: 850px;
+            margin: 60px auto 0;
+            text-align: left;
+        }
+
+        /* Free Card (Light) */
+        .pricing-card.free {
+            background: var(--light-elevated);
+            border: 1px solid var(--light-border);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Pro Card (Dark theme injected into light section) */
+        .pricing-card.premium {
+            background: var(--dark-bg);
+            color: var(--dark-text-main);
+            border: 1px solid var(--dark-border);
+            border-radius: 20px;
+            padding: 42px; /* slightly visually larger */
+            position: relative;
+            transform: scale(1.02); /* Pop out effect */
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15), 0 0 0 1px rgba(255,255,255,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Subtle glow for Pro card */
+        .pricing-card.premium::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            opacity: 0.5;
+        }
+
+        .price-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 4px; }
+        .price-desc { font-size: 0.95rem; margin-bottom: 24px; }
+        .pricing-card.free .price-desc { color: var(--light-text-muted); }
+        .pricing-card.premium .price-desc { color: var(--dark-text-muted); }
+        
+        .price-amount {
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            margin-bottom: 32px;
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+        }
+        .price-amount span { font-size: 1rem; font-weight: 500; }
+        .pricing-card.free .price-amount span { color: var(--light-text-muted); }
+        .pricing-card.premium .price-amount span { color: var(--dark-text-muted); }
+
+        .feature-list { list-style: none; margin-bottom: 40px; flex-grow: 1; }
+        .feature-list li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 14px;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+        }
+        .pricing-card.free .feature-list li { color: var(--light-text-main); }
+        .pricing-card.free .feature-list li::before { color: #18181b; }
+        
+        .pricing-card.premium .feature-list li { color: var(--dark-text-main); }
+        .pricing-card.premium .feature-list li::before { color: #ffffff; }
+
+        /* Footer */
+        footer {
+            padding: 60px 0;
+            border-top: 1px solid var(--light-border);
+            color: var(--light-text-muted);
+            font-size: 0.9rem;
+            margin-top: 80px;
+        }
+        .footer-content { display: flex; justify-content: space-between; align-items: center; }
+        .footer-links a {
+            color: var(--light-text-muted);
+            text-decoration: none;
+            margin-left: 24px;
+            transition: color 0.2s;
+        }
+        .footer-links a:hover { color: var(--light-text-main); }
+
+        @media (max-width: 800px) {
+            .feature-row, .feature-row:nth-child(even) { flex-direction: column; gap: 30px; }
+            .pricing-grid { grid-template-columns: 1fr; margin-top: 40px; }
+            .pricing-card.premium { transform: scale(1); }
+            .hero h1 { font-size: 3rem; }
+            .hero-mockup { aspect-ratio: 4/3; }
+            .footer-content { flex-direction: column; gap: 20px; text-align: center; }
+            .footer-links a { margin: 0 12px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV (Dark Overlay) -->
+    <nav>
+        <div class="logo">TimeScope</div>
+        <div class="lang-switch">
+            <button onclick="setLanguage('en')" id="btn-en" class="active">EN</button>
+            <button onclick="setLanguage('ja')" id="btn-ja">JP</button>
+        </div>
+    </nav>
+
+    <!-- 1. HERO (Dark Theme) -->
+    <div class="theme-dark">
+        <header class="hero container fade-in">
+            <h1 data-i18n="hero.title">TimeScope</h1>
+            <p data-i18n="hero.subtitle">Know the duration. Instantly.</p>
+            
+            <div class="hero-actions">
+                <div class="cta-wrapper">
+                    <a href="#" class="btn btn-primary" data-i18n="hero.cta">Download for Windows (Free)</a>
+                    <div class="microcopy" data-i18n="hero.micro">No signup required</div>
+                </div>
+            </div>
+            
+            <div class="hero-mockup-wrapper fade-in">
+                <div class="hero-mockup">
+                    <span data-i18n="hero.mockup">[ UI GIF / Video Placeholder ]</span>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- 2. PROBLEM (Light Theme) -->
+    <section class="problem container fade-in">
+        <h2 data-i18n="problem.title">Calendars are for meetings.</h2>
+        <p data-i18n="problem.subtitle">TimeScope is built purely to help you see time.</p>
+    </section>
+
+    <!-- 3. SOLUTION -->
+    <section class="solution container">
+        <div class="grid-3">
+            <div class="card fade-in">
+                <div class="card-icon">⚡</div>
+                <h3 data-i18n="solution.1.title">Stop counting</h3>
+                <p data-i18n="solution.1.desc">Never count days backwards or forwards on a grid again.</p>
+            </div>
+            <div class="card fade-in">
+                <div class="card-icon">🌊</div>
+                <h3 data-i18n="solution.2.title">Scroll seamlessly</h3>
+                <p data-i18n="solution.2.desc">Navigate through infinite months without jarring pagination.</p>
+            </div>
+            <div class="card fade-in">
+                <div class="card-icon">🎯</div>
+                <h3 data-i18n="solution.3.title">Select & know</h3>
+                <p data-i18n="solution.3.desc">Drag across dates to calculate total duration in real-time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURES (with GIF framing) -->
+    <section class="features container">
+        <div class="feature-row fade-in">
+            <div class="feature-text">
+                <h3 data-i18n="feature.1.title">Visualize time instantly.</h3>
+                <p data-i18n="feature.1.desc">Stop reading numbers. Start seeing length. TimeScope transforms abstract dates into visual blocks, making project phases and sprint lengths instantly obvious.</p>
+            </div>
+            <div class="feature-visual">
+                <span data-i18n="feature.mockup1">[ Duration Drag GIF ]</span>
+            </div>
+        </div>
+        
+        <div class="feature-row fade-in">
+            <div class="feature-text">
+                <h3 data-i18n="feature.2.title">Native speed. Zero lag.</h3>
+                <p data-i18n="feature.2.desc">Built as a lightweight native Windows app. It uses less than 10MB of memory so you can keep it running in your background forever.</p>
+            </div>
+            <div class="feature-visual">
+                <span data-i18n="feature.mockup2">[ Quick Scroll GIF ]</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4.5. MID CTA -->
+    <div class="container fade-in">
+        <div class="mid-cta">
+            <h2 data-i18n="midcta.title">Ready to stop counting?</h2>
+            <div class="cta-wrapper">
+                <a href="#" class="btn btn-light-primary" data-i18n="midcta.cta">Download Free</a>
+                <div class="microcopy microcopy-light" data-i18n="midcta.micro">Lightweight installer. Runs instantly.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. PRICING (Free vs High-Contrast Pro) -->
+    <section class="pricing container" id="pricing">
+        <div class="section-header fade-in">
+            <h2 data-i18n="pricing.title">Simple pricing</h2>
+            <p data-i18n="pricing.subtitle">Upgrade only when you need professional power.</p>
+        </div>
+        
+        <div class="pricing-grid">
+            <!-- Free (Everyday) -->
+            <div class="pricing-card free fade-in">
+                <div>
+                    <div class="price-title" data-i18n="pricing.free.title">Free</div>
+                    <div class="price-desc" data-i18n="pricing.free.desc">For everyday checking</div>
+                    <div class="price-amount" data-i18n="pricing.free.price">$0 <span>/ forever</span></div>
+                </div>
+                <ul class="feature-list">
+                    <li data-i18n="pricing.free.feat1">Unlimited duration logic</li>
+                    <li data-i18n="pricing.free.feat2">Seamless scroll</li>
+                    <li data-i18n="pricing.free.feat3">Single monitor support</li>
+                </ul>
+                <div class="cta-wrapper" style="width: 100%;">
+                    <a href="#" class="btn btn-light-outline" style="width: 100%;" data-i18n="pricing.free.cta">Download Free</a>
+                    <div class="microcopy microcopy-light" data-i18n="hero.micro">No signup required</div>
+                </div>
+            </div>
+
+            <!-- Pro (Professional) -->
+            <div class="pricing-card premium fade-in">
+                <div>
+                    <div class="price-title" data-i18n="pricing.pro.title">Pro</div>
+                    <div class="price-desc" data-i18n="pricing.pro.desc">For professional workflows</div>
+                    <div class="price-amount" data-i18n="pricing.pro.price">$9.99 <span>/ one-time</span></div>
+                </div>
+                <ul class="feature-list">
+                    <li data-i18n="pricing.pro.feat0"><strong>Everything in Free, plus:</strong></li>
+                    <li data-i18n="pricing.pro.feat1">Multi-monitor extended support</li>
+                    <li data-i18n="pricing.pro.feat2">Custom global hotkeys</li>
+                    <li data-i18n="pricing.pro.feat3">Premium priority updates</li>
+                </ul>
+                <div class="cta-wrapper" style="width: 100%;">
+                    <!-- Stripe Link -->
+                    <a href="#" class="btn btn-primary" style="width: 100%;" data-i18n="pricing.pro.cta">Upgrade to Pro</a>
+                    <div class="microcopy" style="color: var(--dark-text-muted);" data-i18n="pricing.pro.micro">Secure payment via Stripe</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="copyright">&copy; 2026 TimeScope. <span data-i18n="footer.rights">All rights reserved.</span></div>
+            <div class="footer-links">
+                <a href="#" data-i18n="footer.terms">Terms</a>
+                <a href="#" data-i18n="footer.privacy">Privacy</a>
+                <a href="#" data-i18n="footer.contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- I18N AND LOGIC -->
+    <script>
+        const i18nData = {
+            "en": {
+                "hero.title": "TimeScope",
+                "hero.subtitle": "Know the duration. Instantly.",
+                "hero.cta": "Download for Windows (Free)",
+                "hero.micro": "No signup required",
+                "hero.mockup": "[ Insert Grand UI Core GIF ]",
+                
+                "problem.title": "Calendars are for meetings.",
+                "problem.subtitle": "TimeScope is built purely to help you see time.",
+                
+                "solution.1.title": "Stop counting",
+                "solution.1.desc": "Never count days backwards or forwards on a grid again.",
+                "solution.2.title": "Scroll seamlessly",
+                "solution.2.desc": "Navigate through infinite months without jarring pagination.",
+                "solution.3.title": "Select & know",
+                "solution.3.desc": "Drag across dates to calculate total duration in real-time.",
+                
+                "feature.1.title": "Visualize time instantly.",
+                "feature.1.desc": "Stop reading numbers. Start seeing length. TimeScope transforms abstract dates into visual blocks, making project phases and sprint lengths instantly obvious.",
+                "feature.mockup1": "[ Insert Drag & Calculate GIF ]",
+                
+                "feature.2.title": "Native speed. Zero lag.",
+                "feature.2.desc": "Built as a lightweight native Windows app. It uses less than 10MB of memory so you can keep it running in your background forever.",
+                "feature.mockup2": "[ Insert Fast Scroll GIF ]",
+                
+                "midcta.title": "Ready to stop counting?",
+                "midcta.cta": "Download Free",
+                "midcta.micro": "Lightweight installer. Runs instantly.",
+                
+                "pricing.title": "Simple pricing",
+                "pricing.subtitle": "Upgrade only when you need professional power.",
+                
+                "pricing.free.title": "Free",
+                "pricing.free.desc": "For everyday checking",
+                "pricing.free.price": "$0 <span>/ forever</span>",
+                "pricing.free.feat1": "Unlimited duration logic",
+                "pricing.free.feat2": "Seamless scrolling",
+                "pricing.free.feat3": "Single monitor support",
+                "pricing.free.cta": "Download Free",
+                
+                "pricing.pro.title": "Pro",
+                "pricing.pro.desc": "For professional workflows",
+                "pricing.pro.price": "$9.99 <span>/ one-time</span>",
+                "pricing.pro.feat0": "<strong>Everything in Free, plus:</strong>",
+                "pricing.pro.feat1": "Multi-monitor extended support",
+                "pricing.pro.feat2": "Custom global hotkeys",
+                "pricing.pro.feat3": "Premium priority updates",
+                "pricing.pro.cta": "Upgrade to Pro",
+                "pricing.pro.micro": "Secure payment via Stripe",
+                
+                "footer.rights": "All rights reserved.",
+                "footer.terms": "Terms",
+                "footer.privacy": "Privacy",
+                "footer.contact": "Contact"
+            },
+            "ja": {
+                "hero.title": "TimeScope",
+                "hero.subtitle": "期間を、瞬時に把握する。",
+                "hero.cta": "Windows版をダウンロード (無料)",
+                "hero.micro": "登録不要・すぐに使えます",
+                "hero.mockup": "[ アプリ全体の高画質GIFを配置 ]",
+                
+                "problem.title": "会議のためのカレンダーか。",
+                "problem.subtitle": "時間把握のためのTimeScopeか。",
+                
+                "solution.1.title": "指差し計算を終わらせる",
+                "solution.1.desc": "週末や月末をまたぐ日数を、頭で計算する必要はもうありません。",
+                "solution.2.title": "シームレスな月移動",
+                "solution.2.desc": "月ごとのパジネーションを廃止。途切れないスクロール。",
+                "solution.3.title": "なぞる、ただそれだけ",
+                "solution.3.desc": "日付間をドラッグ＆ドロップする瞬間に総日数を算出・表示。",
+                
+                "feature.1.title": "時間を、視覚の長さに。",
+                "feature.1.desc": "数字を読むのをやめましょう。TimeScopeは日付の概念を「視覚的なブロック」に変換し、プロジェクトのマイルストーンやスプリントを直感的な長さとして理解させます。",
+                "feature.mockup1": "[ ドラッグによる日数算出GIFを配置 ]",
+                
+                "feature.2.title": "思考を妨げない軽快さ。",
+                "feature.2.desc": "ネイティブWindowsアプリとして極限まで効率化。メモリ使用量はわずか10MB以下。いつでもバックグラウンドに置いておくことができます。",
+                "feature.mockup2": "[ 高速スクロールGIFを配置 ]",
+                
+                "midcta.title": "マスの指差し計算を終わらせよう。",
+                "midcta.cta": "無料でダウンロード",
+                "midcta.micro": "超軽量なインストーラーですぐに起動",
+                
+                "pricing.title": "シンプルで透明な料金体系",
+                "pricing.subtitle": "まずは無料で。業務効率化の必要性を感じたらPro版へ。",
+                
+                "pricing.free.title": "Free",
+                "pricing.free.desc": "日常的な日数確認に",
+                "pricing.free.price": "無料 <span>/ ずっと</span>",
+                "pricing.free.feat1": "日数と期間の自動計算",
+                "pricing.free.feat2": "境界のないスクロール",
+                "pricing.free.feat3": "シングルモニターでの利用",
+                "pricing.free.cta": "無料でダウンロード",
+                
+                "pricing.pro.title": "Pro",
+                "pricing.pro.desc": "プロのプロジェクト管理に",
+                "pricing.pro.price": "¥1,500 <span>/ 買い切り</span>",
+                "pricing.pro.feat0": "<strong>Free版の全機能に加え:</strong>",
+                "pricing.pro.feat1": "マルチモニター完全対応",
+                "pricing.pro.feat2": "グローバルホットキーの拡張",
+                "pricing.pro.feat3": "優先的なアップデートの提供",
+                "pricing.pro.cta": "Pro版にアップグレード",
+                "pricing.pro.micro": "Stripeを通じた安全な決済",
+                
+                "footer.rights": "無断複写・転載を禁じます。",
+                "footer.terms": "利用規約",
+                "footer.privacy": "プライバシーポリシー",
+                "footer.contact": "お問い合わせ"
+            }
+        };
+
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
+            
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18nData[lang] && i18nData[lang][key]) {
+                    el.innerHTML = i18nData[lang][key]; 
+                }
+            });
+
+            document.title = lang === 'en' 
+                ? 'TimeScope | See time. Instantly.' 
+                : 'TimeScope | 期間を、瞬時に把握する。';
+
+            try { localStorage.setItem('timescope-lang', lang); } catch(e) {}
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            let initialLang = 'en';
+            try {
+                const saved = localStorage.getItem('timescope-lang');
+                if (saved && (saved === 'en' || saved === 'ja')) {
+                    initialLang = saved;
+                } else {
+                    const browserLang = navigator.language || navigator.userLanguage;
+                    if (browserLang.startsWith('ja')) initialLang = 'ja';
+                }
+            } catch(e) {}
+            setLanguage(initialLang);
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.15,
+                rootMargin: "0px 0px -40px 0px"
+            });
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
