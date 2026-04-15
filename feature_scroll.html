@@ -6,14 +6,14 @@
     <title>TimeScope Feature - Multiple Months</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { margin: 0; background-color: #ffffff; height: 100vh; display: flex; align-items: center; justify-content: center; font-family: 'Inter', sans-serif; overflow: hidden; flex-direction: column; -webkit-font-smoothing: antialiased; }
+        body { margin: 0; background-color: #ffffff; width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; font-family: 'Inter', sans-serif; overflow: hidden; flex-direction: column; -webkit-font-smoothing: antialiased; }
         
         .calendar-wrapper {
             position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
-            transform: scale(0.7);
+            transform: scale(0.5); /* Scaled down slightly more so the 720px height fits perfectly without cropping */
             transform-origin: center center;
         }
 
@@ -24,19 +24,20 @@
             border-radius: 20px;
             box-shadow: 0 20px 40px rgba(0,0,0,0.06), 0 0 0 1px rgba(0,0,0,0.03);
             overflow: hidden;
-            height: 360px; /* Modified to 360px */
+            height: 360px; /* Starts exactly fitting 1 month and some padding */
+            position: relative; /* Keeps caption absolutely positioned inside */
             transition: height 1.2s cubic-bezier(0.25, 1, 0.4, 1);
         }
 
         .calendar-window.expanded {
-            height: 620px; /* Modified to 620px */
+            height: 720px; /* 360px + ~340px for two full months height */
         }
         
         .months-container {
-            transition: transform 0.6s cubic-bezier(0.25, 1, 0.4, 1);
+            transition: transform 1.2s cubic-bezier(0.25, 1, 0.4, 1);
         }
         .months-container.scrolled {
-            transform: translateY(-8px); /* Subtle scroll effect */
+            transform: translateY(-336px); /* Scrolls up by exactly April's content height (approx 336px) */
         }
 
         .month-block { margin-bottom: 24px; }
@@ -50,7 +51,6 @@
         .day:nth-child(7n+1) { color: #e11d48; } .day:nth-child(7n) { color: #2563eb; }
         .day.empty { pointer-events: none; }
         
-        /* Highlight logic from Hero */
         .day::before { content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: transparent; z-index: -2; }
         .day.selected { color: #18181b; }
         .day.selected::before { background-color: rgba(59, 130, 246, 0.15); }
@@ -58,22 +58,56 @@
         .day.selected.first::after, .day.selected.last::after { content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: #5a92e6; border-radius: 50%; z-index: -1; }
         .day.selected.first, .day.selected.last { color: #ffffff !important; font-weight: 600; }
 
+        /* Window gradient overlay for bottom */
+        .window-gradient {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background: linear-gradient(to top, rgba(255,255,255,1) 10%, rgba(255,255,255,0));
+            z-index: 5;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+        .window-gradient.show {
+            opacity: 1;
+        }
+
         .caption {
-            margin-top: 32px;
+            position: absolute;
+            bottom: 32px;
+            left: 50%;
+            transform: translate(-50%, 10px);
             font-size: 1.1rem;
             font-weight: 600;
             color: #18181b;
             background: #ffffff;
             padding: 10px 24px;
             border-radius: 100px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 0 0 1px rgba(0,0,0,0.03);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.05);
             opacity: 0;
-            transform: translateY(10px);
-            transition: opacity 0.3s ease, transform 0.3s ease;
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            z-index: 10;
+            white-space: nowrap;
         }
         .caption.show {
             opacity: 1;
-            transform: translateY(0);
+            transform: translate(-50%, 0);
+        }
+
+        @media (min-height: 501px) {
+            .calendar-wrapper { transform: scale(0.65); }
+        }
+        @media (max-height: 500px) {
+            .calendar-wrapper { transform: scale(0.5); }
+        }
+        @media (max-height: 400px) {
+            .calendar-wrapper { transform: scale(0.45); }
+        }
+        @media (max-height: 350px) {
+            .calendar-wrapper { transform: scale(0.4); }
         }
     </style>
 </head>
@@ -89,27 +123,29 @@
                 </div>
                 
                 <!-- May -->
-                <div class="month-block">
+                <div class="month-block" id="may">
                     <div class="header">May 2026</div>
                     <div class="weekdays"><div>Su</div><div>Mo</div><div>Tu</div><div>We</div><div>Th</div><div>Fr</div><div>Sa</div></div>
                     <div class="grid" id="grid-may"></div>
                 </div>
 
                 <!-- June -->
-                <div class="month-block">
+                <div class="month-block" id="june">
                     <div class="header">June 2026</div>
                     <div class="weekdays"><div>Su</div><div>Mo</div><div>Tu</div><div>We</div><div>Th</div><div>Fr</div><div>Sa</div></div>
                     <div class="grid" id="grid-jun"></div>
                 </div>
             </div>
+            
+            <div class="window-gradient" id="gradient"></div>
+            <div class="caption" id="caption">See multiple months at once</div>
         </div>
-        
-        <div class="caption" id="caption">See multiple months at once</div>
     </div>
 
     <script>
         function generateMonth(gridId, startDay, totalDays, selectStart, selectEnd) {
             const grid = document.getElementById(gridId);
+            grid.innerHTML = ''; // reset just in case
             for (let i = 0; i < startDay; i++) {
                 grid.innerHTML += `<div class="day empty"></div>`;
             }
@@ -124,32 +160,49 @@
             }
         }
 
-        // April 2026 starts Wed (3), 30 days
-        generateMonth('grid-apr', 3, 30, 8, 15);
-        // May 2026 starts Fri (5), 31 days
-        generateMonth('grid-may', 5, 31, null, null); 
-        // June 2026 starts Mon (1), 30 days
-        generateMonth('grid-jun', 1, 30, null, null);
+        function initCalendars() {
+            // April 2026 starts Wed (3), 30 days
+            generateMonth('grid-apr', 3, 30, 8, 15);
+            // May 2026 starts Fri (5), 31 days
+            generateMonth('grid-may', 5, 31, null, null); 
+            // June 2026 starts Mon (1), 30 days
+            generateMonth('grid-jun', 1, 30, null, null);
+        }
+
+        initCalendars();
 
         const win = document.getElementById('window');
         const cap = document.getElementById('caption');
+        const gradient = document.getElementById('gradient');
         const months = document.getElementById('months-container');
 
         function playLoop() {
             setTimeout(() => {
+                // Phase 1: Expand window to show 2 months
                 win.classList.add('expanded');
+                
                 setTimeout(() => {
+                    // Phase 2: Scroll by 1 month down
                     months.classList.add('scrolled');
+                    
                     setTimeout(() => {
+                        // Phase 3: Show caption
+                        gradient.classList.add('show');
                         cap.classList.add('show');
-                    }, 150);
-                    setTimeout(() => {
-                        win.classList.remove('expanded');
-                        cap.classList.remove('show');
-                        months.classList.remove('scrolled');
-                        setTimeout(playLoop, 1200); 
-                    }, 2200); 
-                }, 1200); 
+
+                        // After delay, Reset
+                        setTimeout(() => {
+                            win.classList.remove('expanded');
+                            cap.classList.remove('show');
+                            gradient.classList.remove('show');
+                            months.classList.remove('scrolled');
+                            setTimeout(playLoop, 1200); 
+                        }, 3500); 
+
+                    }, 1200); // Wait for scroll animation to finish
+                    
+                }, 1400); // Wait for expand animation + tiny gap
+                
             }, 800);
         }
 
