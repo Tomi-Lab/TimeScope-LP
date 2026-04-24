@@ -566,10 +566,20 @@
             <p data-i18n="hero.subtitle">Understand and decide time instantly.</p>
             <div class="hero-target" data-i18n="hero.target">For project managers, developers, and planners</div>
             
-            <div class="hero-actions">
+            <div class="hero-actions" style="flex-direction: column; align-items: center; gap: 24px;">
                 <div class="cta-wrapper">
                     <a href="#" class="btn btn-primary download-link" data-i18n="hero.cta">Download for Windows (Free)</a>
                     <div class="microcopy" data-i18n="hero.micro">No signup required</div>
+                </div>
+                
+                <!-- Post-download guidance -->
+                <div class="fade-in" style="display: flex; align-items: center; gap: 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 12px 20px; border-radius: 12px; text-align: left; max-width: 400px; animation-delay: 0.3s;">
+                    <img src="assets/tray-hint.png" alt="System Tray Icon" style="width: 80px; height: auto; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+                    <div style="font-size: 0.85rem; color: var(--dark-text-muted); line-height: 1.5;">
+                        <span style="color: var(--dark-text-main); font-weight: 600;" data-i18n="hero.guidance.title">After launch:</span><br>
+                        • <span data-i18n="hero.guidance.step1">The app runs in your system tray (bottom-right)</span><br>
+                        • <span data-i18n="hero.guidance.step2">Click the icon to open TimeScope</span>
+                    </div>
                 </div>
             </div>
             
@@ -723,21 +733,49 @@
         </div>
     </section>
 
-    <!-- 6. DOWNLOAD GUIDE -->
+    <!-- 5.5 MINOR CTA (Follow Updates) -->
+    <section class="container fade-in" style="margin-bottom: 40px;">
+        <div style="background: var(--light-elevated); border: 1px solid var(--light-border); border-radius: 16px; padding: 32px 40px; display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 850px; margin: 0 auto; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 8px; color: var(--light-text-main);">Stay updated</h3>
+            <p style="color: var(--light-text-muted); margin-bottom: 24px; font-size: 1rem;">Follow development & updates on X</p>
+            <a href="https://x.com/TimeScope_App" target="_blank" class="btn btn-light-outline">Follow @TimeScope_App</a>
+        </div>
+    </section>
+
+    <!-- 6. GETTING STARTED & SUPPORT -->
     <section class="container fade-in" style="margin-top: 40px; margin-bottom: 60px;">
         <div style="background: var(--light-elevated); border: 1px solid var(--light-border); border-radius: 16px; padding: 40px; max-width: 850px; margin: 0 auto;">
-            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 24px; text-align: center;" data-i18n="guide.title">How to install & run</h3>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
-                <div>
-                    <div style="font-weight: 700; color: var(--light-text-main); margin-bottom: 8px;">1. <span data-i18n="guide.step1.title">Download & Extract</span></div>
-                    <p style="font-size: 0.95rem; color: var(--light-text-muted);" data-i18n="guide.step1.desc">Unzip the downloaded file anywhere on your PC.</p>
-                </div>
-                <div>
-                    <div style="font-weight: 700; color: var(--light-text-main); margin-bottom: 8px;">2. <span data-i18n="guide.step2.title">Double click to run</span></div>
-                    <p style="font-size: 0.95rem; color: var(--light-text-muted);" data-i18n="guide.step2.desc">TimeScope is a portable app. Simply open the extracted executable file.</p>
-                </div>
+            <!-- A. Getting Started -->
+            <div style="margin-bottom: 32px;">
+                <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 16px; color: var(--light-text-main);" data-i18n="support.start.title">Getting Started</h3>
+                <ol style="margin-left: 20px; color: var(--light-text-muted); font-size: 0.95rem; line-height: 1.8;">
+                    <li style="padding-left: 8px; margin-bottom: 4px;" data-i18n="support.start.1">Unzip the downloaded file</li>
+                    <li style="padding-left: 8px; margin-bottom: 4px;" data-i18n="support.start.2">Double-click the .exe to launch</li>
+                    <li style="padding-left: 8px; margin-bottom: 4px;" data-i18n="support.start.3">Find the icon in your system tray (bottom-right of Windows)</li>
+                </ol>
             </div>
+
+            <!-- B. Security Note -->
+            <div style="margin-bottom: 32px; padding: 16px; background: rgba(0,0,0,0.02); border-radius: 8px; border: 1px solid var(--light-border);">
+                <div style="font-weight: 600; color: var(--light-text-main); font-size: 0.95rem; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+                    <span style="font-size: 1.1rem;">🛡️</span> <span data-i18n="support.security.title">Security Note</span>
+                </div>
+                <p style="color: var(--light-text-muted); font-size: 0.9rem; line-height: 1.5;" data-i18n="support.security.desc">
+                    Windows may show a security warning on first launch.<br>Click "More info" → "Run anyway" to continue.
+                </p>
+            </div>
+
+            <!-- C. Developer Message -->
+            <div style="text-align: center; border-top: 1px solid var(--light-border); padding-top: 24px;">
+                <p style="color: var(--light-text-muted); font-size: 0.9rem; line-height: 1.6; margin-bottom: 12px;">
+                    <span data-i18n="support.dev.1">Built by a developer who needed to understand time clearly in real work.</span><br>
+                    <span data-i18n="support.dev.2">I built TimeScope to answer a simple question:</span><br>
+                    <span style="font-style: italic; color: var(--light-text-main); font-weight: 500;" data-i18n="support.dev.3">"How long does this actually take?"</span>
+                </p>
+                <a href="https://x.com/TimeScope_App" target="_blank" style="color: var(--light-text-main); font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'" data-i18n="support.dev.link">Follow development updates on X →</a>
+            </div>
+
         </div>
     </section>
 
@@ -749,6 +787,7 @@
                 <a href="terms.html" data-i18n="footer.terms">Terms</a>
                 <a href="privacy.html" data-i18n="footer.privacy">Privacy</a>
                 <a href="contact.html" data-i18n="footer.contact">Contact</a>
+                <a href="https://x.com/TimeScope_App" target="_blank">Follow on X</a>
             </div>
         </div>
     </footer>
@@ -760,6 +799,9 @@
             "en": {
                 "hero.title": "See time. Instantly.",
                 "hero.subtitle": "A calendar built to understand and decide time instantly.",
+                "hero.guidance.title": "After launch:",
+                "hero.guidance.step1": "The app runs in your system tray (bottom-right)",
+                "hero.guidance.step2": "Click the icon to open TimeScope",
                 
                 "feature.1.title": "See time clearly.",
                 "feature.1.desc": "Scroll seamlessly and navigate infinite months without jarring pagination. TimeScope makes project phases and sprint lengths instantly obvious.",
@@ -803,11 +845,18 @@
                 "pricing.pro.flow1": "License key sent via email instantly after payment.",
                 "pricing.pro.flow2": "Enter the key in the free app to unlock Pro features.",
                 
-                "guide.title": "How to install & run",
-                "guide.step1.title": "Download & Extract",
-                "guide.step1.desc": "Unzip the downloaded file anywhere on your PC.",
-                "guide.step2.title": "Double click to run",
-                "guide.step2.desc": "TimeScope is a portable app. Simply open the extracted executable file.",
+                "support.start.title": "Getting Started",
+                "support.start.1": "Unzip the downloaded file",
+                "support.start.2": "Double-click the .exe to launch",
+                "support.start.3": "Find the icon in your system tray (bottom-right of Windows)",
+                
+                "support.security.title": "Security Note",
+                "support.security.desc": "Windows may show a security warning on first launch.<br>Click \"More info\" → \"Run anyway\" to continue.",
+                
+                "support.dev.1": "Built by a developer who needed to understand time clearly in real work.",
+                "support.dev.2": "I built TimeScope to answer a simple question:",
+                "support.dev.3": "\"How long does this actually take?\"",
+                "support.dev.link": "Follow development updates on X →",
 
                 "footer.rights": "All rights reserved.",
                 "footer.terms": "Terms",
@@ -817,6 +866,9 @@
             "ja": {
                 "hero.title": "時間を、ただ視るだけ。",
                 "hero.subtitle": "「期間」を理解し、一瞬で決断するためのカレンダー。",
+                "hero.guidance.title": "起動後：",
+                "hero.guidance.step1": "アプリはタスクトレイ（画面右下）に常駐します",
+                "hero.guidance.step2": "アイコンをクリックすると開きます",
                 
                 "feature.1.title": "時間を、直感的に見渡す。",
                 "feature.1.desc": "途切れることのない滑らかなスクロールで、複数月をシームレスに移動。プロジェクトの全体像やスプリント期間が、ひと目で手に取るように分かります。",
@@ -860,11 +912,18 @@
                 "pricing.pro.flow1": "決済直後にライセンスキーがメールで届きます",
                 "pricing.pro.flow2": "無料版アプリ内でキーを入力するとProが解放されます",
                 
-                "guide.title": "ダウンロード手順・使い方",
-                "guide.step1.title": "ZIPを解凍する",
-                "guide.step1.desc": "ダウンロードしたファイルをPC内の任意の場所に展開してください。",
-                "guide.step2.title": "exeを起動する",
-                "guide.step2.desc": "インストール不要のポータブルアプリです。exeを直接起動できます。",
+                "support.start.title": "使い方",
+                "support.start.1": "ZIPを解凍する",
+                "support.start.2": "exeをダブルクリックで起動",
+                "support.start.3": "タスクトレイ（画面右下）に常駐します",
+                
+                "support.security.title": "初回起動時のセキュリティについて",
+                "support.security.desc": "初回起動時にWindowsの警告が表示される場合があります。<br>「詳細情報」→「実行」を選択してください。",
+                
+                "support.dev.1": "実際の業務で「時間」を明確に把握する必要があった開発者によって作られました。",
+                "support.dev.2": "TimeScopeは、シンプルで根本的な問いに答えるために作りました。",
+                "support.dev.3": "「これ、実際にはどれくらいかかる？」",
+                "support.dev.link": "Xで開発状況をフォローする →",
 
                 "footer.rights": "無断複写・転載を禁じます。",
                 "footer.terms": "利用規約",
