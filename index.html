@@ -22,6 +22,11 @@
     <meta property="twitter:title" content="TimeScope | See time. Instantly.">
     <meta property="twitter:description" content="A calendar built to understand and decide time instantly. Scroll seamlessly, compare durations, and make better decisions.">
     <meta property="twitter:image" content="https://timescope-app.github.io/assets/timescope-ogp.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <!-- Inter font for the clean modern look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -552,7 +557,10 @@
 
     <!-- NAV (Dark Overlay) -->
     <nav>
-        <div class="logo">TimeScope</div>
+        <div class="logo" style="display: flex; align-items: center; gap: 8px;">
+            <img src="assets/icon-64.png" alt="TimeScope Icon" style="height: 18px; width: auto;">
+            TimeScope
+        </div>
         <div class="lang-switch">
             <button onclick="setLanguage('en')" id="btn-en" class="active">EN</button>
             <button onclick="setLanguage('ja')" id="btn-ja">JP</button>
