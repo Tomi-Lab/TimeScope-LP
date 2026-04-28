@@ -539,8 +539,6 @@
                     lang = urlLang;
                 } else if (savedLang === 'en' || savedLang === 'ja') {
                     lang = savedLang;
-                } else if (browserLang && browserLang.startsWith('ja')) {
-                    lang = 'ja';
                 }
                 
                 document.documentElement.lang = lang;
