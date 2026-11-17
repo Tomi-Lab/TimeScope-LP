@@ -1,0 +1,954 @@
+{
+  "en-US": {
+    "lang_code": "en-US",
+    "html_lang": "en-US",
+    "url_path": "/",
+    "label": "English",
+    "seo_title": "TimeScope – Visual Calendar | A Broader View of Time for Windows",
+    "seo_desc": "A lightweight Windows desktop calendar for viewing multiple months, selecting date ranges, and instantly checking their duration.",
+    "nav_features": "Features",
+    "nav_pricing": "Free vs Pro",
+    "nav_support": "Support",
+    "nav_cta": "Get on Microsoft Store",
+    "hero_pill": "TimeScope – Visual Calendar · Windows 10 / 11",
+    "hero_h1": "A familiar calendar. A broader view of time.",
+    "hero_sub": "A lightweight Windows desktop calendar to view multiple months, select date ranges, and understand durations at a glance.",
+    "hero_cta_primary": "Get it from Microsoft Store",
+    "hero_cta_secondary": "Compare Free & Pro",
+    "hero_meta": "Free edition · 7 languages · Optional TimeScope Pro ($4.99 USD base, one-time via Microsoft Store)",
+    "hero_alt": "TimeScope multi-month desktop calendar showing six months and a 90-day range selection",
+    "benefits_title": "See time clearly without switching views",
+    "benefits_sub": "Built for fast date exploration, duration checking, and everyday desktop focus.",
+    "benefits": [
+      {
+        "badge": "Multi-Month View",
+        "title": "See more months at once",
+        "desc": "Start with a compact single-month calendar and expand horizontally or vertically using your available window and display space."
+      },
+      {
+        "badge": "Instant Day Count",
+        "title": "Select any period and see its duration",
+        "desc": "Drag across any dates to highlight a range and read the exact day count immediately in a floating badge and summary bar."
+      },
+      {
+        "badge": "TimeScope Pro",
+        "title": "Visualize time more flexibly with Pro",
+        "desc": "Unlock multi-band period comparison, multi-monitor display choice, and custom holidays & workdays as an optional one-time upgrade."
+      }
+    ],
+    "features_title": "Designed for effortless Windows desktop workflow",
+    "features_sub": "Every core calendar tool is included free, with zero scheduling clutter.",
+    "features": [
+      {
+        "shot": "02",
+        "alt": "TimeScope flexible 1x1, 3x1, 1x2, and 3x2 calendar layout examples",
+        "title": "Flexible multi-month calendar display",
+        "desc": "Expand your calendar horizontally and vertically to match your workspace—from a compact single month to broad multi-month views.",
+        "bullets": [
+          "Expand horizontally and vertically based on window and screen space",
+          "Three zoom presets: Small, Medium, and Large",
+          "Smooth scrolling across months and years"
+        ]
+      },
+      {
+        "shot": "03",
+        "alt": "Drag across dates to select a period and see the 22 days badge",
+        "title": "Drag-to-select date ranges & instant day count",
+        "desc": "Check the length of a trip, sprint, or milestone between any two dates—even across month boundaries—without manual counting.",
+        "bullets": [
+          "Live floating day-count badge while dragging",
+          "Clear bottom summary showing start, end, and total days",
+          "Opens on today's date with a fresh selection"
+        ]
+      },
+      {
+        "shot": "04",
+        "alt": "TimeScope customization menu with zoom presets, week numbers, relative days, and 7 languages",
+        "title": "Customize the way you see time",
+        "desc": "Tailor week start, visual indicators, and interface language directly from the menu with zero restarts.",
+        "bullets": [
+          "Today (T) and relative day indicators (-n / +n)",
+          "ISO week numbers beside each row & current-month highlight",
+          "Sunday or Monday week start & 7 languages with instant switching"
+        ]
+      },
+      {
+        "shot": "06",
+        "alt": "TimeScope pinned above other windows with dynamic Windows system tray date icon",
+        "title": "Always within reach on your desktop",
+        "desc": "Keep your calendar pinned above other windows while you work, and glance at today's date directly in the Windows system tray.",
+        "bullets": [
+          "Always-on-top Pin toggle for quick reference",
+          "Dynamic Windows system tray icon showing today's date and time",
+          "Lightweight desktop experience without event or cloud bloat"
+        ]
+      }
+    ],
+    "pricing_title": "Free vs TimeScope Pro",
+    "pricing_sub": "Start free with all core calendar features. Upgrade inside the app via Microsoft Store if you need Pro.",
+    "free_name": "Free Edition",
+    "free_tag": "Included",
+    "free_price": "$0",
+    "free_price_unit": "Free",
+    "free_sub": "All core multi-month viewing, date-range selection, and desktop customization.",
+    "free_items": [
+      "Flexible multi-month calendar display",
+      "Drag-to-select date ranges & instant day count",
+      "Today & relative day indicators (-n / +n)",
+      "ISO week numbers & current-month highlight",
+      "3 zoom presets & Sunday/Monday week start",
+      "Smooth scrolling, Always-on-top Pin & live tray icon",
+      "7 interface languages with instant switching"
+    ],
+    "free_cta": "Download Free on Microsoft Store",
+    "pro_name": "TimeScope Pro",
+    "pro_tag": "One-time purchase · No subscription",
+    "pro_price": "$4.99 USD",
+    "pro_price_unit": "base price",
+    "pro_sub": "Optional one-time Microsoft Store in-app purchase unlocked inside TimeScope.",
+    "pro_items": [
+      "Everything in Free Edition",
+      "Multi-band: retain and compare multiple date ranges simultaneously",
+      "Multi-monitor: choose which display shows the calendar",
+      "Custom holidays & workdays tailored to your schedule"
+    ],
+    "pro_cta": "Get TimeScope on Microsoft Store",
+    "pricing_note": "TimeScope Pro is a Durable one-time in-app add-on purchased inside the app through Microsoft Store ($4.99 USD base price; regional pricing and local taxes vary). No subscription required.",
+    "gallery_title": "Explore TimeScope v1.2.0",
+    "gallery_sub": "Genuine application screenshots showcasing both Free and TimeScope Pro capabilities.",
+    "captions": [
+      "Multi-month desktop calendar view displaying six months at once with a continuous 90-day range selection.",
+      "Expand your calendar horizontally and vertically from a single month to multi-month views.",
+      "Drag across dates to highlight any range and see the exact day count in a live badge and summary.",
+      "Customize zoom presets, current-month highlight, relative day counts, week numbers, week start, and 7 languages.",
+      "Spot today, relative day offsets (-n / +n), and ISO week numbers directly in the calendar grid.",
+      "Pin TimeScope above other windows and check today's date and time from the dynamic Windows tray icon.",
+      "TimeScope Pro adds multi-band period comparison, multi-monitor placement, and custom holidays and workdays."
+    ],
+    "bottom_h2": "A clearer view of time on your Windows desktop.",
+    "bottom_p": "Download TimeScope – Visual Calendar free from Microsoft Store on Windows 10 and Windows 11 (x64).",
+    "bottom_cta": "Get it from Microsoft Store",
+    "footer_store": "Microsoft Store",
+    "footer_support": "Support & FAQ",
+    "footer_contact": "Contact",
+    "footer_privacy": "Privacy Policy",
+    "footer_terms": "Terms of Service",
+    "footer_rights": "© 2026 Tomi-lab. All rights reserved."
+  },
+  "ja-JP": {
+    "lang_code": "ja-JP",
+    "html_lang": "ja-JP",
+    "url_path": "/ja/",
+    "label": "日本語",
+    "seo_title": "TimeScope – Visual Calendar | より広い視点で時間を見渡す Windows カレンダー",
+    "seo_desc": "複数月の同時表示や期間選択、日数の即時確認ができる、軽量な Windows デスクトップカレンダーです。",
+    "nav_features": "機能",
+    "nav_pricing": "Free / Pro 比較",
+    "nav_support": "サポート",
+    "nav_cta": "Microsoft Store で入手",
+    "hero_pill": "TimeScope – Visual Calendar · Windows 10 / 11 対応",
+    "hero_h1": "いつものカレンダーに、もっと広い時間の視点を。",
+    "hero_sub": "複数月の同時表示やドラッグによる期間選択、日数の即時確認ができる Windows 向けの軽量デスクトップカレンダー。",
+    "hero_cta_primary": "Microsoft Store で入手",
+    "hero_cta_secondary": "Free と Pro を比較",
+    "hero_meta": "無料版あり · 7言語対応 · TimeScope Pro（基準価格 $4.99 USD・買い切り）",
+    "hero_alt": "6か月を同時表示し90日間の期間を選択した TimeScope デスクトップカレンダー",
+    "benefits_title": "画面を切り替えずに、時間のつながりを把握",
+    "benefits_sub": "素早い日付確認、期間の日数算出、デスクトップ常駐のために設計されています。",
+    "benefits": [
+      {
+        "badge": "複数月表示",
+        "title": "複数の月を同時に見渡す",
+        "desc": "1か月のコンパクトな表示から始めて、ウィンドウや画面の空き領域に合わせて横方向・縦方向へ柔軟に表示を広げられます。"
+      },
+      {
+        "badge": "即時日数カウント",
+        "title": "あらゆる期間を瞬時に選択・確認",
+        "desc": "日付をドラッグするだけで期間を強調表示し、正確な日数をフローティングバッジと下部サマリーで即座に確認できます。"
+      },
+      {
+        "badge": "TimeScope Pro",
+        "title": "Pro 版でさらに柔軟な時間の可視化",
+        "desc": "複数期間の同時比較（マルチバンド）、マルチモニター表示先選択、カスタム休日・稼働日設定を買い切りで追加できます。"
+      }
+    ],
+    "features_title": "Windows デスクトップ作業に寄り添う設計",
+    "features_sub": "予定管理やクラウド同期の煩雑さを持たない、純粋なビジュアルカレンダーです。",
+    "features": [
+      {
+        "shot": "02",
+        "alt": "1x1、3x1、1x2、3x2 の柔軟な表示例",
+        "title": "ウィンドウに合わせて広がる複数月表示",
+        "desc": "1か月表示から始めて、作業スペースに合わせて横にも縦にも表示月数を広げられます。",
+        "bullets": [
+          "ウィンドウや画面スペースに応じた横・縦の柔軟な拡張",
+          "Small / Medium / Large の3段階ズームプリセット",
+          "月・年をまたぐ滑らかなスクロール"
+        ]
+      },
+      {
+        "shot": "03",
+        "alt": "ドラッグ選択と22 daysバッジの表示例",
+        "title": "ドラッグで期間選択＆正確な日数を即時表示",
+        "desc": "旅行やプロジェクト期間など、月をまたぐ2つの日付間の日数を数えずにすぐ把握できます。",
+        "bullets": [
+          "ドラッグ中にライブ表示される日数フローティングバッジ",
+          "開始日・終了日・合計日数をまとめる下部サマリー",
+          "起動時は今日の日付を基準にすっきり表示"
+        ]
+      },
+      {
+        "shot": "04",
+        "alt": "ズームや週番号、7言語切替を含むカスタマイズメニュー",
+        "title": "自分の時間感覚に合わせてカスタマイズ",
+        "desc": "週の開始曜日や各種表示オプション、UI 言語をメニューから再起動なしで切り替えられます。",
+        "bullets": [
+          "今日（T）と今日からの相対日数（-n / +n）表示",
+          "各行横への ISO 週番号表示・当月ハイライト",
+          "日曜／月曜始まり選択＆7言語の即時切り替え"
+        ]
+      },
+      {
+        "shot": "06",
+        "alt": "最前面ピン留めとシステムトレイの動的アイコン表示",
+        "title": "作業中もいつでもすぐ手の届く場所に",
+        "desc": "他のウィンドウの手前にピン留めして固定表示でき、システムトレイの動的アイコンで今日の日付と時刻をすぐ確認できます。",
+        "bullets": [
+          "最前面固定（Pin）による素早い参照",
+          "今日の日付と時刻を示す動的 Windows システムトレイアイコン",
+          "予定管理機能を持たない軽量な常駐カレンダー"
+        ]
+      }
+    ],
+    "pricing_title": "Free 版と TimeScope Pro の比較",
+    "pricing_sub": "基本機能はすべて無料。より高度な比較やマルチモニター運用が必要な場合はアプリ内からアップグレードできます。",
+    "free_name": "Free 版",
+    "free_tag": "無料",
+    "free_price": "$0",
+    "free_price_unit": "無料",
+    "free_sub": "複数月表示、期間選択・日数カウント、各種カスタマイズをすべて利用可能。",
+    "free_items": [
+      "柔軟な複数月カレンダー表示",
+      "ドラッグによる期間選択と日数の即時カウント",
+      "今日および相対日数（-n / +n）表示",
+      "ISO 週番号表示と当月ハイライト",
+      "3段階ズーム＆日曜／月曜始まり設定",
+      "滑らかなスクロール・最前面ピン留め・動的トレイアイコン",
+      "再起動なしの7言語インターフェース切り替え"
+    ],
+    "free_cta": "Microsoft Store で無料入手",
+    "pro_name": "TimeScope Pro",
+    "pro_tag": "買い切り・サブスクリプションなし",
+    "pro_price": "$4.99 USD",
+    "pro_price_unit": "基準価格",
+    "pro_sub": "TimeScope アプリ内から Microsoft Store 経由で購入できる買い切りアドオンです。",
+    "pro_items": [
+      "Free 版のすべての機能",
+      "マルチバンド：複数の期間を同時に保持して比較",
+      "マルチモニター：表示するディスプレイを選択",
+      "カスタム休日・稼働日：独自の休日や営業日を設定"
+    ],
+    "pro_cta": "Microsoft Store でアプリを入手",
+    "pricing_note": "TimeScope Pro は Microsoft Store のアプリ内購入（買い切り・サブスクリプションなし）として提供されます（基準価格 $4.99 USD／地域により現地通貨・税込価格が異なります）。",
+    "gallery_title": "TimeScope v1.2.0 スクリーンショット",
+    "gallery_sub": "Free 版および TimeScope Pro の実画面スクリーンショットをご覧いただけます。",
+    "captions": [
+      "複数月を同時に見渡せるデスクトップカレンダー表示と、90日間の連続期間選択の例。",
+      "1か月の表示から、横方向・縦方向へ柔軟に表示月数を広げられます。",
+      "日付をドラッグして期間を選択すると、フローティングバッジと下部サマリーに正確な日数が表示されます。",
+      "フォントサイズ（Small/Medium/Large）、当月強調、相対日数、週番号、開始曜日、7言語を切り替えられます。",
+      "今日の日付、今日からの相対日数（-n / +n）、ISO 週番号をカレンダー上でひと目で把握できます。",
+      "他のウィンドウの手前にピン留めし、Windows トレイの動的アイコンで今日の日付と時刻を確認できます。",
+      "TimeScope Pro では複数期間の同時比較、マルチモニター表示先選択、カスタム休日・稼働日設定を利用できます。"
+    ],
+    "bottom_h2": "デスクトップで、時間をもっと見やすく。",
+    "bottom_p": "Windows 10 / 11（x64）向けの TimeScope – Visual Calendar を Microsoft Store から無料でダウンロードできます。",
+    "bottom_cta": "Microsoft Store で入手",
+    "footer_store": "Microsoft Store",
+    "footer_support": "サポート / FAQ",
+    "footer_contact": "お問い合わせ",
+    "footer_privacy": "プライバシーポリシー",
+    "footer_terms": "利用規約",
+    "footer_rights": "© 2026 Tomi-lab. All rights reserved."
+  },
+  "zh-CN": {
+    "lang_code": "zh-CN",
+    "html_lang": "zh-CN",
+    "url_path": "/zh-cn/",
+    "label": "简体中文",
+    "seo_title": "TimeScope – Visual Calendar | 更开阔视野的 Windows 桌面日历",
+    "seo_desc": "一款轻量的 Windows 桌面日历，可同时查看多个月份、选择日期范围并即时查看天数。",
+    "nav_features": "功能",
+    "nav_pricing": "免费版与 Pro",
+    "nav_support": "支持",
+    "nav_cta": "前往 Microsoft Store",
+    "hero_pill": "TimeScope – Visual Calendar · Windows 10 / 11",
+    "hero_h1": "熟悉的日历，更开阔的时间视野。",
+    "hero_sub": "一款适用于 Windows 的轻量桌面日历，帮助您同时查看多个月份、选择日期范围并一目了然掌握天数。",
+    "hero_cta_primary": "从 Microsoft Store 获取",
+    "hero_cta_secondary": "对比免费版与 Pro",
+    "hero_meta": "免费版 · 支持 7 种语言 · 可选 TimeScope Pro（基准价格 $4.99 USD，一次性买断）",
+    "hero_alt": "TimeScope 多月桌面日历展示六个月视图与 90 天连续范围选择",
+    "benefits_title": "无需切换视图，清晰掌握时间全貌",
+    "benefits_sub": "专为快速浏览日期、计算时间跨度与轻量桌面使用而打造。",
+    "benefits": [
+      {
+        "badge": "多月视图",
+        "title": "一次看见更多月份",
+        "desc": "从紧凑的单月视图开始，根据可用窗口和屏幕空间横向与纵向扩展显示更多月份。"
+      },
+      {
+        "badge": "即时天数统计",
+        "title": "选择任意时间段并立即查看天数",
+        "desc": "拖动选择任意日期范围，浮动标签与底部摘要会立即显示精确天数，跨月同样支持。"
+      },
+      {
+        "badge": "TimeScope Pro",
+        "title": "使用 TimeScope Pro 更灵活地可视化时间",
+        "desc": "通过一次性应用内购买解锁多区间对比、多显示器选择以及自定义节假日与工作日。"
+      }
+    ],
+    "features_title": "贴合 Windows 桌面工作流的简洁设计",
+    "features_sub": "所有核心日历功能均免费提供，专注于纯粹的时间查看体验，无日程管理冗余。",
+    "features": [
+      {
+        "shot": "02",
+        "alt": "TimeScope 1x1、3x1、1x2 与 3x2 灵活日历视图",
+        "title": "灵活的多月日历显示",
+        "desc": "充分利用可用窗口与屏幕空间，自由横向或纵向扩展所显示的月份数量。",
+        "bullets": [
+          "根据窗口和屏幕空间横向与纵向扩展",
+          "三种字号缩放预设：Small、Medium、Large",
+          "跨月与跨年平滑滚动浏览"
+        ]
+      },
+      {
+        "shot": "03",
+        "alt": "拖动选择日期范围并显示 22 天浮动标签",
+        "title": "拖动选择日期范围与即时天数计算",
+        "desc": "无需手动数日历，拖动即可立即了解旅行、项目或两个日期之间的准确天数。",
+        "bullets": [
+          "拖动时实时显示浮动天数标签",
+          "清晰的底部摘要展示起止日期与总天数",
+          "启动时默认定位今天并保持清爽选区"
+        ]
+      },
+      {
+        "shot": "04",
+        "alt": "TimeScope 自定义菜单展示字号预设、周数、相对天数与 7 种语言",
+        "title": "按您的习惯自定义日历",
+        "desc": "无需重启即可直接切换每周起始日、时间辅助标识与界面语言。",
+        "bullets": [
+          "今天（T）与距今相对天数（-n / +n）提示",
+          "每行旁显示 ISO 周数并高亮当前月份",
+          "周日/周一作为起始日及 7 种语言即时切换"
+        ]
+      },
+      {
+        "shot": "06",
+        "alt": "TimeScope 置顶固定与 Windows 动态系统托盘图标",
+        "title": "工作时随时触手可及",
+        "desc": "将日历固定在其他窗口之上，并通过 Windows 动态系统托盘图标一眼查看当前日期与时间。",
+        "bullets": [
+          "窗口置顶固定开关，随时对照日期",
+          "动态 Windows 系统托盘图标实时显示日期与时间",
+          "轻量无负担，不包含日程同步或任务管理"
+        ]
+      }
+    ],
+    "pricing_title": "免费版与 TimeScope Pro 对比",
+    "pricing_sub": "核心功能完全免费。如需进阶对比与多屏功能，可在应用内通过 Microsoft Store 升级。",
+    "free_name": "免费版",
+    "free_tag": "免费提供",
+    "free_price": "$0",
+    "free_price_unit": "免费",
+    "free_sub": "包含全部核心多月视图、日期范围选择与桌面个性化设置。",
+    "free_items": [
+      "灵活的多月日历显示",
+      "拖动选择日期范围与即时天数统计",
+      "今天与相对天数（-n / +n）提示",
+      "ISO 周数显示与当前月份高亮",
+      "3 种缩放预设与周日/周一起始日设置",
+      "平滑滚动、窗口置顶与动态托盘图标",
+      "7 种界面语言免重启即时切换"
+    ],
+    "free_cta": "在 Microsoft Store 免费下载",
+    "pro_name": "TimeScope Pro",
+    "pro_tag": "一次性购买 · 无需订阅",
+    "pro_price": "$4.99 USD",
+    "pro_price_unit": "基准价格",
+    "pro_sub": "在应用内通过 Microsoft Store 一次性买断解锁的可选扩展包。",
+    "pro_items": [
+      "包含免费版全部功能",
+      "多区间对比：同时保留并比较多个日期范围",
+      "多显示器支持：自由选择显示日历的屏幕",
+      "自定义节假日与工作日"
+    ],
+    "pro_cta": "前往 Microsoft Store 获取",
+    "pricing_note": "TimeScope Pro 为一次性应用内购买（无需订阅），在应用内通过 Microsoft Store 完成解锁（基准价格 $4.99 USD，各地区货币与税费可能有所不同）。",
+    "gallery_title": "探索 TimeScope v1.2.0",
+    "gallery_sub": "来自 TimeScope v1.2.0 实机界面的真实截图，完整展示免费版与 Pro 功能。",
+    "captions": [
+      "同时显示多个月份的桌面日历视图，并展示连续 90 天的日期范围选择效果。",
+      "可从单月视图向横向和纵向灵活扩展，同时查看更多月份。",
+      "拖动选择任意日期范围，通过浮动标签和底部摘要即时查看准确天数。",
+      "支持字体大小预设、高亮当前月份、相对天数、周数、每周起始日及 7 种语言即时切换。",
+      "在日历网格中一眼掌握今天、距今相对天数（-n / +n）与 ISO 周数。",
+      "可将窗口置顶固定在其他窗口之上，并通过 Windows 动态托盘图标实时查看日期与时间。",
+      "TimeScope Pro 提供多区间同时对比、多显示器显示选择以及自定义节假日与工作日功能。"
+    ],
+    "bottom_h2": "在 Windows 桌面上更清晰地看见时间。",
+    "bottom_p": "前往 Microsoft Store 免费获取适用于 Windows 10 和 Windows 11 (x64) 的 TimeScope – Visual Calendar。",
+    "bottom_cta": "从 Microsoft Store 获取",
+    "footer_store": "Microsoft Store",
+    "footer_support": "支持与常见问题",
+    "footer_contact": "联系我们",
+    "footer_privacy": "隐私政策",
+    "footer_terms": "使用条款",
+    "footer_rights": "© 2026 Tomi-lab. All rights reserved."
+  },
+  "zh-TW": {
+    "lang_code": "zh-TW",
+    "html_lang": "zh-TW",
+    "url_path": "/zh-tw/",
+    "label": "繁體中文",
+    "seo_title": "TimeScope – Visual Calendar | 更開闊視野的 Windows 桌面行事曆",
+    "seo_desc": "一款輕量的 Windows 桌面行事曆，可同時檢視多個月份、選取日期範圍並即時查看天數。",
+    "nav_features": "功能",
+    "nav_pricing": "免費版與 Pro",
+    "nav_support": "支援",
+    "nav_cta": "前往 Microsoft Store",
+    "hero_pill": "TimeScope – Visual Calendar · Windows 10 / 11",
+    "hero_h1": "熟悉的行事曆，更開闊的時間視野。",
+    "hero_sub": "專為 Windows 設計的輕量級桌面行事曆，協助您同時檢視多個月份、選取日期區間並一目了然掌握天數。",
+    "hero_cta_primary": "從 Microsoft Store 取得",
+    "hero_cta_secondary": "比較免費版與 Pro",
+    "hero_meta": "免費版 · 支援 7 種語言 · 可選購 TimeScope Pro（基準價格 $4.99 USD，一次性買斷）",
+    "hero_alt": "TimeScope 多月桌面行事曆顯示六個月畫面與 90 天連續區間選取",
+    "benefits_title": "無需切換畫面，清楚掌握時間全貌",
+    "benefits_sub": "專為快速瀏覽日期、計算區間天數與桌面日常參考而設計。",
+    "benefits": [
+      {
+        "badge": "多月檢視",
+        "title": "一次看見更多月份",
+        "desc": "從精巧的單月行事曆開始，依可用視窗與螢幕空間橫向與縱向擴展顯示更多月份。"
+      },
+      {
+        "badge": "即時天數統計",
+        "title": "選取任意期間並立即查看天數",
+        "desc": "拖曳選取任意日期區間，浮動標籤與底部摘要會立即顯示精確天數，跨月選取也一樣順暢。"
+      },
+      {
+        "badge": "TimeScope Pro",
+        "title": "透過 TimeScope Pro 更彈性地視覺化時間",
+        "desc": "以一次性應用程式內購買解鎖多區間比較、多螢幕顯示選擇與自訂節假日與工作日。"
+      }
+    ],
+    "features_title": "融入 Windows 桌面工作流的簡潔設計",
+    "features_sub": "所有核心行事曆功能皆免費提供，專注於時間檢視與天數掌握，無行程排程干擾。",
+    "features": [
+      {
+        "shot": "02",
+        "alt": "TimeScope 1x1、3x1、1x2 與 3x2 彈性檢視範例",
+        "title": "彈性的多月行事曆顯示",
+        "desc": "善用您的可用視窗與螢幕空間，自由橫向或縱向擴展所顯示的月份數量。",
+        "bullets": [
+          "依據視窗與螢幕空間自由橫向與縱向擴展",
+          "三種字體大小預設：Small、Medium、Large",
+          "跨月與跨年流暢捲動瀏覽"
+        ]
+      },
+      {
+        "shot": "03",
+        "alt": "拖曳選取日期區間並顯示 22 天浮動標籤",
+        "title": "拖曳選取日期區間與即時天數計算",
+        "desc": "不必手動數日子，拖曳即可立即查看旅行、專案或兩個重要日期之間的精確天數。",
+        "bullets": [
+          "拖曳時即時顯示浮動天數標籤",
+          "清晰底部摘要顯示起訖日期與總天數",
+          "開啟時定位於今日並維持清爽選取狀態"
+        ]
+      },
+      {
+        "shot": "04",
+        "alt": "TimeScope 自訂選單顯示字體大小、週數、相對天數與 7 種語言",
+        "title": "依照您的習慣自訂檢視",
+        "desc": "無需重新啟動即可從選單即時調整每週起始日、時間提示與介面語言。",
+        "bullets": [
+          "今日（T）與距離今日相對天數（-n / +n）提示",
+          "每列旁顯示 ISO 週數並反白當月",
+          "週日/週一開始設定與 7 種語言即時切換"
+        ]
+      },
+      {
+        "shot": "06",
+        "alt": "TimeScope 釘選置頂與 Windows 動態系統匣圖示",
+        "title": "工作時隨時觸手可及",
+        "desc": "將行事曆釘選於其他視窗上方，並透過動態 Windows 系統匣圖示一眼查看今日日期與時間。",
+        "bullets": [
+          "視窗釘選置頂開關，隨時對照日期",
+          "動態 Windows 系統匣圖示即時顯示日期與時間",
+          "輕量桌面工具，不含雲端同步或行程管理"
+        ]
+      }
+    ],
+    "pricing_title": "免費版與 TimeScope Pro 比較",
+    "pricing_sub": "核心功能全面免費。若需要多區間對比與多螢幕設定，可於應用程式內透過 Microsoft Store 升級。",
+    "free_name": "免費版",
+    "free_tag": "免費提供",
+    "free_price": "$0",
+    "free_price_unit": "免費",
+    "free_sub": "包含所有核心多月檢視、日期區間選取與桌面個人化功能。",
+    "free_items": [
+      "彈性的多月行事曆顯示",
+      "拖曳選取日期區間與即時天數統計",
+      "今日與相對天數（-n / +n）提示",
+      "ISO 週數顯示與當月反白",
+      "3 種縮放預設與週日/週一起始日設定",
+      "流暢捲動、視窗釘選與動態系統匣圖示",
+      "7 種介面語言免重新啟動即時切換"
+    ],
+    "free_cta": "於 Microsoft Store 免費下載",
+    "pro_name": "TimeScope Pro",
+    "pro_tag": "一次性購買・無需訂閱",
+    "pro_price": "$4.99 USD",
+    "pro_price_unit": "基準價格",
+    "pro_sub": "可於 TimeScope 應用程式內透過 Microsoft Store 一次性買斷解鎖。",
+    "pro_items": [
+      "包含免費版全部功能",
+      "多區間比較：同時保留並比較多個日期區間",
+      "多螢幕支援：自由選擇要顯示行事曆的螢幕",
+      "自訂節假日與工作日"
+    ],
+    "pro_cta": "前往 Microsoft Store 取得",
+    "pricing_note": "TimeScope Pro 為一次性應用程式內購買（無需訂閱），於應用程式內透過 Microsoft Store 解鎖（基準價格 $4.99 USD，各地區幣別與稅率可能有所不同）。",
+    "gallery_title": "探索 TimeScope v1.2.0",
+    "gallery_sub": "來自 TimeScope v1.2.0 實機畫面的真實截圖，完整呈現免費版與 Pro 功能。",
+    "captions": [
+      "同時檢視多個月份的桌面行事曆畫面，並展示連續 90 天的日期區間選取效果。",
+      "可從精巧的單月檢視橫向與縱向擴展，同時查看更多月份。",
+      "拖曳選取任意日期區間，透過浮動標籤與底部摘要即時查看精確天數。",
+      "可自訂字體大小預設、當月反白、相對天數、週數、每週起始日與 7 種語言即時切換。",
+      "在行事曆格線中一目了然掌握今日、距離今日天數（-n / +n）與 ISO 週數。",
+      "可釘選置頂於其他視窗上方，並透過 Windows 動態系統匣圖示查看即時日期與時間。",
+      "TimeScope Pro 提供多區間同時比較、多螢幕顯示選擇以及自訂節假日與工作日功能。"
+    ],
+    "bottom_h2": "在 Windows 桌面上更清晰地看見時間。",
+    "bottom_p": "立即前往 Microsoft Store 免費取得適用於 Windows 10 與 Windows 11 (x64) 的 TimeScope – Visual Calendar。",
+    "bottom_cta": "從 Microsoft Store 取得",
+    "footer_store": "Microsoft Store",
+    "footer_support": "支援與常見問題",
+    "footer_contact": "聯絡我們",
+    "footer_privacy": "隱私權政策",
+    "footer_terms": "服務條款",
+    "footer_rights": "© 2026 Tomi-lab. All rights reserved."
+  },
+  "de-DE": {
+    "lang_code": "de-DE",
+    "html_lang": "de-DE",
+    "url_path": "/de/",
+    "label": "Deutsch",
+    "seo_title": "TimeScope – Visual Calendar | Ein breiterer Blick auf die Zeit für Windows",
+    "seo_desc": "Ein leichter Windows-Desktop-Kalender zum Betrachten mehrerer Monate, Auswählen von Zeiträumen und sofortigen Tageszählen.",
+    "nav_features": "Funktionen",
+    "nav_pricing": "Free vs Pro",
+    "nav_support": "Support",
+    "nav_cta": "Im Microsoft Store laden",
+    "hero_pill": "TimeScope – Visual Calendar · Windows 10 / 11",
+    "hero_h1": "Ein vertrauter Kalender. Ein breiterer Blick auf die Zeit.",
+    "hero_sub": "Ein leichter Desktop-Kalender für Windows, um mehrere Monate zu überblicken, Zeiträume auszuwählen und Tagesanzahlen sofort zu sehen.",
+    "hero_cta_primary": "Im Microsoft Store laden",
+    "hero_cta_secondary": "Free & Pro vergleichen",
+    "hero_meta": "Kostenlose Basisversion · 7 Sprachen · Optionales TimeScope Pro ($4.99 USD Basispreis, Einmalkauf über Microsoft Store)",
+    "hero_alt": "TimeScope Desktop-Kalender mit sechs Monaten und einer 90-Tage-Auswahl",
+    "benefits_title": "Zeit klar erfassen – ohne Ansichten zu wechseln",
+    "benefits_sub": "Entwickelt für schnelle Datumsorientierung, präzise Tageszählung und ruhiges Arbeiten am Desktop.",
+    "benefits": [
+      {
+        "badge": "Mehrmonatsansicht",
+        "title": "Mehr Monate auf einen Blick sehen",
+        "desc": "Starten Sie mit einem kompakten Monat und erweitern Sie horizontal und vertikal passend zu Ihrem verfügbaren Fenster- und Bildschirmplatz."
+      },
+      {
+        "badge": "Sofortiger Tageszähler",
+        "title": "Jeden Zeitraum wählen und Dauer sofort sehen",
+        "desc": "Ziehen Sie über beliebige Tage, um einen Zeitraum hervorzuheben und die genaue Tagesanzahl direkt im schwebenden Hinweis abzulesen."
+      },
+      {
+        "badge": "TimeScope Pro",
+        "title": "Zeit noch flexibler mit TimeScope Pro visualisieren",
+        "desc": "Schalten Sie Mehrfach-Zeiträume, Multi-Monitor-Auswahl sowie eigene Feiertage und Arbeitstage einmalig per In-App-Kauf frei."
+      }
+    ],
+    "features_title": "Für einen mühelosen Windows-Desktop-Workflow gemacht",
+    "features_sub": "Alle wichtigen Kalenderfunktionen sind kostenlos enthalten – ohne Termin- oder Cloud-Ballast.",
+    "features": [
+      {
+        "shot": "02",
+        "alt": "Flexible TimeScope Kalenderansichten 1x1, 3x1, 1x2 und 3x2",
+        "title": "Flexible Mehrmonatsansicht",
+        "desc": "Erweitern Sie Ihren Kalender horizontal und vertikal entsprechend dem verfügbaren Fenster- und Bildschirmplatz.",
+        "bullets": [
+          "Horizontal und vertikal erweiterbar je nach Fenstergröße",
+          "Drei Zoomstufen: Small, Medium und Large",
+          "Flüssiges Scrollen durch Monate und Jahre"
+        ]
+      },
+      {
+        "shot": "03",
+        "alt": "Zeitraumauswahl per Ziehen mit 22-Tage-Hinweis",
+        "title": "Zeiträume per Ziehen wählen & Tage sofort zählen",
+        "desc": "Erfassen Sie die Dauer zwischen zwei beliebigen Daten – auch über Monatsgrenzen hinweg – ganz ohne manuelles Nachzählen.",
+        "bullets": [
+          "Schwebender Tageszähler direkt während des Ziehens",
+          "Klare Zusammenfassung mit Start-, Enddatum und Gesamttagen",
+          "Startet jeweils am heutigen Datum mit frischer Auswahl"
+        ]
+      },
+      {
+        "shot": "04",
+        "alt": "TimeScope Anpassungsmenü mit Zoom, Kalenderwochen, relativen Tagen und 7 Sprachen",
+        "title": "Passen Sie Ihren Kalender an Ihren Stil an",
+        "desc": "Legen Sie Wochenbeginn, Zeithinweise und Sprache direkt im Menü fest – sofort wirksam ohne Neustart.",
+        "bullets": [
+          "Heute (T) und relative Tagesabstände (-n / +n)",
+          "ISO-Kalenderwochen neben jeder Zeile & Hervorhebung des aktuellen Monats",
+          "Wochenbeginn Sonntag oder Montag & 7 Sprachen ohne Neustart"
+        ]
+      },
+      {
+        "shot": "06",
+        "alt": "TimeScope im Vordergrund angepinnt mit dynamischem Tray-Symbol",
+        "title": "Auf dem Desktop immer griffbereit",
+        "desc": "Pinnen Sie den Kalender über andere Fenster und behalten Sie das heutige Datum über das dynamische Windows-Tray-Symbol im Blick.",
+        "bullets": [
+          "Immer-im-Vordergrund-Pin für schnellen Zugriff beim Arbeiten",
+          "Dynamisches Windows-System-Tray-Symbol für Datum und Uhrzeit",
+          "Leichtgewichtig ohne Terminverwaltung oder Cloud-Synchronisierung"
+        ]
+      }
+    ],
+    "pricing_title": "Free vs. TimeScope Pro",
+    "pricing_sub": "Alle Kernfunktionen sind kostenlos. Optional können Sie TimeScope Pro direkt in der App über den Microsoft Store freischalten.",
+    "free_name": "Kostenlose Basisversion",
+    "free_tag": "Kostenlos",
+    "free_price": "$0",
+    "free_price_unit": "Kostenlos",
+    "free_sub": "Alle wichtigen Funktionen für Mehrmonatsansicht, Zeitraumauswahl und Anpassung.",
+    "free_items": [
+      "Flexible Mehrmonatsansicht",
+      "Zeitraumauswahl per Ziehen & sofortige Tageszählung",
+      "Heute & relative Tagesabstände (-n / +n)",
+      "ISO-Kalenderwochen & Fokus auf den aktuellen Monat",
+      "3 Zoomstufen & Wochenbeginn Sonntag oder Montag",
+      "Flüssiges Scrollen, Pin-Funktion & dynamisches Tray-Symbol",
+      "7 Oberflächensprachen mit sofortigem Wechsel"
+    ],
+    "free_cta": "Kostenlos im Microsoft Store laden",
+    "pro_name": "TimeScope Pro",
+    "pro_tag": "Einmalkauf · Kein Abonnement",
+    "pro_price": "$4.99 USD",
+    "pro_price_unit": "Basispreis",
+    "pro_sub": "Optionaler einmaliger In-App-Kauf, der direkt in TimeScope über den Microsoft Store freigeschaltet wird.",
+    "pro_items": [
+      "Alle Funktionen der kostenlosen Basisversion",
+      "Mehrere Zeiträume gleichzeitig halten und vergleichen (Multi-Band)",
+      "Multi-Monitor-Unterstützung: Bildschirm frei wählen",
+      "Eigene Feiertage und Arbeitstage festlegen"
+    ],
+    "pro_cta": "TimeScope im Microsoft Store laden",
+    "pricing_note": "TimeScope Pro ist ein einmaliges In-App-Add-on (kein Abonnement), das in der App über den Microsoft Store erworben wird ($4.99 USD Basispreis; lokale Währung und Steuern variieren je nach Region).",
+    "gallery_title": "TimeScope v1.2.0 entdecken",
+    "gallery_sub": "Echte Anwendungs-Screenshots der kostenlosen Basisversion und von TimeScope Pro.",
+    "captions": [
+      "Mehrmonatsansicht auf dem Desktop mit sechs Monaten auf einen Blick und einer durchgehenden 90-Tage-Auswahl.",
+      "Erweitern Sie Ihren Kalender flexibel von einem Monat horizontal und vertikal auf mehrere Monate.",
+      "Ziehen Sie über Daten, um Zeiträume hervorzuheben und die genaue Tagesanzahl live abzulesen.",
+      "Passen Sie Schriftgrößen, Monatsfokus, relative Tage, Kalenderwochen, Wochenbeginn und 7 Sprachen an.",
+      "Erkennen Sie heute, Tagesabstände (-n / +n) und ISO-Kalenderwochen direkt im Kalenderraster.",
+      "Pinnen Sie TimeScope über andere Fenster und prüfen Sie Datum und Uhrzeit über das dynamische Tray-Symbol.",
+      "TimeScope Pro bietet Mehrfach-Zeitraumvergleiche, Multi-Monitor-Auswahl sowie eigene Feiertage und Arbeitstage."
+    ],
+    "bottom_h2": "Mehr Klarheit für Ihre Zeit auf dem Windows-Desktop.",
+    "bottom_p": "Laden Sie TimeScope – Visual Calendar kostenlos im Microsoft Store für Windows 10 und Windows 11 (x64) herunter.",
+    "bottom_cta": "Im Microsoft Store laden",
+    "footer_store": "Microsoft Store",
+    "footer_support": "Support & FAQ",
+    "footer_contact": "Kontakt",
+    "footer_privacy": "Datenschutz",
+    "footer_terms": "Nutzungsbedingungen",
+    "footer_rights": "© 2026 Tomi-lab. All rights reserved."
+  },
+  "fr-FR": {
+    "lang_code": "fr-FR",
+    "html_lang": "fr-FR",
+    "url_path": "/fr/",
+    "label": "Français",
+    "seo_title": "TimeScope – Visual Calendar | Une vue plus large du temps pour Windows",
+    "seo_desc": "Un calendrier de bureau Windows léger pour afficher plusieurs mois, sélectionner des plages de dates et connaître leur durée instantanément.",
+    "nav_features": "Fonctionnalités",
+    "nav_pricing": "Gratuit vs Pro",
+    "nav_support": "Support",
+    "nav_cta": "Obtenir sur Microsoft Store",
+    "hero_pill": "TimeScope – Visual Calendar · Windows 10 / 11",
+    "hero_h1": "Un calendrier familier. Une vue plus large du temps.",
+    "hero_sub": "Un calendrier de bureau Windows léger pour afficher plusieurs mois, sélectionner des plages de dates et comprendre leur durée en un clin d'œil.",
+    "hero_cta_primary": "Télécharger sur Microsoft Store",
+    "hero_cta_secondary": "Comparer Gratuit et Pro",
+    "hero_meta": "Édition gratuite · 7 langues · TimeScope Pro en option (prix de base $4.99 USD, achat unique via Microsoft Store)",
+    "hero_alt": "Calendrier Windows TimeScope affichant six mois et une sélection continue de 90 jours",
+    "benefits_title": "Visualisez le temps clairement sans changer de vue",
+    "benefits_sub": "Conçu pour explorer les dates rapidement, compter les jours et rester léger sur votre bureau.",
+    "benefits": [
+      {
+        "badge": "Vue multi-mois",
+        "title": "Voyez plus de mois d'un seul coup",
+        "desc": "Commencez avec un seul mois compact et agrandissez à l'horizontale et à la verticale selon l'espace de votre fenêtre et de votre écran."
+      },
+      {
+        "badge": "Compteur instantané",
+        "title": "Sélectionnez une période et voyez sa durée",
+        "desc": "Faites glisser sur n'importe quelles dates pour mettre en valeur une plage et lire immédiatement le nombre exact de jours."
+      },
+      {
+        "badge": "TimeScope Pro",
+        "title": "Allez plus loin avec TimeScope Pro",
+        "desc": "Débloquez la comparaison multi-périodes, le choix du moniteur et les jours fériés et ouvrés personnalisés en achat unique."
+      }
+    ],
+    "features_title": "Pensé pour un flux de travail fluide sur Windows",
+    "features_sub": "Toutes les fonctions essentielles sont gratuites, sans planificateur ni synchronisation superflue.",
+    "features": [
+      {
+        "shot": "02",
+        "alt": "Vues flexibles TimeScope 1x1, 3x1, 1x2 et 3x2",
+        "title": "Affichage multi-mois flexible",
+        "desc": "Élargissez votre calendrier à l'horizontale et à la verticale selon l'espace disponible sur votre écran.",
+        "bullets": [
+          "Extension horizontale et verticale adaptée à votre fenêtre",
+          "Trois tailles de zoom : Small, Medium et Large",
+          "Défilement fluide sur les mois et les années"
+        ]
+      },
+      {
+        "shot": "03",
+        "alt": "Sélection par glisser avec badge 22 jours",
+        "title": "Sélection par glisser et décompte immédiat",
+        "desc": "Connaissez la durée exacte d'un voyage ou d'un projet entre deux dates, même sur plusieurs mois, sans compter manuellement.",
+        "bullets": [
+          "Badge flottant en direct pendant le glisser",
+          "Résumé clair en bas indiquant début, fin et total de jours",
+          "S'ouvre à la date du jour avec une sélection nette"
+        ]
+      },
+      {
+        "shot": "04",
+        "alt": "Menu de personnalisation TimeScope avec zoom, semaines ISO et 7 langues",
+        "title": "Personnalisez votre manière de voir le temps",
+        "desc": "Réglez le début de semaine, les repères visuels et la langue directement depuis le menu, sans redémarrer.",
+        "bullets": [
+          "Indicateurs Aujourd'hui (T) et jours relatifs (-n / +n)",
+          "Numéros de semaine ISO et mise en valeur du mois en cours",
+          "Semaine commençant le dimanche ou le lundi et 7 langues"
+        ]
+      },
+      {
+        "shot": "06",
+        "alt": "TimeScope épinglé au premier plan avec icône dynamique de barre système",
+        "title": "Toujours à portée de main sur votre bureau",
+        "desc": "Épinglez le calendrier au-dessus des autres fenêtres et consultez la date du jour via l'icône dynamique de la barre Windows.",
+        "bullets": [
+          "Bouton d'épinglage au premier plan pendant le travail",
+          "Icône dynamique de barre système affichant date et heure",
+          "Outil léger sans gestion d'événements ni synchronisation cloud"
+        ]
+      }
+    ],
+    "pricing_title": "Version gratuite vs TimeScope Pro",
+    "pricing_sub": "Toutes les fonctions principales sont gratuites. Passez à Pro directement dans l'application via le Microsoft Store si besoin.",
+    "free_name": "Édition gratuite",
+    "free_tag": "Inclus",
+    "free_price": "$0",
+    "free_price_unit": "Gratuit",
+    "free_sub": "Affichage multi-mois, sélection de périodes et personnalisation complète.",
+    "free_items": [
+      "Affichage multi-mois flexible",
+      "Sélection de plages par glisser et décompte instantané",
+      "Indicateurs Aujourd'hui et jours relatifs (-n / +n)",
+      "Numéros de semaine ISO et mois en cours mis en valeur",
+      "3 tailles prédéfinies et début de semaine dim./lun.",
+      "Défilement fluide, épinglage et icône système dynamique",
+      "7 langues avec changement instantané"
+    ],
+    "free_cta": "Télécharger gratuitement sur Microsoft Store",
+    "pro_name": "TimeScope Pro",
+    "pro_tag": "Achat unique · Sans abonnement",
+    "pro_price": "$4.99 USD",
+    "pro_price_unit": "prix de base",
+    "pro_sub": "Achat unique optionnel dans l'application, débloqué via le Microsoft Store.",
+    "pro_items": [
+      "Tout ce qui est inclus dans l'édition gratuite",
+      "Mode multi-périodes : conservez et comparez plusieurs plages à la fois",
+      "Support multi-écrans : choisissez l'écran d'affichage du calendrier",
+      "Jours fériés et ouvrés personnalisés"
+    ],
+    "pro_cta": "Obtenir TimeScope sur Microsoft Store",
+    "pricing_note": "TimeScope Pro est un module complémentaire durable en achat unique dans l'application via Microsoft Store (prix de base $4.99 USD ; les tarifs locaux et taxes varient selon la région). Sans abonnement.",
+    "gallery_title": "Découvrir TimeScope v1.2.0",
+    "gallery_sub": "Captures d'écran authentiques présentant l'édition gratuite et TimeScope Pro.",
+    "captions": [
+      "Vue calendrier multi-mois sur le bureau affichant six mois à la fois avec une plage continue de 90 jours.",
+      "Agrandissez votre calendrier d'un seul mois à l'horizontale et à la verticale selon l'espace disponible.",
+      "Glissez sur les dates pour sélectionner une période et voir le nombre exact de jours en direct.",
+      "Personnalisez la taille de police, le mois en cours, les jours relatifs, les semaines ISO, le début de semaine et 7 langues.",
+      "Repérez aujourd'hui, les écarts en jours (-n / +n) et les numéros de semaine ISO directement dans la grille.",
+      "Épinglez TimeScope au premier plan et consultez la date et l'heure via l'icône dynamique Windows.",
+      "TimeScope Pro ajoute la comparaison multi-périodes, le choix du moniteur et les jours fériés et ouvrés personnalisés."
+    ],
+    "bottom_h2": "Une vision plus claire du temps sur votre bureau Windows.",
+    "bottom_p": "Téléchargez gratuitement TimeScope – Visual Calendar sur Microsoft Store pour Windows 10 et Windows 11 (x64).",
+    "bottom_cta": "Obtenir sur Microsoft Store",
+    "footer_store": "Microsoft Store",
+    "footer_support": "Support & FAQ",
+    "footer_contact": "Contact",
+    "footer_privacy": "Confidentialité",
+    "footer_terms": "Conditions",
+    "footer_rights": "© 2026 Tomi-lab. All rights reserved."
+  },
+  "es-ES": {
+    "lang_code": "es-ES",
+    "html_lang": "es-ES",
+    "url_path": "/es/",
+    "label": "Español",
+    "seo_title": "TimeScope – Visual Calendar | Una visión más amplia del tiempo para Windows",
+    "seo_desc": "Un calendario de escritorio ligero para Windows para ver varios meses, seleccionar rangos de fechas y comprobar su duración al instante.",
+    "nav_features": "Funciones",
+    "nav_pricing": "Gratis vs Pro",
+    "nav_support": "Soporte",
+    "nav_cta": "Obtener en Microsoft Store",
+    "hero_pill": "TimeScope – Visual Calendar · Windows 10 / 11",
+    "hero_h1": "Un calendario familiar. Una visión más amplia del tiempo.",
+    "hero_sub": "Un calendario de escritorio ligero para Windows para ver varios meses, seleccionar rangos de fechas y conocer su duración de un vistazo.",
+    "hero_cta_primary": "Descargar en Microsoft Store",
+    "hero_cta_secondary": "Comparar Gratis y Pro",
+    "hero_meta": "Edición gratuita · 7 idiomas · TimeScope Pro opcional ($4.99 USD precio base, pago único vía Microsoft Store)",
+    "hero_alt": "Calendario de escritorio TimeScope con seis meses a la vista y una selección continua de 90 días",
+    "benefits_title": "Ve el tiempo con claridad sin cambiar de vista",
+    "benefits_sub": "Diseñado para explorar fechas rápido, contar días al instante y mantenerse ligero en tu escritorio.",
+    "benefits": [
+      {
+        "badge": "Vista de varios meses",
+        "title": "Ve más meses a la vez",
+        "desc": "Comienza con un mes compacto y amplía horizontal y verticalmente aprovechando el espacio disponible de tu ventana y pantalla."
+      },
+      {
+        "badge": "Contador instantáneo",
+        "title": "Selecciona cualquier período y ve su duración",
+        "desc": "Arrastra sobre cualquier fecha para resaltar un rango y ver al instante el número exacto de días en una etiqueta flotante."
+      },
+      {
+        "badge": "TimeScope Pro",
+        "title": "Visualiza el tiempo con más flexibilidad en Pro",
+        "desc": "Desbloquea comparación multibanda, selección de monitor y festivos y laborables personalizados mediante una compra única."
+      }
+    ],
+    "features_title": "Pensado para un flujo de trabajo fluido en Windows",
+    "features_sub": "Todas las funciones principales son gratuitas, sin agendas complejas ni sincronización en la nube.",
+    "features": [
+      {
+        "shot": "02",
+        "alt": "Vistas flexibles de TimeScope 1x1, 3x1, 1x2 y 3x2",
+        "title": "Vista flexible de varios meses",
+        "desc": "Amplía tu calendario horizontal y verticalmente para aprovechar el espacio disponible de tu ventana y pantalla.",
+        "bullets": [
+          "Ampliación horizontal y vertical adaptable",
+          "Tres ajustes de tamaño: Small, Medium y Large",
+          "Desplazamiento fluido por meses y años"
+        ]
+      },
+      {
+        "shot": "03",
+        "alt": "Selección por arrastre con etiqueta de 22 días",
+        "title": "Selección por arrastre y recuento al instante",
+        "desc": "Calcula al momento la duración de un viaje o proyecto entre dos fechas, incluso entre meses distintos, sin contar a mano.",
+        "bullets": [
+          "Etiqueta flotante en vivo mientras arrastras",
+          "Resumen inferior claro con fecha de inicio, fin y total de días",
+          "Se abre en la fecha de hoy con selección limpia"
+        ]
+      },
+      {
+        "shot": "04",
+        "alt": "Menú de personalización con tamaños, semanas ISO y 7 idiomas",
+        "title": "Personaliza tu forma de ver el tiempo",
+        "desc": "Ajusta el inicio de semana, las referencias visuales y el idioma directamente desde el menú sin reiniciar.",
+        "bullets": [
+          "Indicadores de hoy (T) y días relativos (-n / +n)",
+          "Números de semana ISO y resaltado del mes actual",
+          "Inicio en domingo o lunes y 7 idiomas al instante"
+        ]
+      },
+      {
+        "shot": "06",
+        "alt": "TimeScope fijado sobre otras ventanas con icono dinámico de bandeja",
+        "title": "Siempre a tu alcance en el escritorio",
+        "desc": "Fija el calendario sobre otras ventanas mientras trabajas y consulta la fecha de hoy en el icono dinámico de la bandeja de Windows.",
+        "bullets": [
+          "Botón para fijar siempre visible",
+          "Icono dinámico en la bandeja del sistema con fecha y hora",
+          "Ligero y directo, sin gestión de eventos ni sincronización"
+        ]
+      }
+    ],
+    "pricing_title": "Edición gratuita vs. TimeScope Pro",
+    "pricing_sub": "Las funciones principales son gratuitas. Si necesitas funciones avanzadas, puedes desbloquear Pro dentro de la app vía Microsoft Store.",
+    "free_name": "Edición gratuita",
+    "free_tag": "Incluido",
+    "free_price": "$0",
+    "free_price_unit": "Gratis",
+    "free_sub": "Toda la visualización de varios meses, selección de rangos y personalización básica.",
+    "free_items": [
+      "Vista flexible de varios meses",
+      "Selección de rangos por arrastre y recuento instantáneo",
+      "Indicadores de hoy y días relativos (-n / +n)",
+      "Números de semana ISO y mes actual resaltado",
+      "3 tamaños de fuente e inicio en domingo o lunes",
+      "Desplazamiento fluido, fijación visible e icono dinámico",
+      "7 idiomas con cambio al instante"
+    ],
+    "free_cta": "Descargar gratis en Microsoft Store",
+    "pro_name": "TimeScope Pro",
+    "pro_tag": "Compra única · Sin suscripción",
+    "pro_price": "$4.99 USD",
+    "pro_price_unit": "precio base",
+    "pro_sub": "Compra única opcional dentro de la aplicación a través de Microsoft Store.",
+    "pro_items": [
+      "Todo lo incluido en la edición gratuita",
+      "Comparación multibanda: mantén y compara varios rangos a la vez",
+      "Soporte multimonitor: elige en qué pantalla mostrar el calendario",
+      "Días festivos y laborables personalizados"
+    ],
+    "pro_cta": "Obtener TimeScope en Microsoft Store",
+    "pricing_note": "TimeScope Pro es un complemento duradero de pago único dentro de la app a través de Microsoft Store ($4.99 USD precio base; el precio local y los impuestos varían según la región). Sin suscripción.",
+    "gallery_title": "Explora TimeScope v1.2.0",
+    "gallery_sub": "Capturas reales de la aplicación que muestran tanto la edición gratuita como TimeScope Pro.",
+    "captions": [
+      "Vista de calendario de escritorio con seis meses a la vista y una selección continua de 90 días.",
+      "Amplía tu calendario de forma horizontal y vertical desde un mes hasta vistas de varios meses.",
+      "Arrastra sobre las fechas para resaltar cualquier rango y ver el recuento exacto de días al instante.",
+      "Personaliza tamaños de fuente, mes actual, días relativos, números de semana, inicio de semana y 7 idiomas.",
+      "Identifica hoy, la distancia en días (-n / +n) y las semanas ISO directamente en la cuadrícula.",
+      "Fija TimeScope sobre otras ventanas y consulta la fecha y hora desde el icono dinámico de la bandeja.",
+      "TimeScope Pro añade comparación multibanda, selección de monitor y días festivos y laborables personalizados."
+    ],
+    "bottom_h2": "Una visión más clara del tiempo en tu escritorio Windows.",
+    "bottom_p": "Descarga TimeScope – Visual Calendar gratis desde Microsoft Store para Windows 10 y Windows 11 (x64).",
+    "bottom_cta": "Obtener en Microsoft Store",
+    "footer_store": "Microsoft Store",
+    "footer_support": "Soporte y FAQ",
+    "footer_contact": "Contacto",
+    "footer_privacy": "Privacidad",
+    "footer_terms": "Términos",
+    "footer_rights": "© 2026 Tomi-lab. All rights reserved."
+  }
+}

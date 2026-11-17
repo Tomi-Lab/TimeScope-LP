@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeScope – Visual Calendar | Ein breiterer Blick auf die Zeit für Windows</title>
+    <meta name="description" content="Ein leichter Windows-Desktop-Kalender zum Betrachten mehrerer Monate, Auswählen von Zeiträumen und sofortigen Tageszählen.">
+    <link rel="canonical" href="https://gettimescope.com/de/">
+    <link rel="alternate" hreflang="en-US" href="https://gettimescope.com/">
+    <link rel="alternate" hreflang="ja-JP" href="https://gettimescope.com/ja/">
+    <link rel="alternate" hreflang="zh-CN" href="https://gettimescope.com/zh-cn/">
+    <link rel="alternate" hreflang="zh-TW" href="https://gettimescope.com/zh-tw/">
+    <link rel="alternate" hreflang="de-DE" href="https://gettimescope.com/de/">
+    <link rel="alternate" hreflang="fr-FR" href="https://gettimescope.com/fr/">
+    <link rel="alternate" hreflang="es-ES" href="https://gettimescope.com/es/">
+    <link rel="alternate" hreflang="x-default" href="https://gettimescope.com/">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gettimescope.com/de/">
+    <meta property="og:title" content="TimeScope – Visual Calendar | Ein breiterer Blick auf die Zeit für Windows">
+    <meta property="og:description" content="Ein leichter Windows-Desktop-Kalender zum Betrachten mehrerer Monate, Auswählen von Zeiträumen und sofortigen Tageszählen.">
+    <meta property="og:image" content="https://gettimescope.com/assets/v2/timescope-ogp-v6.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TimeScope – Visual Calendar | Ein breiterer Blick auf die Zeit für Windows">
+    <meta name="twitter:description" content="Ein leichter Windows-Desktop-Kalender zum Betrachten mehrerer Monate, Auswählen von Zeiträumen und sofortigen Tageszählen.">
+    <meta name="twitter:image" content="https://gettimescope.com/assets/v2/timescope-ogp-v6.jpg">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../assets/v2/timescope_icon_rounded_256.png">
+    <link rel="stylesheet" href="../assets/v2/styles.css">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "TimeScope – Visual Calendar", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Windows 10, Windows 11", "url": "https://gettimescope.com/de/", "downloadUrl": "https://apps.microsoft.com/detail/9NJR56D56R9F", "publisher": {"@type": "Organization", "name": "Tomi-lab"}, "offers": [{"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "TimeScope Free Edition"}, {"@type": "Offer", "price": "4.99", "priceCurrency": "USD", "description": "TimeScope Pro (One-time in-app purchase)"}]}</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T7HPX8ZJJ4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-T7HPX8ZJJ4');
+    </script>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "wfyjqjuxl4");
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand-link">
+                <img src="../assets/v2/timescope_icon_rounded_64.png" alt="TimeScope Logo" width="32" height="32">
+                <span>TimeScope</span>
+            </a>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="#features">Funktionen</a>
+                <a href="#pricing">Free vs Pro</a>
+                <a href="support.html">Support</a>
+            </nav>
+            <div class="header-actions">
+                <select class="lang-select" aria-label="Language" onchange="switchLocale(this)">
+<option value="../index.html" data-locale="en-US">English</option>
+<option value="../ja/" data-locale="ja-JP">日本語</option>
+<option value="../zh-cn/" data-locale="zh-CN">简体中文</option>
+<option value="../zh-tw/" data-locale="zh-TW">繁體中文</option>
+<option value="../de/" data-locale="de-DE" selected>Deutsch</option>
+<option value="../fr/" data-locale="fr-FR">Français</option>
+<option value="../es/" data-locale="es-ES">Español</option>
+                </select>
+                <a href="https://apps.microsoft.com/detail/9NJR56D56R9F" target="_blank" rel="noopener" class="btn btn-primary btn-sm" data-cta="header">Im Microsoft Store laden</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-pill">TimeScope – Visual Calendar · Windows 10 / 11</span>
+                    <h1>Ein vertrauter Kalender. Ein breiterer Blick auf die Zeit.</h1>
+                    <p>Ein leichter Desktop-Kalender für Windows, um mehrere Monate zu überblicken, Zeiträume auszuwählen und Tagesanzahlen sofort zu sehen.</p>
+                    <div class="hero-ctas">
+                        <a href="https://apps.microsoft.com/detail/9NJR56D56R9F" target="_blank" rel="noopener" class="btn btn-primary" data-cta="hero">Im Microsoft Store laden</a>
+                        <a href="#pricing" class="btn btn-secondary">Free &amp; Pro vergleichen</a>
+                    </div>
+                    <p class="hero-meta">Kostenlose Basisversion · 7 Sprachen · Optionales TimeScope Pro ($4.99 USD Basispreis, Einmalkauf über Microsoft Store)</p>
+                </div>
+                <div class="hero-visual">
+                    <img src="../assets/v2/screenshots/de-DE/01.webp" alt="TimeScope Desktop-Kalender mit sechs Monaten und einer 90-Tage-Auswahl" width="1440" height="810">
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Zeit klar erfassen – ohne Ansichten zu wechseln</h2>
+                    <p>Entwickelt für schnelle Datumsorientierung, präzise Tageszählung und ruhiges Arbeiten am Desktop.</p>
+                </div>
+                <div class="benefits-grid">
+                <article class="benefit-card">
+                    <span class="benefit-badge">Mehrmonatsansicht</span>
+                    <h3>Mehr Monate auf einen Blick sehen</h3>
+                    <p>Starten Sie mit einem kompakten Monat und erweitern Sie horizontal und vertikal passend zu Ihrem verfügbaren Fenster- und Bildschirmplatz.</p>
+                </article>
+                <article class="benefit-card">
+                    <span class="benefit-badge">Sofortiger Tageszähler</span>
+                    <h3>Jeden Zeitraum wählen und Dauer sofort sehen</h3>
+                    <p>Ziehen Sie über beliebige Tage, um einen Zeitraum hervorzuheben und die genaue Tagesanzahl direkt im schwebenden Hinweis abzulesen.</p>
+                </article>
+                <article class="benefit-card">
+                    <span class="benefit-badge">TimeScope Pro</span>
+                    <h3>Zeit noch flexibler mit TimeScope Pro visualisieren</h3>
+                    <p>Schalten Sie Mehrfach-Zeiträume, Multi-Monitor-Auswahl sowie eigene Feiertage und Arbeitstage einmalig per In-App-Kauf frei.</p>
+                </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section section-tinted">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Für einen mühelosen Windows-Desktop-Workflow gemacht</h2>
+                    <p>Alle wichtigen Kalenderfunktionen sind kostenlos enthalten – ohne Termin- oder Cloud-Ballast.</p>
+                </div>
+                <div class="feature-stack">
+            <div class="feature-row">
+                <div class="feature-copy">
+                    <h3>Flexible Mehrmonatsansicht</h3>
+                    <p>Erweitern Sie Ihren Kalender horizontal und vertikal entsprechend dem verfügbaren Fenster- und Bildschirmplatz.</p>
+                    <ul class="feature-list">
+                        <li>Horizontal und vertikal erweiterbar je nach Fenstergröße</li>
+                        <li>Drei Zoomstufen: Small, Medium und Large</li>
+                        <li>Flüssiges Scrollen durch Monate und Jahre</li>
+                    </ul>
+                </div>
+                <div class="feature-shot">
+                    <img src="../assets/v2/screenshots/de-DE/02.webp" alt="Flexible TimeScope Kalenderansichten 1x1, 3x1, 1x2 und 3x2" width="1440" height="810" loading="lazy">
+                </div>
+            </div>
+            <div class="feature-row reverse">
+                <div class="feature-copy">
+                    <h3>Zeiträume per Ziehen wählen &amp; Tage sofort zählen</h3>
+                    <p>Erfassen Sie die Dauer zwischen zwei beliebigen Daten – auch über Monatsgrenzen hinweg – ganz ohne manuelles Nachzählen.</p>
+                    <ul class="feature-list">
+                        <li>Schwebender Tageszähler direkt während des Ziehens</li>
+                        <li>Klare Zusammenfassung mit Start-, Enddatum und Gesamttagen</li>
+                        <li>Startet jeweils am heutigen Datum mit frischer Auswahl</li>
+                    </ul>
+                </div>
+                <div class="feature-shot">
+                    <img src="../assets/v2/screenshots/de-DE/03.webp" alt="Zeitraumauswahl per Ziehen mit 22-Tage-Hinweis" width="1440" height="810" loading="lazy">
+                </div>
+            </div>
+            <div class="feature-row">
+                <div class="feature-copy">
+                    <h3>Passen Sie Ihren Kalender an Ihren Stil an</h3>
+                    <p>Legen Sie Wochenbeginn, Zeithinweise und Sprache direkt im Menü fest – sofort wirksam ohne Neustart.</p>
+                    <ul class="feature-list">
+                        <li>Heute (T) und relative Tagesabstände (-n / +n)</li>
+                        <li>ISO-Kalenderwochen neben jeder Zeile &amp; Hervorhebung des aktuellen Monats</li>
+                        <li>Wochenbeginn Sonntag oder Montag &amp; 7 Sprachen ohne Neustart</li>
+                    </ul>
+                </div>
+                <div class="feature-shot">
+                    <img src="../assets/v2/screenshots/de-DE/04.webp" alt="TimeScope Anpassungsmenü mit Zoom, Kalenderwochen, relativen Tagen und 7 Sprachen" width="1440" height="810" loading="lazy">
+                </div>
+            </div>
+            <div class="feature-row reverse">
+                <div class="feature-copy">
+                    <h3>Auf dem Desktop immer griffbereit</h3>
+                    <p>Pinnen Sie den Kalender über andere Fenster und behalten Sie das heutige Datum über das dynamische Windows-Tray-Symbol im Blick.</p>
+                    <ul class="feature-list">
+                        <li>Immer-im-Vordergrund-Pin für schnellen Zugriff beim Arbeiten</li>
+                        <li>Dynamisches Windows-System-Tray-Symbol für Datum und Uhrzeit</li>
+                        <li>Leichtgewichtig ohne Terminverwaltung oder Cloud-Synchronisierung</li>
+                    </ul>
+                </div>
+                <div class="feature-shot">
+                    <img src="../assets/v2/screenshots/de-DE/06.webp" alt="TimeScope im Vordergrund angepinnt mit dynamischem Tray-Symbol" width="1440" height="810" loading="lazy">
+                </div>
+            </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Free vs. TimeScope Pro</h2>
+                    <p>Alle Kernfunktionen sind kostenlos. Optional können Sie TimeScope Pro direkt in der App über den Microsoft Store freischalten.</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="tier-card">
+                        <div class="tier-top">
+                            <span class="tier-name">Kostenlose Basisversion</span>
+                            <span class="tier-tag">Kostenlos</span>
+                        </div>
+                        <div class="tier-price">$0 <span>· Kostenlos</span></div>
+                        <p class="tier-sub">Alle wichtigen Funktionen für Mehrmonatsansicht, Zeitraumauswahl und Anpassung.</p>
+                        <ul class="tier-list">
+                        <li>Flexible Mehrmonatsansicht</li>
+                        <li>Zeitraumauswahl per Ziehen &amp; sofortige Tageszählung</li>
+                        <li>Heute &amp; relative Tagesabstände (-n / +n)</li>
+                        <li>ISO-Kalenderwochen &amp; Fokus auf den aktuellen Monat</li>
+                        <li>3 Zoomstufen &amp; Wochenbeginn Sonntag oder Montag</li>
+                        <li>Flüssiges Scrollen, Pin-Funktion &amp; dynamisches Tray-Symbol</li>
+                        <li>7 Oberflächensprachen mit sofortigem Wechsel</li>
+                        </ul>
+                        <a href="https://apps.microsoft.com/detail/9NJR56D56R9F" target="_blank" rel="noopener" class="btn btn-secondary" data-cta="pricing_free">Kostenlos im Microsoft Store laden</a>
+                    </div>
+                    <div class="tier-card pro">
+                        <div class="tier-top">
+                            <span class="tier-name">TimeScope Pro</span>
+                            <span class="tier-tag">Einmalkauf · Kein Abonnement</span>
+                        </div>
+                        <div class="tier-price">$4.99 USD <span>· Basispreis</span></div>
+                        <p class="tier-sub">Optionaler einmaliger In-App-Kauf, der direkt in TimeScope über den Microsoft Store freigeschaltet wird.</p>
+                        <ul class="tier-list">
+                        <li>Alle Funktionen der kostenlosen Basisversion</li>
+                        <li>Mehrere Zeiträume gleichzeitig halten und vergleichen (Multi-Band)</li>
+                        <li>Multi-Monitor-Unterstützung: Bildschirm frei wählen</li>
+                        <li>Eigene Feiertage und Arbeitstage festlegen</li>
+                        </ul>
+                        <a href="https://apps.microsoft.com/detail/9NJR56D56R9F" target="_blank" rel="noopener" class="btn btn-pro" data-cta="pricing_pro">TimeScope im Microsoft Store laden</a>
+                    </div>
+                </div>
+                <p class="pricing-note">TimeScope Pro ist ein einmaliges In-App-Add-on (kein Abonnement), das in der App über den Microsoft Store erworben wird ($4.99 USD Basispreis; lokale Währung und Steuern variieren je nach Region).</p>
+            </div>
+        </section>
+
+        <section id="screenshots" class="section section-tinted">
+            <div class="container">
+                <div class="section-header">
+                    <h2>TimeScope v1.2.0 entdecken</h2>
+                    <p>Echte Anwendungs-Screenshots der kostenlosen Basisversion und von TimeScope Pro.</p>
+                </div>
+                <div class="gallery-stage">
+                    <img id="gallery-main-img" src="../assets/v2/screenshots/de-DE/01.webp" alt="Mehrmonatsansicht auf dem Desktop mit sechs Monaten auf einen Blick und einer durchgehenden 90-Tage-Auswahl." width="1440" height="810">
+                </div>
+                <p id="gallery-caption" class="gallery-caption">Mehrmonatsansicht auf dem Desktop mit sechs Monaten auf einen Blick und einer durchgehenden 90-Tage-Auswahl.</p>
+                <div class="gallery-thumbs">
+                <button type="button" class="thumb-btn active" data-slide="1" data-src="../assets/v2/screenshots/de-DE/01.webp" data-caption="Mehrmonatsansicht auf dem Desktop mit sechs Monaten auf einen Blick und einer durchgehenden 90-Tage-Auswahl." aria-label="Screenshot 1">
+                    <img src="../assets/v2/screenshots/de-DE/01.webp" alt="Mehrmonatsansicht auf dem Desktop mit sechs Monaten auf einen Blick und einer durchgehenden 90-Tage-Auswahl." width="1440" height="810" loading="lazy">
+                </button>
+                <button type="button" class="thumb-btn" data-slide="2" data-src="../assets/v2/screenshots/de-DE/02.webp" data-caption="Erweitern Sie Ihren Kalender flexibel von einem Monat horizontal und vertikal auf mehrere Monate." aria-label="Screenshot 2">
+                    <img src="../assets/v2/screenshots/de-DE/02.webp" alt="Erweitern Sie Ihren Kalender flexibel von einem Monat horizontal und vertikal auf mehrere Monate." width="1440" height="810" loading="lazy">
+                </button>
+                <button type="button" class="thumb-btn" data-slide="3" data-src="../assets/v2/screenshots/de-DE/03.webp" data-caption="Ziehen Sie über Daten, um Zeiträume hervorzuheben und die genaue Tagesanzahl live abzulesen." aria-label="Screenshot 3">
+                    <img src="../assets/v2/screenshots/de-DE/03.webp" alt="Ziehen Sie über Daten, um Zeiträume hervorzuheben und die genaue Tagesanzahl live abzulesen." width="1440" height="810" loading="lazy">
+                </button>
+                <button type="button" class="thumb-btn" data-slide="4" data-src="../assets/v2/screenshots/de-DE/04.webp" data-caption="Passen Sie Schriftgrößen, Monatsfokus, relative Tage, Kalenderwochen, Wochenbeginn und 7 Sprachen an." aria-label="Screenshot 4">
+                    <img src="../assets/v2/screenshots/de-DE/04.webp" alt="Passen Sie Schriftgrößen, Monatsfokus, relative Tage, Kalenderwochen, Wochenbeginn und 7 Sprachen an." width="1440" height="810" loading="lazy">
+                </button>
+                <button type="button" class="thumb-btn" data-slide="5" data-src="../assets/v2/screenshots/de-DE/05.webp" data-caption="Erkennen Sie heute, Tagesabstände (-n / +n) und ISO-Kalenderwochen direkt im Kalenderraster." aria-label="Screenshot 5">
+                    <img src="../assets/v2/screenshots/de-DE/05.webp" alt="Erkennen Sie heute, Tagesabstände (-n / +n) und ISO-Kalenderwochen direkt im Kalenderraster." width="1440" height="810" loading="lazy">
+                </button>
+                <button type="button" class="thumb-btn" data-slide="6" data-src="../assets/v2/screenshots/de-DE/06.webp" data-caption="Pinnen Sie TimeScope über andere Fenster und prüfen Sie Datum und Uhrzeit über das dynamische Tray-Symbol." aria-label="Screenshot 6">
+                    <img src="../assets/v2/screenshots/de-DE/06.webp" alt="Pinnen Sie TimeScope über andere Fenster und prüfen Sie Datum und Uhrzeit über das dynamische Tray-Symbol." width="1440" height="810" loading="lazy">
+                </button>
+                <button type="button" class="thumb-btn" data-slide="7" data-src="../assets/v2/screenshots/de-DE/07.webp" data-caption="TimeScope Pro bietet Mehrfach-Zeitraumvergleiche, Multi-Monitor-Auswahl sowie eigene Feiertage und Arbeitstage." aria-label="Screenshot 7">
+                    <img src="../assets/v2/screenshots/de-DE/07.webp" alt="TimeScope Pro bietet Mehrfach-Zeitraumvergleiche, Multi-Monitor-Auswahl sowie eigene Feiertage und Arbeitstage." width="1440" height="810" loading="lazy">
+                </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="bottom-cta">
+            <div class="container">
+                <h2>Mehr Klarheit für Ihre Zeit auf dem Windows-Desktop.</h2>
+                <p>Laden Sie TimeScope – Visual Calendar kostenlos im Microsoft Store für Windows 10 und Windows 11 (x64) herunter.</p>
+                <a href="https://apps.microsoft.com/detail/9NJR56D56R9F" target="_blank" rel="noopener" class="btn btn-primary" data-cta="bottom">Im Microsoft Store laden</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>© 2026 Tomi-lab. All rights reserved.</div>
+            <div class="footer-links">
+                <a href="https://apps.microsoft.com/detail/9NJR56D56R9F" target="_blank" rel="noopener" data-cta="footer">Microsoft Store</a>
+                <a href="support.html">Support &amp; FAQ</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="privacy.html">Datenschutz</a>
+                <a href="terms.html">Nutzungsbedingungen</a>
+                <a href="https://x.com/TimeScope_App" target="_blank" rel="noopener">X (Twitter)</a>
+                <select class="lang-select" aria-label="Footer language" onchange="switchLocale(this)">
+<option value="../index.html" data-locale="en-US">English</option>
+<option value="../ja/" data-locale="ja-JP">日本語</option>
+<option value="../zh-cn/" data-locale="zh-CN">简体中文</option>
+<option value="../zh-tw/" data-locale="zh-TW">繁體中文</option>
+<option value="../de/" data-locale="de-DE" selected>Deutsch</option>
+<option value="../fr/" data-locale="fr-FR">Français</option>
+<option value="../es/" data-locale="es-ES">Español</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      const CURRENT_LOCALE = "de-DE";
+      function track(name, params) {
+        if (typeof gtag === "function") gtag("event", name, params || {});
+      }
+      function switchLocale(sel) {
+        const opt = sel.options[sel.selectedIndex];
+        track("language_switch", { from_locale: CURRENT_LOCALE, to_locale: opt.getAttribute("data-locale") });
+        window.location.href = sel.value;
+      }
+      document.querySelectorAll("[data-cta]").forEach(function(el) {
+        el.addEventListener("click", function() {
+          track("store_cta_click", { cta_location: el.getAttribute("data-cta"), locale: CURRENT_LOCALE });
+        });
+      });
+      const mainImg = document.getElementById("gallery-main-img");
+      const capEl = document.getElementById("gallery-caption");
+      document.querySelectorAll(".thumb-btn").forEach(function(btn) {
+        btn.addEventListener("click", function() {
+          document.querySelectorAll(".thumb-btn").forEach(function(b) { b.classList.remove("active"); });
+          btn.classList.add("active");
+          mainImg.src = btn.getAttribute("data-src");
+          mainImg.alt = btn.getAttribute("data-caption");
+          capEl.textContent = btn.getAttribute("data-caption");
+          track("gallery_slide_view", { slide_index: btn.getAttribute("data-slide"), locale: CURRENT_LOCALE });
+        });
+      });
+      const pricingEl = document.getElementById("pricing");
+      if (pricingEl && "IntersectionObserver" in window) {
+        let seen = false;
+        new IntersectionObserver(function(entries) {
+          if (!seen && entries[0].isIntersecting) {
+            seen = true;
+            track("pricing_section_view", { locale: CURRENT_LOCALE });
+          }
+        }, { threshold: 0.3 }).observe(pricingEl);
+      }
+    </script>
+</body>
+</html>
