@@ -1,0 +1,758 @@
+{
+  "en-US": {
+    "support": {
+      "title": "Support & FAQ | TimeScope – Visual Calendar",
+      "desc": "Frequently asked questions, installation guide, and support information for TimeScope – Visual Calendar on Windows 10 and Windows 11.",
+      "h1": "Support & Frequently Asked Questions",
+      "sub": "Answers for installing, customizing, and using TimeScope – Visual Calendar v1.2.0 on Windows.",
+      "groups": [
+        {
+          "h2": "Installation & Compatibility",
+          "items": [
+            [
+              "What Windows versions are supported?",
+              "TimeScope v1.2.0 is built for Windows 10 and Windows 11 (x64) and is distributed through Microsoft Store."
+            ],
+            [
+              "I launched TimeScope, where is the icon?",
+              "TimeScope runs in the Windows system tray. If it is inside the hidden tray overflow menu (▲), you can drag it onto the taskbar or enable it in Windows Settings → Personalization → Taskbar → Other system tray icons."
+            ]
+          ]
+        },
+        {
+          "h2": "Calendar Display & Date-Range Selection",
+          "items": [
+            [
+              "How many months can TimeScope display at once?",
+              "You can expand the calendar horizontally and vertically according to your available window and display space—there is no fixed six-month limit."
+            ],
+            [
+              "How do I measure the number of days between two dates?",
+              "Click and drag across any dates on the calendar. TimeScope highlights the selected period and displays the exact day count in a floating badge and the bottom summary bar, including across month boundaries."
+            ],
+            [
+              "How do I change zoom size, week start, or language?",
+              "Open the calendar menu to choose between Small, Medium, and Large zoom presets, switch Sunday or Monday week start, toggle ISO week numbers and relative days (-n / +n), or switch instantly among 7 supported languages with no restart."
+            ]
+          ]
+        },
+        {
+          "h2": "TimeScope Pro & Purchases",
+          "items": [
+            [
+              "What does TimeScope Pro include?",
+              "TimeScope Pro is an optional one-time in-app purchase ($4.99 USD base price; local currency and taxes vary by region, no subscription) that unlocks Multi-band period comparison, Multi-monitor display selection, and Custom holidays & workdays."
+            ],
+            [
+              "How do I purchase or restore TimeScope Pro after reinstalling?",
+              "TimeScope Pro is linked to your Microsoft Store account via Microsoft Store in-app purchase inside the application. If you experience any issue purchasing or restoring your Pro entitlement after reinstalling, please contact support@gettimescope.com with your Microsoft Store order details."
+            ]
+          ]
+        }
+      ],
+      "more_h2": "Need More Help?",
+      "more_p": "Contact us directly at support@gettimescope.com or visit our Contact page."
+    },
+    "contact": {
+      "title": "Contact | TimeScope",
+      "h1": "Contact Us",
+      "intro": "Have questions about TimeScope, billing, or technical issues? We're here to help.",
+      "tech_label": "Technical Support & Troubleshooting",
+      "biz_label": "General Info & Business Inquiries"
+    },
+    "privacy": {
+      "title": "Privacy Policy | TimeScope",
+      "h1": "Privacy Policy",
+      "updated": "Last updated: April 2026",
+      "sections": [
+        [
+          "1. Information Collection",
+          "TimeScope operates locally on your Windows device. We do not collect, transmit, or store any personal calendar data or task information entered into the application."
+        ],
+        [
+          "2. Payment Information",
+          "When purchasing a Pro license, your payment is processed entirely through Stripe. We do not store your credit card information on our servers."
+        ],
+        [
+          "3. Local Storage",
+          "The application only uses local storage settings to remember your visual preferences, such as selected language or window size adjustments."
+        ],
+        [
+          "4. Contact Us",
+          "If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us."
+        ]
+      ]
+    },
+    "terms": {
+      "title": "Terms of Service | TimeScope",
+      "h1": "Terms of Service",
+      "updated": "Last updated: April 2026",
+      "sections": [
+        [
+          "1. Acceptance of Terms",
+          "By downloading or using TimeScope, these terms will automatically apply to you. You should make sure therefore that you read them carefully before using the app."
+        ],
+        [
+          "2. License",
+          "TimeScope grants you a revocable, non-exclusive, non-transferable, limited license to download, install and use the application strictly in accordance with the terms of this Agreement."
+        ],
+        [
+          "3. Pro Features",
+          "Certain features may require a Pro license. The Pro license is provided as a one-time purchase via Stripe."
+        ],
+        [
+          "4. Changes to Terms",
+          "We may update our Terms of Service from time to time. Thus, you are advised to review this page periodically for any changes."
+        ]
+      ]
+    }
+  },
+  "ja-JP": {
+    "support": {
+      "title": "サポート・FAQ | TimeScope – Visual Calendar",
+      "desc": "Windows 10 / 11 向け TimeScope – Visual Calendar のインストール方法、機能、Pro 版に関するよくある質問です。",
+      "h1": "サポート・よくある質問（FAQ）",
+      "sub": "TimeScope – Visual Calendar v1.2.0 の導入・カスタマイズ・Pro 版に関するご案内です。",
+      "groups": [
+        {
+          "h2": "インストール・動作環境",
+          "items": [
+            [
+              "対応している Windows のバージョンは？",
+              "TimeScope v1.2.0 は Windows 10 および Windows 11（x64）に対応しており、Microsoft Store から配布されています。"
+            ],
+            [
+              "起動したのにアイコンが見当たりません。",
+              "TimeScope は Windows システムトレイで動作します。隠れたインジケーター（▲）内に格納されている場合は、タスクバーへドラッグするか、「Windows 設定 → 個人用設定 → タスクバー → その他のシステム トレイ アイコン」で表示を有効にしてください。"
+            ]
+          ]
+        },
+        {
+          "h2": "カレンダー表示・期間選択",
+          "items": [
+            [
+              "最大で何か月まで表示できますか？",
+              "ウィンドウや画面の空き領域に合わせて横方向・縦方向に自由に拡張でき、6か月などの固定上限はありません。"
+            ],
+            [
+              "2つの日付の間の日数を調べるには？",
+              "カレンダー上で日付をドラッグすると選択範囲が強調表示され、フローティングバッジと下部サマリーに正確な日数が即座に表示されます（月をまたぐ期間にも対応）。"
+            ],
+            [
+              "ズームサイズ・週の開始曜日・言語を変更するには？",
+              "カレンダーメニューから Small / Medium / Large の3段階ズーム、日曜／月曜始まり、ISO 週番号や相対日数（-n / +n）の表示、再起動なしの7言語切り替えを行えます。"
+            ]
+          ]
+        },
+        {
+          "h2": "TimeScope Pro・ご購入について",
+          "items": [
+            [
+              "TimeScope Pro には何が含まれますか？",
+              "TimeScope Pro は買い切りのアプリ内購入（基準価格 $4.99 USD／地域により現地通貨・税込価格が異なります、サブスクリプションなし）で、マルチバンド比較、マルチモニター表示先選択、カスタム休日・稼働日設定をアンロックします。"
+            ],
+            [
+              "購入や再インストール後のライセンス復元はどうすればよいですか？",
+              "TimeScope Pro はアプリ内の Microsoft Store アプリ内購入を通じて Microsoft アカウントに紐づきます。再インストール後の復元や購入時に問題が発生した場合は、Microsoft Store の注文情報とあわせて support@gettimescope.com までご連絡ください。"
+            ]
+          ]
+        }
+      ],
+      "more_h2": "お問い合わせ",
+      "more_p": "解決しない場合は support@gettimescope.com またはお問い合わせページよりご連絡ください。"
+    },
+    "contact": {
+      "title": "お問い合わせ | TimeScope",
+      "h1": "お問い合わせ",
+      "intro": "TimeScope の操作方法、課金、技術的なトラブルについてご不明点があればお気軽にお問い合わせください。",
+      "tech_label": "技術サポート・トラブルシューティング",
+      "biz_label": "一般的なお問い合わせ・ビジネス窓口"
+    },
+    "privacy": {
+      "title": "プライバシーポリシー | TimeScope",
+      "h1": "プライバシーポリシー",
+      "updated": "最終更新日: 2026年4月",
+      "sections": [
+        [
+          "1. 情報の収集",
+          "TimeScope はお使いの Windows デバイス上でローカルに動作します。アプリ内に入力された個人のカレンダーデータやタスク情報を収集・送信・保存することはありません。"
+        ],
+        [
+          "2. お支払い情報",
+          "Pro ライセンスをご購入の際、決済処理はすべて Stripe を通じて行われます。当方のサーバーにお客様のクレジットカード情報を保存することはありません。"
+        ],
+        [
+          "3. ローカルストレージ",
+          "本アプリは、選択した言語やウィンドウサイズの調整など、表示設定を記憶するためにのみローカル設定領域を使用します。"
+        ],
+        [
+          "4. お問い合わせ",
+          "プライバシーポリシーに関するご質問やご意見がございましたら、お気軽にお問い合わせください。"
+        ]
+      ]
+    },
+    "terms": {
+      "title": "利用規約 | TimeScope",
+      "h1": "利用規約",
+      "updated": "最終更新日: 2026年4月",
+      "sections": [
+        [
+          "1. 規約への同意",
+          "TimeScope をダウンロードまたは使用することにより、本規約に同意したものとみなされます。ご利用前に内容をよくお読みください。"
+        ],
+        [
+          "2. ライセンス",
+          "TimeScope は、本規約の条件に厳密に従うことを条件として、アプリケーションのダウンロード・インストール・使用に関する取り消し可能・非独占的・譲渡不可の限定ライセンスを付与します。"
+        ],
+        [
+          "3. Pro 機能",
+          "一部の機能には Pro ライセンスが必要です。Pro ライセンスは Stripe を通じた買い切り型として提供されます。"
+        ],
+        [
+          "4. 規約の変更",
+          "当方は利用規約を随時更新する場合があります。変更を確認するため、本ページを定期的にご確認いただくことを推奨します。"
+        ]
+      ]
+    }
+  },
+  "zh-CN": {
+    "support": {
+      "title": "支持与常见问题 | TimeScope – Visual Calendar",
+      "desc": "适用于 Windows 10 / 11 的 TimeScope – Visual Calendar 安装、使用与 Pro 版常见问题解答。",
+      "h1": "支持与常见问题（FAQ）",
+      "sub": "关于安装、自定义设置以及使用 TimeScope – Visual Calendar v1.2.0 的说明。",
+      "groups": [
+        {
+          "h2": "安装与系统兼容性",
+          "items": [
+            [
+              "支持哪些 Windows 版本？",
+              "TimeScope v1.2.0 适用于 Windows 10 和 Windows 11 (x64)，通过 Microsoft Store 分发。"
+            ],
+            [
+              "启动 TimeScope 后找不到图标怎么办？",
+              "TimeScope 在 Windows 系统托盘中运行。若被收纳在隐藏图标菜单 (▲) 中，可将其拖至任务栏，或在“Windows 设置 → 个性化 → 任务栏 → 其他系统托盘图标”中开启常驻显示。"
+            ]
+          ]
+        },
+        {
+          "h2": "日历视图与日期范围选择",
+          "items": [
+            [
+              "一次最多可以显示几个月份？",
+              "您可以根据可用窗口和屏幕空间横向与纵向扩展显示，没有固定的 6 个月上限。"
+            ],
+            [
+              "如何计算两个日期之间的天数？",
+              "在日历上按住并拖动任意日期，所选期间会立即高亮，并在浮动标签与底部摘要栏中显示准确天数（支持跨月）。"
+            ],
+            [
+              "如何更改缩放大小、每周起始日或语言？",
+              "打开日历菜单即可选择 Small、Medium、Large 三种缩放预设，切换周日或周一起始日、ISO 周数与相对天数 (-n / +n)，或免重启即时切换 7 种语言。"
+            ]
+          ]
+        },
+        {
+          "h2": "TimeScope Pro 与购买",
+          "items": [
+            [
+              "TimeScope Pro 包含哪些功能？",
+              "TimeScope Pro 为可选的一次性应用内购买（基准价格 $4.99 USD，实际币种与税费因地区而异，无需订阅），可解锁多区间对比、多显示器显示选择及自定义节假日与工作日。"
+            ],
+            [
+              "重装系统后如何购买或恢复 TimeScope Pro？",
+              "TimeScope Pro 通过应用内的 Microsoft Store 应用内购买绑定至您的 Microsoft 账户。如在购买或恢复授权时遇到问题，请附带 Microsoft Store 订单信息联系 support@gettimescope.com。"
+            ]
+          ]
+        }
+      ],
+      "more_h2": "需要更多帮助？",
+      "more_p": "请发送邮件至 support@gettimescope.com 或访问我们的联系页面。"
+    },
+    "contact": {
+      "title": "联系我们 | TimeScope",
+      "h1": "联系我们",
+      "intro": "如果您对 TimeScope 的使用、账单或技术问题有任何疑问，欢迎随时联系我们。",
+      "tech_label": "技术支持与故障排查",
+      "biz_label": "一般咨询与商务合作"
+    },
+    "privacy": {
+      "title": "隐私政策 | TimeScope",
+      "h1": "隐私政策",
+      "updated": "最后更新：2026 年 4 月",
+      "sections": [
+        [
+          "1. 信息收集",
+          "TimeScope 在您的 Windows 设备本地运行。我们不会收集、传输或存储您在应用中输入的任何个人日历数据或任务信息。"
+        ],
+        [
+          "2. 支付信息",
+          "购买 Pro 授权时，您的付款完全通过 Stripe 处理。我们不会在服务器上存储您的信用卡信息。"
+        ],
+        [
+          "3. 本地存储",
+          "本应用仅使用本地存储设置来记住您的视觉偏好，例如所选语言或窗口大小调整。"
+        ],
+        [
+          "4. 联系我们",
+          "如果您对我们的隐私政策有任何疑问或建议，请随时与我们联系。"
+        ]
+      ]
+    },
+    "terms": {
+      "title": "使用条款 | TimeScope",
+      "h1": "使用条款",
+      "updated": "最后更新：2026 年 4 月",
+      "sections": [
+        [
+          "1. 条款接受",
+          "下载或使用 TimeScope 即表示您自动受本条款约束。使用应用前请仔细阅读。"
+        ],
+        [
+          "2. 许可授权",
+          "TimeScope 授予您可撤销、非独占、不可转让的有限许可，仅可在严格遵守本协议条款的前提下下载、安装和使用本应用。"
+        ],
+        [
+          "3. Pro 功能",
+          "部分功能可能需要 Pro 授权。Pro 授权通过 Stripe 以一次性买断方式提供。"
+        ],
+        [
+          "4. 条款变更",
+          "我们可能会不时更新使用条款，建议您定期查看本页面以了解最新变更。"
+        ]
+      ]
+    }
+  },
+  "zh-TW": {
+    "support": {
+      "title": "支援與常見問題 | TimeScope – Visual Calendar",
+      "desc": "適用於 Windows 10 / 11 的 TimeScope – Visual Calendar 安裝、操作與 Pro 版常見問題解答。",
+      "h1": "支援與常見問題（FAQ）",
+      "sub": "關於安裝、自訂設定與使用 TimeScope – Visual Calendar v1.2.0 的說明。",
+      "groups": [
+        {
+          "h2": "安裝與系統相容性",
+          "items": [
+            [
+              "支援哪些 Windows 版本？",
+              "TimeScope v1.2.0 專為 Windows 10 與 Windows 11 (x64) 打造，並透過 Microsoft Store 發佈。"
+            ],
+            [
+              "啟動 TimeScope 後找不到圖示怎麼辦？",
+              "TimeScope 執行於 Windows 系統匣。若圖示位於隱藏圖示選單 (▲) 內，可拖曳至工作列，或前往「Windows 設定 → 個人化 → 工作列 → 其他系統匣圖示」開啟顯示。"
+            ]
+          ]
+        },
+        {
+          "h2": "行事曆顯示與日期區間選取",
+          "items": [
+            [
+              "一次最多可以顯示幾個月份？",
+              "您可依可用視窗與螢幕空間自由橫向與縱向擴展顯示，沒有固定的 6 個月上限。"
+            ],
+            [
+              "如何計算兩個日期之間的天數？",
+              "在行事曆上拖曳選取任意日期，所選期間會立即反白，並在浮動標籤與底部摘要列中顯示精確天數（支援跨月）。"
+            ],
+            [
+              "如何變更縮放大小、每週起始日或語言？",
+              "開啟行事曆選單即可切換 Small、Medium、Large 三種字體大小預設、週日或週一起始日、ISO 週數與相對天數 (-n / +n)，並免重新啟動即時切換 7 種語言。"
+            ]
+          ]
+        },
+        {
+          "h2": "TimeScope Pro 與購買",
+          "items": [
+            [
+              "TimeScope Pro 包含哪些功能？",
+              "TimeScope Pro 為可選的一次性應用程式內購買（基準價格 $4.99 USD，實際幣別與稅率依地區而異，無需訂閱），可解鎖多區間比較、多螢幕顯示選擇與自訂節假日與工作日。"
+            ],
+            [
+              "重新安裝後如何購買或還原 TimeScope Pro？",
+              "TimeScope Pro 透過應用程式內的 Microsoft Store 購買機制綁定您的 Microsoft 帳戶。若在購買或還原授權時遇到任何問題，請附上 Microsoft Store 訂單資訊聯繫 support@gettimescope.com。"
+            ]
+          ]
+        }
+      ],
+      "more_h2": "需要更多協助？",
+      "more_p": "請直接來信至 support@gettimescope.com 或前往聯絡我們頁面。"
+    },
+    "contact": {
+      "title": "聯絡我們 | TimeScope",
+      "h1": "聯絡我們",
+      "intro": "如果您對 TimeScope 的使用、帳務或技術問題有任何疑問，我們很樂意為您提供協助。",
+      "tech_label": "技術支援與問題排除",
+      "biz_label": "一般諮詢與商務洽詢"
+    },
+    "privacy": {
+      "title": "隱私權政策 | TimeScope",
+      "h1": "隱私權政策",
+      "updated": "最後更新：2026 年 4 月",
+      "sections": [
+        [
+          "1. 資訊收集",
+          "TimeScope 於您的 Windows 裝置本機運行。我們不會收集、傳輸或儲存您在應用程式中輸入的任何個人行事曆資料或工作資訊。"
+        ],
+        [
+          "2. 付款資訊",
+          "購買 Pro 授權時，您的付款將完全透過 Stripe 處理。我們不會在伺服器上儲存您的信用卡資訊。"
+        ],
+        [
+          "3. 本機儲存空間",
+          "本應用程式僅使用本機設定儲存空間來記住您的視覺偏好設定，例如所選語言或視窗大小調整。"
+        ],
+        [
+          "4. 聯絡我們",
+          "如果您對我們的隱私權政策有任何疑問或建議，歡迎隨時與我們聯繫。"
+        ]
+      ]
+    },
+    "terms": {
+      "title": "服務條款 | TimeScope",
+      "h1": "服務條款",
+      "updated": "最後更新：2026 年 4 月",
+      "sections": [
+        [
+          "1. 條款接受",
+          "下載或使用 TimeScope 即表示您自動適用本條款。使用應用程式前請務必詳閱。"
+        ],
+        [
+          "2. 授權",
+          "TimeScope 授予您可撤銷、非專屬、不可轉讓的有限授權，僅得嚴格依據本協議條款下載、安裝與使用本應用程式。"
+        ],
+        [
+          "3. Pro 功能",
+          "部分功能可能需要 Pro 授權。Pro 授權係透過 Stripe 以一次性購買方式提供。"
+        ],
+        [
+          "4. 條款變更",
+          "我們可能會不時更新服務條款，建議您定期檢視本頁面以掌握任何變更。"
+        ]
+      ]
+    }
+  },
+  "de-DE": {
+    "support": {
+      "title": "Support & FAQ | TimeScope – Visual Calendar",
+      "desc": "Häufig gestellte Fragen, Installationshinweise und Support für TimeScope – Visual Calendar unter Windows 10 und Windows 11.",
+      "h1": "Support & Häufige Fragen (FAQ)",
+      "sub": "Antworten zur Installation, Anpassung und Nutzung von TimeScope – Visual Calendar v1.2.0 unter Windows.",
+      "groups": [
+        {
+          "h2": "Installation & Kompatibilität",
+          "items": [
+            [
+              "Welche Windows-Versionen werden unterstützt?",
+              "TimeScope v1.2.0 wurde für Windows 10 und Windows 11 (x64) entwickelt und wird über den Microsoft Store bereitgestellt."
+            ],
+            [
+              "Ich habe TimeScope gestartet – wo ist das Symbol?",
+              "TimeScope läuft im Windows-Infobereich (System Tray). Falls es im Überlaufmenü (▲) liegt, ziehen Sie es auf die Taskleiste oder aktivieren Sie es unter Windows-Einstellungen → Personalisierung → Taskleiste → Andere Taskleistensymbole."
+            ]
+          ]
+        },
+        {
+          "h2": "Kalenderansicht & Zeitraumauswahl",
+          "items": [
+            [
+              "Wie viele Monate kann TimeScope gleichzeitig anzeigen?",
+              "Sie können den Kalender horizontal und vertikal passend zu Ihrem verfügbaren Fenster- und Bildschirmplatz erweitern – ohne feste Sechs-Monats-Grenze."
+            ],
+            [
+              "Wie messe ich die Tage zwischen zwei Daten?",
+              "Ziehen Sie mit der Maus über beliebige Tage. TimeScope hebt den Zeitraum hervor und zeigt die genaue Tagesanzahl im schwebenden Hinweis sowie in der Fußzeile an – auch monatsübergreifend."
+            ],
+            [
+              "Wie ändere ich Zoomstufe, Wochenbeginn oder Sprache?",
+              "Im Kalendermenü können Sie Small, Medium und Large wählen, Sonntag oder Montag als Wochenbeginn festlegen, ISO-Kalenderwochen und relative Tage (-n / +n) einblenden oder ohne Neustart zwischen 7 Sprachen wechseln."
+            ]
+          ]
+        },
+        {
+          "h2": "TimeScope Pro & Kauf",
+          "items": [
+            [
+              "Was ist in TimeScope Pro enthalten?",
+              "TimeScope Pro ist ein optionaler einmaliger In-App-Kauf ($4.99 USD Basispreis; lokale Preise und Steuern variieren je nach Region, kein Abonnement) für Mehrfach-Zeiträume, Multi-Monitor-Auswahl sowie eigene Feiertage und Arbeitstage."
+            ],
+            [
+              "Wie kaufe oder stelle ich TimeScope Pro nach einer Neuinstallation wieder her?",
+              "TimeScope Pro wird über den Microsoft Store In-App-Kauf mit Ihrem Microsoft-Konto verknüpft. Bei Problemen beim Kauf oder der Wiederherstellung wenden Sie sich bitte mit Ihren Microsoft-Store-Bestelldaten an support@gettimescope.com."
+            ]
+          ]
+        }
+      ],
+      "more_h2": "Weitere Hilfe benötigt?",
+      "more_p": "Schreiben Sie uns an support@gettimescope.com oder besuchen Sie unsere Kontaktseite."
+    },
+    "contact": {
+      "title": "Kontakt | TimeScope",
+      "h1": "Kontakt",
+      "intro": "Haben Sie Fragen zu TimeScope, zur Abrechnung oder zu technischen Themen? Wir helfen Ihnen gerne weiter.",
+      "tech_label": "Technischer Support & Fehlerbehebung",
+      "biz_label": "Allgemeine Anfragen & Geschäftliches"
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung | TimeScope",
+      "h1": "Datenschutzerklärung",
+      "updated": "Stand: April 2026",
+      "sections": [
+        [
+          "1. Datenerfassung",
+          "TimeScope läuft lokal auf Ihrem Windows-Gerät. Wir erfassen, übertragen oder speichern keine persönlichen Kalenderdaten oder Aufgabeninformationen, die Sie in die Anwendung eingeben."
+        ],
+        [
+          "2. Zahlungsinformationen",
+          "Beim Kauf einer Pro-Lizenz wird Ihre Zahlung vollständig über Stripe abgewickelt. Wir speichern keine Kreditkartendaten auf unseren Servern."
+        ],
+        [
+          "3. Lokale Speicherung",
+          "Die Anwendung nutzt lokale Einstellungen ausschließlich, um Ihre Darstellungspräferenzen wie Sprache oder Fenstergröße zu speichern."
+        ],
+        [
+          "4. Kontakt",
+          "Wenn Sie Fragen oder Anregungen zu unserer Datenschutzerklärung haben, zögern Sie nicht, uns zu kontaktieren."
+        ]
+      ]
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen | TimeScope",
+      "h1": "Nutzungsbedingungen",
+      "updated": "Stand: April 2026",
+      "sections": [
+        [
+          "1. Annahme der Bedingungen",
+          "Durch das Herunterladen oder Nutzen von TimeScope gelten diese Bedingungen automatisch für Sie. Bitte lesen Sie sie vor der Nutzung sorgfältig durch."
+        ],
+        [
+          "2. Lizenz",
+          "TimeScope gewährt Ihnen eine widerrufliche, nicht-exklusive, nicht übertragbare, eingeschränkte Lizenz zum Herunterladen, Installieren und Nutzen der Anwendung gemäß dieser Vereinbarung."
+        ],
+        [
+          "3. Pro-Funktionen",
+          "Bestimmte Funktionen erfordern möglicherweise eine Pro-Lizenz. Die Pro-Lizenz wird als einmaliger Kauf über Stripe bereitgestellt."
+        ],
+        [
+          "4. Änderungen der Bedingungen",
+          "Wir können unsere Nutzungsbedingungen von Zeit zu Zeit aktualisieren. Bitte überprüfen Sie diese Seite regelmäßig auf Änderungen."
+        ]
+      ]
+    }
+  },
+  "fr-FR": {
+    "support": {
+      "title": "Support & FAQ | TimeScope – Visual Calendar",
+      "desc": "Questions fréquentes, guide d'installation et support pour TimeScope – Visual Calendar sur Windows 10 et Windows 11.",
+      "h1": "Support & Foire aux questions (FAQ)",
+      "sub": "Réponses sur l'installation, la personnalisation et l'utilisation de TimeScope – Visual Calendar v1.2.0 sous Windows.",
+      "groups": [
+        {
+          "h2": "Installation & Compatibilité",
+          "items": [
+            [
+              "Quelles versions de Windows sont prises en charge ?",
+              "TimeScope v1.2.0 est conçu pour Windows 10 et Windows 11 (x64) et distribué via le Microsoft Store."
+            ],
+            [
+              "J'ai lancé TimeScope, où se trouve l'icône ?",
+              "TimeScope s'exécute dans la zone de notification Windows. Si elle est masquée dans le menu (▲), faites-la glisser vers la barre des tâches ou activez-la dans Paramètres Windows → Personnalisation → Barre des tâches → Autres icônes de la barre d'état système."
+            ]
+          ]
+        },
+        {
+          "h2": "Affichage & Sélection de périodes",
+          "items": [
+            [
+              "Combien de mois TimeScope peut-il afficher à la fois ?",
+              "Vous pouvez élargir le calendrier horizontalement et verticalement selon l'espace disponible sur votre fenêtre et votre écran, sans limite fixe à six mois."
+            ],
+            [
+              "Comment mesurer le nombre de jours entre deux dates ?",
+              "Cliquez et faites glisser sur les dates souhaitées. TimeScope met en évidence la période et affiche le nombre exact de jours dans un badge flottant et dans le résumé en bas de fenêtre, même sur plusieurs mois."
+            ],
+            [
+              "Comment changer la taille de zoom, le début de semaine ou la langue ?",
+              "Ouvrez le menu du calendrier pour choisir Small, Medium ou Large, démarrer la semaine le dimanche ou le lundi, afficher les semaines ISO et jours relatifs (-n / +n), ou basculer instantanément parmi 7 langues sans redémarrer."
+            ]
+          ]
+        },
+        {
+          "h2": "TimeScope Pro & Achats",
+          "items": [
+            [
+              "Qu'inclut TimeScope Pro ?",
+              "TimeScope Pro est un achat unique optionnel dans l'application (prix de base $4.99 USD ; tarifs locaux et taxes variables selon la région, sans abonnement) qui débloque la comparaison multi-périodes, le support multi-écrans et les jours fériés et ouvrés personnalisés."
+            ],
+            [
+              "Comment acheter ou restaurer TimeScope Pro après réinstallation ?",
+              "TimeScope Pro est lié à votre compte Microsoft Store via l'achat intégré dans l'application. En cas de problème d'achat ou de restauration après réinstallation, contactez support@gettimescope.com avec les détails de votre commande Microsoft Store."
+            ]
+          ]
+        }
+      ],
+      "more_h2": "Besoin d'aide supplémentaire ?",
+      "more_p": "Écrivez-nous à support@gettimescope.com ou consultez notre page Contact."
+    },
+    "contact": {
+      "title": "Contact | TimeScope",
+      "h1": "Nous contacter",
+      "intro": "Une question sur TimeScope, la facturation ou un souci technique ? Nous sommes là pour vous aider.",
+      "tech_label": "Support technique & dépannage",
+      "biz_label": "Informations générales & demandes commerciales"
+    },
+    "privacy": {
+      "title": "Politique de confidentialité | TimeScope",
+      "h1": "Politique de confidentialité",
+      "updated": "Dernière mise à jour : avril 2026",
+      "sections": [
+        [
+          "1. Collecte des informations",
+          "TimeScope fonctionne localement sur votre appareil Windows. Nous ne collectons, ne transmettons ni ne stockons aucune donnée personnelle de calendrier ou d'information saisie dans l'application."
+        ],
+        [
+          "2. Informations de paiement",
+          "Lors de l'achat d'une licence Pro, votre paiement est entièrement traité via Stripe. Nous ne stockons pas vos coordonnées bancaires sur nos serveurs."
+        ],
+        [
+          "3. Stockage local",
+          "L'application utilise uniquement des paramètres locaux pour mémoriser vos préférences visuelles, comme la langue sélectionnée ou la taille de la fenêtre."
+        ],
+        [
+          "4. Nous contacter",
+          "Si vous avez des questions ou des suggestions concernant notre politique de confidentialité, n'hésitez pas à nous contacter."
+        ]
+      ]
+    },
+    "terms": {
+      "title": "Conditions d'utilisation | TimeScope",
+      "h1": "Conditions d'utilisation",
+      "updated": "Dernière mise à jour : avril 2026",
+      "sections": [
+        [
+          "1. Acceptation des conditions",
+          "En téléchargeant ou en utilisant TimeScope, ces conditions s'appliquent automatiquement à vous. Veuillez les lire attentivement avant d'utiliser l'application."
+        ],
+        [
+          "2. Licence",
+          "TimeScope vous accorde une licence révocable, non exclusive, non transférable et limitée pour télécharger, installer et utiliser l'application conformément aux termes du présent accord."
+        ],
+        [
+          "3. Fonctionnalités Pro",
+          "Certaines fonctionnalités peuvent nécessiter une licence Pro. La licence Pro est fournie sous forme d'achat unique via Stripe."
+        ],
+        [
+          "4. Modifications des conditions",
+          "Nous pouvons mettre à jour nos conditions d'utilisation occasionnellement. Nous vous conseillons de consulter cette page régulièrement."
+        ]
+      ]
+    }
+  },
+  "es-ES": {
+    "support": {
+      "title": "Soporte y FAQ | TimeScope – Visual Calendar",
+      "desc": "Preguntas frecuentes, guía de instalación y soporte para TimeScope – Visual Calendar en Windows 10 y Windows 11.",
+      "h1": "Soporte y Preguntas frecuentes (FAQ)",
+      "sub": "Respuestas sobre instalación, personalización y uso de TimeScope – Visual Calendar v1.2.0 en Windows.",
+      "groups": [
+        {
+          "h2": "Instalación y Compatibilidad",
+          "items": [
+            [
+              "¿Qué versiones de Windows son compatibles?",
+              "TimeScope v1.2.0 está diseñado para Windows 10 y Windows 11 (x64) y se distribuye a través de Microsoft Store."
+            ],
+            [
+              "He abierto TimeScope, ¿dónde está el icono?",
+              "TimeScope se ejecuta en la bandeja del sistema de Windows. Si aparece en el menú de iconos ocultos (▲), arrástralo a la barra de tareas o actívalo en Configuración de Windows → Personalización → Barra de tareas → Otros iconos de la bandeja del sistema."
+            ]
+          ]
+        },
+        {
+          "h2": "Vista del calendario y selección de rangos",
+          "items": [
+            [
+              "¿Cuántos meses puede mostrar TimeScope a la vez?",
+              "Puedes ampliar el calendario horizontal y verticalmente según el espacio disponible en tu ventana y pantalla, sin un límite fijo de seis meses."
+            ],
+            [
+              "¿Cómo mido la cantidad de días entre dos fechas?",
+              "Haz clic y arrastra sobre cualquier fecha del calendario. TimeScope resalta el período y muestra el número exacto de días en una etiqueta flotante y en el resumen inferior, incluso entre meses distintos."
+            ],
+            [
+              "¿Cómo cambio el tamaño, el inicio de semana o el idioma?",
+              "Abre el menú del calendario para elegir entre Small, Medium y Large, fijar el inicio en domingo o lunes, activar semanas ISO y días relativos (-n / +n) o cambiar al instante entre 7 idiomas sin reiniciar."
+            ]
+          ]
+        },
+        {
+          "h2": "TimeScope Pro y Compras",
+          "items": [
+            [
+              "¿Qué incluye TimeScope Pro?",
+              "TimeScope Pro es una compra única opcional dentro de la app ($4.99 USD precio base; la moneda local y los impuestos varían según la región, sin suscripción) que desbloquea comparación multibanda, soporte multimonitor y días festivos y laborables personalizados."
+            ],
+            [
+              "¿Cómo compro o restauro TimeScope Pro tras reinstalar?",
+              "TimeScope Pro se vincula a tu cuenta de Microsoft Store mediante la compra integrada dentro de la aplicación. Si tienes algún problema al comprar o restaurar tras reinstalar, escribe a support@gettimescope.com con los datos de tu pedido en Microsoft Store."
+            ]
+          ]
+        }
+      ],
+      "more_h2": "¿Necesitas más ayuda?",
+      "more_p": "Escríbenos directamente a support@gettimescope.com o visita nuestra página de Contacto."
+    },
+    "contact": {
+      "title": "Contacto | TimeScope",
+      "h1": "Contacto",
+      "intro": "¿Tienes dudas sobre TimeScope, facturación o algún problema técnico? Estamos aquí para ayudarte.",
+      "tech_label": "Soporte técnico y resolución de problemas",
+      "biz_label": "Información general y consultas comerciales"
+    },
+    "privacy": {
+      "title": "Política de privacidad | TimeScope",
+      "h1": "Política de privacidad",
+      "updated": "Última actualización: abril de 2026",
+      "sections": [
+        [
+          "1. Recopilación de información",
+          "TimeScope funciona de forma local en tu dispositivo Windows. No recopilamos, transmitimos ni almacenamos datos personales del calendario ni información de tareas introducida en la aplicación."
+        ],
+        [
+          "2. Información de pago",
+          "Al adquirir una licencia Pro, tu pago se procesa íntegramente a través de Stripe. No almacenamos los datos de tu tarjeta de crédito en nuestros servidores."
+        ],
+        [
+          "3. Almacenamiento local",
+          "La aplicación solo utiliza ajustes locales para recordar tus preferencias visuales, como el idioma seleccionado o el tamaño de la ventana."
+        ],
+        [
+          "4. Contacto",
+          "Si tienes preguntas o sugerencias sobre nuestra Política de privacidad, no dudes en ponerte en contacto con nosotros."
+        ]
+      ]
+    },
+    "terms": {
+      "title": "Términos de servicio | TimeScope",
+      "h1": "Términos de servicio",
+      "updated": "Última actualización: abril de 2026",
+      "sections": [
+        [
+          "1. Aceptación de los términos",
+          "Al descargar o utilizar TimeScope, estos términos se aplicarán automáticamente. Asegúrate de leerlos detenidamente antes de usar la aplicación."
+        ],
+        [
+          "2. Licencia",
+          "TimeScope te concede una licencia revocable, no exclusiva, intransferible y limitada para descargar, instalar y utilizar la aplicación estrictamente conforme a este Acuerdo."
+        ],
+        [
+          "3. Funciones Pro",
+          "Algunas funciones pueden requerir una licencia Pro. La licencia Pro se ofrece como compra única a través de Stripe."
+        ],
+        [
+          "4. Cambios en los términos",
+          "Podemos actualizar nuestros Términos de servicio periódicamente. Te recomendamos revisar esta página con regularidad para conocer cualquier cambio."
+        ]
+      ]
+    }
+  }
+}
