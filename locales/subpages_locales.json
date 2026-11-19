@@ -105,6 +105,34 @@
           "We may update our Terms of Service from time to time. Thus, you are advised to review this page periodically for any changes."
         ]
       ]
+    },
+    "release_notes": {
+      "title": "Release Notes — TimeScope",
+      "desc": "Version history and release notes for TimeScope – Visual Calendar.",
+      "h1": "Release Notes",
+      "sub": "Version history and latest improvements for TimeScope.",
+      "releases": [
+        {
+          "version": "v1.2.1",
+          "date": "2026-11-19",
+          "items": [
+            "Fixed \"Start at login\" so TimeScope launches reliably when you sign in or restart your PC.",
+            "Synced startup state with Windows Settings (Apps -> Startup) and respected user disable settings.",
+            "Replaced the subtle Pro link in the About dialog with a clearer button.",
+            "Fixed an issue where checking for updates in the About dialog failed."
+          ]
+        },
+        {
+          "version": "v1.2.0",
+          "date": "2026-11-03",
+          "items": [
+            "Unlocked multi-column horizontal calendar expansion for everyone in the Free edition.",
+            "Added full support for 7 languages (English, Japanese, Simplified & Traditional Chinese, German, French, Spanish).",
+            "Localized month names, weekday headers, and date formats.",
+            "Simplified into clear Free and Pro tiers with Microsoft Store integration."
+          ]
+        }
+      ]
     }
   },
   "ja-JP": {
@@ -212,6 +240,34 @@
           "4. 規約の変更",
           "当方は利用規約を随時更新する場合があります。変更を確認するため、本ページを定期的にご確認いただくことを推奨します。"
         ]
+      ]
+    },
+    "release_notes": {
+      "title": "リリースノート — TimeScope",
+      "desc": "TimeScope – Visual Calendar の更新履歴・リリースノートです。",
+      "h1": "リリースノート",
+      "sub": "TimeScope の更新履歴と最新のお知らせです。",
+      "releases": [
+        {
+          "version": "v1.2.1",
+          "date": "2026-11-19",
+          "items": [
+            "「ログイン時に起動」を修正し、PCの再起動やサインイン後に自動で立ち上がるようになりました。",
+            "Windows の「設定 → アプリ → スタートアップ」との連動に対応し、Windows 側でオフにした設定を上書きしないよう改善しました。",
+            "About 画面の Pro 案内リンクを分かりやすいボタンに変更しました。",
+            "About 画面の「更新を確認」ボタンがエラーになる不具合を修正しました。"
+          ]
+        },
+        {
+          "version": "v1.2.0",
+          "date": "2026-11-03",
+          "items": [
+            "複数月を並べて表示できる横方向拡張機能を Free 版に開放しました。",
+            "英語・日本語・中国語（簡体字/繁体字）・ドイツ語・フランス語・スペイン語の7言語に対応しました。",
+            "言語に合わせて月名・曜日・日付表記を最適化しました。",
+            "Free 版と Pro 版のシンプルな2区分に整理し、Microsoft Store に対応しました。"
+          ]
+        }
       ]
     }
   },
@@ -321,6 +377,34 @@
           "我们可能会不时更新使用条款，建议您定期查看本页面以了解最新变更。"
         ]
       ]
+    },
+    "release_notes": {
+      "title": "发行说明 — TimeScope",
+      "desc": "TimeScope – Visual Calendar 的版本更新记录与发行说明。",
+      "h1": "发行说明",
+      "sub": "查看 TimeScope 的版本历史与最新改进。",
+      "releases": [
+        {
+          "version": "v1.2.1",
+          "date": "2026-11-19",
+          "items": [
+            "修复“登录时启动”功能，重启电脑或重新登录后 TimeScope 可自动启动。",
+            "与 Windows 设置中的启动状态保持同步，并尊重用户在 Windows 中的关闭选择。",
+            "将“关于”窗口中的 Pro 引导链接更换为更醒目的按钮。",
+            "修复“关于”窗口中点击检查更新时失败的问题。"
+          ]
+        },
+        {
+          "version": "v1.2.0",
+          "date": "2026-11-03",
+          "items": [
+            "向 Free 版免费开放多列横向日历扩展视图。",
+            "全面支持 7 种语言（英语、日语、简体/繁体中文、德语、法语、西班牙语）。",
+            "根据所选语言本地化月份、星期与日期格式。",
+            "简化为清晰的 Free 与 Pro 两档模式，并接入 Microsoft Store。"
+          ]
+        }
+      ]
     }
   },
   "zh-TW": {
@@ -428,6 +512,34 @@
           "4. 條款變更",
           "我們可能會不時更新服務條款，建議您定期檢視本頁面以掌握任何變更。"
         ]
+      ]
+    },
+    "release_notes": {
+      "title": "發行說明 — TimeScope",
+      "desc": "TimeScope – Visual Calendar 的版本更新紀錄與發行說明。",
+      "h1": "發行說明",
+      "sub": "查看 TimeScope 的版本歷史與最新改進。",
+      "releases": [
+        {
+          "version": "v1.2.1",
+          "date": "2026-11-19",
+          "items": [
+            "修正「登入時啟動」功能，重新開機或登入後 TimeScope 會自動啟動。",
+            "與 Windows 設定中的啟動狀態保持同步，並尊重使用者在 Windows 中的停用選擇。",
+            "將「關於」視窗中的 Pro 引導連結改為更清晰的按鈕。",
+            "修正「關於」視窗中點擊檢查更新時失敗的問題。"
+          ]
+        },
+        {
+          "version": "v1.2.0",
+          "date": "2026-11-03",
+          "items": [
+            "向 Free 版免費開放多欄橫向日曆擴展檢視。",
+            "全面支援 7 種語言（英語、日語、簡體/繁體中文、德語、法語、西班牙語）。",
+            "依據所選語言最佳化月份、星期與日期格式。",
+            "簡化為清晰的 Free 與 Pro 雙層級架構，並支援 Microsoft Store。"
+          ]
+        }
       ]
     }
   },
@@ -537,6 +649,34 @@
           "Wir können unsere Nutzungsbedingungen von Zeit zu Zeit aktualisieren. Bitte überprüfen Sie diese Seite regelmäßig auf Änderungen."
         ]
       ]
+    },
+    "release_notes": {
+      "title": "Versionshinweise — TimeScope",
+      "desc": "Versionsverlauf und Versionshinweise für TimeScope – Visual Calendar.",
+      "h1": "Versionshinweise",
+      "sub": "Versionsverlauf und aktuelle Verbesserungen für TimeScope.",
+      "releases": [
+        {
+          "version": "v1.2.1",
+          "date": "2026-11-19",
+          "items": [
+            "„Beim Anmelden starten“ behoben, sodass TimeScope nach Neustart oder Anmeldung automatisch startet.",
+            "Autostart-Status mit den Windows-Einstellungen synchronisiert; Deaktivierungen durch den Benutzer werden respektiert.",
+            "Pro-Link im Info-Dialog durch eine gut sichtbare Schaltfläche ersetzt.",
+            "Fehler bei der Update-Prüfung im Info-Dialog behoben."
+          ]
+        },
+        {
+          "version": "v1.2.0",
+          "date": "2026-11-03",
+          "items": [
+            "Mehrspaltige horizontale Kalendererweiterung für die Free-Edition freigeschaltet.",
+            "Unterstützung für 7 Sprachen hinzugefügt (Englisch, Japanisch, Chinesisch, Deutsch, Französisch, Spanisch).",
+            "Monatsnamen, Wochentage und Datumsformate lokalisiert.",
+            "Klares Free/Pro-Modell mit Microsoft-Store-Integration eingeführt."
+          ]
+        }
+      ]
     }
   },
   "fr-FR": {
@@ -645,6 +785,34 @@
           "Nous pouvons mettre à jour nos conditions d'utilisation occasionnellement. Nous vous conseillons de consulter cette page régulièrement."
         ]
       ]
+    },
+    "release_notes": {
+      "title": "Notes de version — TimeScope",
+      "desc": "Historique des versions et notes de version de TimeScope – Visual Calendar.",
+      "h1": "Notes de version",
+      "sub": "Historique des versions et dernières améliorations de TimeScope.",
+      "releases": [
+        {
+          "version": "v1.2.1",
+          "date": "2026-11-19",
+          "items": [
+            "« Lancer au démarrage » corrigé pour démarrer automatiquement après un redémarrage ou une connexion.",
+            "Synchronisation avec les paramètres de démarrage de Windows tout en respectant la désactivation par l’utilisateur.",
+            "Lien Pro remplacé par un bouton plus visible dans la fenêtre À propos.",
+            "Correction de l’erreur lors de la vérification des mises à jour dans À propos."
+          ]
+        },
+        {
+          "version": "v1.2.0",
+          "date": "2026-11-03",
+          "items": [
+            "Extension horizontale multi-colonnes débloquée gratuitement dans l’édition Free.",
+            "Prise en charge de 7 langues (anglais, japonais, chinois simplifié/traditionnel, allemand, français, espagnol).",
+            "Localisation des mois, des jours de la semaine et des formats de date.",
+            "Modèle Free/Pro simplifié avec intégration Microsoft Store."
+          ]
+        }
+      ]
     }
   },
   "es-ES": {
@@ -752,6 +920,34 @@
           "4. Cambios en los términos",
           "Podemos actualizar nuestros Términos de servicio periódicamente. Te recomendamos revisar esta página con regularidad para conocer cualquier cambio."
         ]
+      ]
+    },
+    "release_notes": {
+      "title": "Notas de la versión — TimeScope",
+      "desc": "Historial de versiones y notas de lanzamiento de TimeScope – Visual Calendar.",
+      "h1": "Notas de la versión",
+      "sub": "Historial de versiones y últimas mejoras de TimeScope.",
+      "releases": [
+        {
+          "version": "v1.2.1",
+          "date": "2026-11-19",
+          "items": [
+            "Corregido «Iniciar al iniciar sesión» para que TimeScope se abra automáticamente tras reiniciar o iniciar sesión.",
+            "Sincronización con la configuración de inicio de Windows respetando si el usuario lo desactiva.",
+            "Enlace de Pro sustituido por un botón más claro en el cuadro Acerca de.",
+            "Solucionado el error al buscar actualizaciones desde Acerca de."
+          ]
+        },
+        {
+          "version": "v1.2.0",
+          "date": "2026-11-03",
+          "items": [
+            "Expansión horizontal de varios meses desbloqueada gratis en la edición Free.",
+            "Soporte para 7 idiomas (inglés, japonés, chino simplificado/tradicional, alemán, francés y español).",
+            "Localización de meses, días de la semana y formatos de fecha.",
+            "Modelo Free y Pro simplificado con integración en Microsoft Store."
+          ]
+        }
       ]
     }
   }

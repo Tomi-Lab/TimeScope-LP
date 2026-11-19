@@ -279,6 +279,7 @@ def render_homepage(loc_key: str, d: dict, all_locales: dict) -> str:
             <div>{esc(d['footer_rights'])}</div>
             <div class="footer-links">
                 <a href="{STORE_URL}" target="_blank" rel="noopener" data-cta="footer">{esc(d['footer_store'])}</a>
+                <a href="release-notes.html">{esc(d['footer_release_notes'])}</a>
                 <a href="support.html">{esc(d['footer_support'])}</a>
                 <a href="contact.html">{esc(d['footer_contact'])}</a>
                 <a href="privacy.html">{esc(d['footer_privacy'])}</a>
@@ -407,6 +408,7 @@ def render_subpage_shell(
             <div>{esc(d['footer_rights'])}</div>
             <div class="footer-links">
                 <a href="{STORE_URL}" target="_blank" rel="noopener" data-cta="footer">{esc(d['footer_store'])}</a>
+                <a href="release-notes.html">{esc(d['footer_release_notes'])}</a>
                 <a href="support.html">{esc(d['footer_support'])}</a>
                 <a href="contact.html">{esc(d['footer_contact'])}</a>
                 <a href="privacy.html">{esc(d['footer_privacy'])}</a>
@@ -484,12 +486,27 @@ def build_legal_body(lg: dict) -> str:
                 </div>"""
 
 
+def build_release_notes_body(rn: dict) -> str:
+    blocks = []
+    for rel in rn["releases"]:
+        lis = "\n".join(f"                        <li>{esc(item)}</li>" for item in rel["items"])
+        blocks.append(
+            f"""                <div class="faq-group">
+                    <h2>{esc(rel['version'])} <span style="font-size:0.75em;font-weight:normal;color:#64748b;">({esc(rel['date'])})</span></h2>
+                    <ul style="margin:12px 0 0 20px;line-height:1.8;">
+{lis}
+                    </ul>
+                </div>"""
+        )
+    return "\n".join(blocks)
+
+
 def build_sitemap(all_locales: dict) -> str:
     urls = []
     for data in all_locales.values():
         prio = "1.0" if data["url_path"] == "/" else "0.9"
         urls.append(f"  <url>\n    <loc>{BASE_URL}{data['url_path']}</loc>\n    <priority>{prio}</priority>\n    <changefreq>weekly</changefreq>\n  </url>")
-        for pf in ["support.html", "contact.html", "privacy.html", "terms.html"]:
+        for pf in ["release-notes.html", "support.html", "contact.html", "privacy.html", "terms.html"]:
             urls.append(f"  <url>\n    <loc>{BASE_URL}{data['url_path']}{pf}</loc>\n    <priority>0.6</priority>\n    <changefreq>monthly</changefreq>\n  </url>")
     return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(urls) + "\n</urlset>\n"
 
@@ -555,9 +572,20 @@ def main():
             )
         built_count += 1
 
+        rn = subpages[loc_key]["release_notes"]
+        with open(os.path.join(out_dir, "release-notes.html"), "w", encoding="utf-8") as f:
+            f.write(
+                render_subpage_shell(
+                    loc_key, data, locales, "release-notes.html",
+                    rn["title"], rn["desc"], rn["h1"], rn["sub"],
+                    build_release_notes_body(rn),
+                )
+            )
+        built_count += 1
+
     with open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write(build_sitemap(locales))
-    print(f"BUILT_ALL: {built_count} HTML pages (7 locales × 5 pages) + sitemap.xml")
+    print(f"BUILT_ALL: {built_count} HTML pages (7 locales × 6 pages) + sitemap.xml")
 
 
 if __name__ == "__main__":

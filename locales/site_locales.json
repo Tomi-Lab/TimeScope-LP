@@ -133,7 +133,8 @@
     "footer_contact": "Contact",
     "footer_privacy": "Privacy Policy",
     "footer_terms": "Terms of Service",
-    "footer_rights": "© 2026 Tomi-lab. All rights reserved."
+    "footer_rights": "© 2026 Tomi-lab. All rights reserved.",
+    "footer_release_notes": "Release Notes"
   },
   "ja-JP": {
     "lang_code": "ja-JP",
@@ -269,7 +270,8 @@
     "footer_contact": "お問い合わせ",
     "footer_privacy": "プライバシーポリシー",
     "footer_terms": "利用規約",
-    "footer_rights": "© 2026 Tomi-lab. All rights reserved."
+    "footer_rights": "© 2026 Tomi-lab. All rights reserved.",
+    "footer_release_notes": "リリースノート"
   },
   "zh-CN": {
     "lang_code": "zh-CN",
@@ -405,7 +407,8 @@
     "footer_contact": "联系我们",
     "footer_privacy": "隐私政策",
     "footer_terms": "使用条款",
-    "footer_rights": "© 2026 Tomi-lab. All rights reserved."
+    "footer_rights": "© 2026 Tomi-lab. All rights reserved.",
+    "footer_release_notes": "发行说明"
   },
   "zh-TW": {
     "lang_code": "zh-TW",
@@ -541,7 +544,8 @@
     "footer_contact": "聯絡我們",
     "footer_privacy": "隱私權政策",
     "footer_terms": "服務條款",
-    "footer_rights": "© 2026 Tomi-lab. All rights reserved."
+    "footer_rights": "© 2026 Tomi-lab. All rights reserved.",
+    "footer_release_notes": "發行說明"
   },
   "de-DE": {
     "lang_code": "de-DE",
@@ -677,7 +681,8 @@
     "footer_contact": "Kontakt",
     "footer_privacy": "Datenschutz",
     "footer_terms": "Nutzungsbedingungen",
-    "footer_rights": "© 2026 Tomi-lab. All rights reserved."
+    "footer_rights": "© 2026 Tomi-lab. All rights reserved.",
+    "footer_release_notes": "Versionshinweise"
   },
   "fr-FR": {
     "lang_code": "fr-FR",
@@ -813,7 +818,8 @@
     "footer_contact": "Contact",
     "footer_privacy": "Confidentialité",
     "footer_terms": "Conditions",
-    "footer_rights": "© 2026 Tomi-lab. All rights reserved."
+    "footer_rights": "© 2026 Tomi-lab. All rights reserved.",
+    "footer_release_notes": "Notes de version"
   },
   "es-ES": {
     "lang_code": "es-ES",
@@ -949,6 +955,7 @@
     "footer_contact": "Contacto",
     "footer_privacy": "Privacidad",
     "footer_terms": "Términos",
-    "footer_rights": "© 2026 Tomi-lab. All rights reserved."
+    "footer_rights": "© 2026 Tomi-lab. All rights reserved.",
+    "footer_release_notes": "Notas de la versión"
   }
 }
