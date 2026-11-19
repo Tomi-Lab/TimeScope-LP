@@ -113,6 +113,14 @@
       "sub": "Version history and latest improvements for TimeScope.",
       "releases": [
         {
+          "version": "v1.2.2",
+          "date": "2026-11-20",
+          "items": [
+            "Fixed an issue where purchased or redeemed TimeScope Pro licenses could fail to be recognized when restoring or syncing from the Microsoft Store.",
+            "Includes all v1.2.1 improvements (\"Start at login\" fix, Windows Startup settings sync, clearer Pro button, and update checker fix)."
+          ]
+        },
+        {
           "version": "v1.2.1",
           "date": "2026-11-19",
           "items": [
@@ -248,6 +256,14 @@
       "h1": "リリースノート",
       "sub": "TimeScope の更新履歴と最新のお知らせです。",
       "releases": [
+        {
+          "version": "v1.2.2",
+          "date": "2026-11-20",
+          "items": [
+            "Microsoft Store で購入または引き換えた TimeScope Pro が、「購入を復元」や再起動後の同期時に認識されない場合がある不具合を修正しました。",
+            "v1.2.1 の改善（「ログイン時に起動」の修正、Windows 設定との連動、About 画面の Pro ボタン・更新確認の改善）もすべて含まれます。"
+          ]
+        },
         {
           "version": "v1.2.1",
           "date": "2026-11-19",
@@ -385,6 +401,14 @@
       "sub": "查看 TimeScope 的版本历史与最新改进。",
       "releases": [
         {
+          "version": "v1.2.2",
+          "date": "2026-11-20",
+          "items": [
+            "修复在 Microsoft Store 购买或兑换 TimeScope Pro 后，恢复购买或重启同步时可能无法识别的问题。",
+            "包含 v1.2.1 的全部改进（开机自启修复、Windows 启动设置同步、Pro 按钮及更新检查优化）。"
+          ]
+        },
+        {
           "version": "v1.2.1",
           "date": "2026-11-19",
           "items": [
@@ -520,6 +544,14 @@
       "h1": "發行說明",
       "sub": "查看 TimeScope 的版本歷史與最新改進。",
       "releases": [
+        {
+          "version": "v1.2.2",
+          "date": "2026-11-20",
+          "items": [
+            "修正於 Microsoft Store 購買或兌換 TimeScope Pro 後，在恢復購買或重啟同步時可能無法辨識的問題。",
+            "包含 v1.2.1 的所有改進（開機自動啟動修正、Windows 啟動設定同步、Pro 按鈕與更新檢查最佳化）。"
+          ]
+        },
         {
           "version": "v1.2.1",
           "date": "2026-11-19",
@@ -657,6 +689,14 @@
       "sub": "Versionsverlauf und aktuelle Verbesserungen für TimeScope.",
       "releases": [
         {
+          "version": "v1.2.2",
+          "date": "2026-11-20",
+          "items": [
+            "Problem behoben, bei dem über den Microsoft Store gekaufte oder eingelöste Pro-Lizenzen beim Wiederherstellen oder Synchronisieren nicht erkannt wurden.",
+            "Enthält alle Verbesserungen aus v1.2.1 (Autostart-Korrektur, Windows-Synchronisation, Pro-Schaltfläche & Update-Prüfung)."
+          ]
+        },
+        {
           "version": "v1.2.1",
           "date": "2026-11-19",
           "items": [
@@ -793,6 +833,14 @@
       "sub": "Historique des versions et dernières améliorations de TimeScope.",
       "releases": [
         {
+          "version": "v1.2.2",
+          "date": "2026-11-20",
+          "items": [
+            "Correction d’un problème empêchant parfois la reconnaissance des licences Pro achetées ou activées lors de la restauration ou de la synchronisation Microsoft Store.",
+            "Inclut toutes les améliorations de la v1.2.1 (démarrage automatique, synchro Windows, bouton Pro et vérification des mises à jour)."
+          ]
+        },
+        {
           "version": "v1.2.1",
           "date": "2026-11-19",
           "items": [
@@ -928,6 +976,14 @@
       "h1": "Notas de la versión",
       "sub": "Historial de versiones y últimas mejoras de TimeScope.",
       "releases": [
+        {
+          "version": "v1.2.2",
+          "date": "2026-11-20",
+          "items": [
+            "Corregido un problema por el que las licencias Pro compradas o canjeadas podían no reconocerse al restaurar o sincronizar desde Microsoft Store.",
+            "Incluye todas las mejoras de la v1.2.1 (inicio automático, sincronización con Windows, botón Pro y comprobación de actualizaciones)."
+          ]
+        },
         {
           "version": "v1.2.1",
           "date": "2026-11-19",
