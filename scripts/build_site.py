@@ -7,6 +7,10 @@ LOCALES_PATH = os.path.join(ROOT, "locales", "site_locales.json")
 SUBPAGES_PATH = os.path.join(ROOT, "locales", "subpages_locales.json")
 STORE_URL = "https://apps.microsoft.com/detail/9NJR56D56R9F"
 BASE_URL = "https://gettimescope.com"
+VIDEO_ID = "hHBjlHZ66SA"
+VIDEO_URL = f"https://youtu.be/{VIDEO_ID}"
+VIDEO_EMBED_URL = f"https://www.youtube-nocookie.com/embed/{VIDEO_ID}"
+YOUTUBE_CHANNEL_URL = "https://www.youtube.com/@TimeScopeApp"
 
 ANALYTICS_HEAD = """    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T7HPX8ZJJ4"></script>
@@ -104,16 +108,32 @@ def render_homepage(loc_key: str, d: dict, all_locales: dict) -> str:
     json_ld = json.dumps(
         {
             "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            "name": "TimeScope – Visual Calendar",
-            "applicationCategory": "UtilitiesApplication",
-            "operatingSystem": "Windows 10, Windows 11",
-            "url": canon,
-            "downloadUrl": STORE_URL,
-            "publisher": {"@type": "Organization", "name": "Tomi-lab"},
-            "offers": [
-                {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "TimeScope Free Edition"},
-                {"@type": "Offer", "price": "4.99", "priceCurrency": "USD", "description": "TimeScope Pro (One-time in-app purchase)"},
+            "@graph": [
+                {
+                    "@type": "SoftwareApplication",
+                    "name": "TimeScope – Visual Calendar",
+                    "applicationCategory": "UtilitiesApplication",
+                    "operatingSystem": "Windows 10, Windows 11",
+                    "url": canon,
+                    "downloadUrl": STORE_URL,
+                    "publisher": {"@type": "Organization", "name": "Tomi-lab"},
+                    "offers": [
+                        {"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "TimeScope Free Edition"},
+                        {"@type": "Offer", "price": "4.99", "priceCurrency": "USD", "description": "TimeScope Pro (One-time in-app purchase)"},
+                    ],
+                },
+                {
+                    "@type": "VideoObject",
+                    "name": d["video_schema_name"],
+                    "description": d["video_schema_desc"],
+                    "thumbnailUrl": f"{BASE_URL}/assets/v2/intro-video-poster.webp",
+                    "uploadDate": "2026-11-24T00:00:00Z",
+                    "duration": "PT2M31S",
+                    "contentUrl": VIDEO_URL,
+                    "embedUrl": VIDEO_EMBED_URL,
+                    "inLanguage": "en",
+                    "publisher": {"@type": "Organization", "name": "Tomi-lab"},
+                },
             ],
         },
         ensure_ascii=False,
@@ -138,6 +158,7 @@ def render_homepage(loc_key: str, d: dict, all_locales: dict) -> str:
     <meta property="og:title" content="{esc(d['seo_title'])}">
     <meta property="og:description" content="{esc(d['seo_desc'])}">
     <meta property="og:image" content="{BASE_URL}/assets/v2/timescope-ogp-v6.jpg">
+    <meta property="og:video" content="{VIDEO_EMBED_URL}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{esc(d['seo_title'])}">
     <meta name="twitter:description" content="{esc(d['seo_desc'])}">
@@ -197,6 +218,28 @@ def render_homepage(loc_key: str, d: dict, all_locales: dict) -> str:
                 </div>
                 <div class="benefits-grid">
 {benefits_html}
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>{esc(d['video_title'])}</h2>
+                    <p>{esc(d['video_sub'])}</p>
+                </div>
+                <div class="video-wrap">
+                    <div class="video-frame-wrap" id="intro-video-container">
+                        <button type="button" class="video-poster-btn" id="intro-video-poster" aria-label="{esc(d['video_play_label'])}">
+                            <img src="{prefix}assets/v2/intro-video-poster.webp" alt="{esc(d['video_poster_alt'])}" width="1280" height="720" loading="lazy">
+                            <span class="video-play-badge" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <p class="video-caption">{esc(d['video_caption'])}</p>
+                    <div class="video-actions">
+                        <a href="{STORE_URL}" target="_blank" rel="noopener" class="btn btn-primary" data-cta="video">{esc(d['hero_cta_primary'])}</a>
+                        <a href="{VIDEO_URL}" target="_blank" rel="noopener" class="btn btn-secondary" id="video-yt-link">{esc(d['video_cta_youtube'])}</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -285,6 +328,7 @@ def render_homepage(loc_key: str, d: dict, all_locales: dict) -> str:
                 <a href="privacy.html">{esc(d['footer_privacy'])}</a>
                 <a href="terms.html">{esc(d['footer_terms'])}</a>
                 <a href="https://x.com/TimeScope_App" target="_blank" rel="noopener">X (Twitter)</a>
+                <a href="{YOUTUBE_CHANNEL_URL}" target="_blank" rel="noopener">YouTube</a>
                 <select class="lang-select" aria-label="Footer language" onchange="switchLocale(this)">
 {lang_opts}
                 </select>
@@ -304,9 +348,81 @@ def render_homepage(loc_key: str, d: dict, all_locales: dict) -> str:
       }}
       document.querySelectorAll("[data-cta]").forEach(function(el) {{
         el.addEventListener("click", function() {{
-          track("store_cta_click", {{ cta_location: el.getAttribute("data-cta"), locale: CURRENT_LOCALE }});
+          const loc = el.getAttribute("data-cta");
+          track("store_cta_click", {{ cta_location: loc, locale: CURRENT_LOCALE }});
+          if (loc === "video") {{
+            track("download_cta_after_video", {{ locale: CURRENT_LOCALE, video_id: "{VIDEO_ID}" }});
+          }}
         }});
       }});
+      const ytLink = document.getElementById("video-yt-link");
+      if (ytLink) {{
+        ytLink.addEventListener("click", function() {{
+          track("intro_video_external_click", {{ locale: CURRENT_LOCALE, video_id: "{VIDEO_ID}" }});
+        }});
+      }}
+      const videoSection = document.getElementById("video");
+      if (videoSection && "IntersectionObserver" in window) {{
+        let videoSeen = false;
+        new IntersectionObserver(function(entries) {{
+          if (!videoSeen && entries[0].isIntersecting) {{
+            videoSeen = true;
+            track("intro_video_impression", {{ locale: CURRENT_LOCALE, video_id: "{VIDEO_ID}" }});
+          }}
+        }}, {{ threshold: 0.35 }}).observe(videoSection);
+      }}
+      const posterBtn = document.getElementById("intro-video-poster");
+      const videoContainer = document.getElementById("intro-video-container");
+      if (posterBtn && videoContainer) {{
+        let playTracked = false;
+        let completeTracked = false;
+        function firePlay() {{
+          if (!playTracked) {{
+            playTracked = true;
+            track("intro_video_play", {{ locale: CURRENT_LOCALE, video_id: "{VIDEO_ID}" }});
+          }}
+        }}
+        posterBtn.addEventListener("click", function() {{
+          firePlay();
+          const iframe = document.createElement("iframe");
+          iframe.id = "intro-yt-iframe";
+          iframe.src = "{VIDEO_EMBED_URL}?autoplay=1&enablejsapi=1&rel=0";
+          iframe.title = "{esc(d['video_schema_name'])}";
+          iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+          iframe.allowFullscreen = true;
+          videoContainer.innerHTML = "";
+          videoContainer.appendChild(iframe);
+          function attachYTPlayer() {{
+            if (window.YT && window.YT.Player) {{
+              new window.YT.Player("intro-yt-iframe", {{
+                events: {{
+                  onStateChange: function(ev) {{
+                    if (ev.data === window.YT.PlayerState.PLAYING) firePlay();
+                    if (ev.data === window.YT.PlayerState.ENDED && !completeTracked) {{
+                      completeTracked = true;
+                      track("intro_video_complete", {{ locale: CURRENT_LOCALE, video_id: "{VIDEO_ID}" }});
+                    }}
+                  }}
+                }}
+              }});
+            }}
+          }}
+          if (window.YT && window.YT.Player) {{
+            attachYTPlayer();
+          }} else {{
+            const prevReady = window.onYouTubeIframeAPIReady;
+            window.onYouTubeIframeAPIReady = function() {{
+              if (typeof prevReady === "function") prevReady();
+              attachYTPlayer();
+            }};
+            if (!document.querySelector('script[src="https://www.youtube.com/iframe_api"]')) {{
+              const tag = document.createElement("script");
+              tag.src = "https://www.youtube.com/iframe_api";
+              document.head.appendChild(tag);
+            }}
+          }}
+        }});
+      }}
       const mainImg = document.getElementById("gallery-main-img");
       const capEl = document.getElementById("gallery-caption");
       document.querySelectorAll(".thumb-btn").forEach(function(btn) {{
@@ -414,6 +530,7 @@ def render_subpage_shell(
                 <a href="privacy.html">{esc(d['footer_privacy'])}</a>
                 <a href="terms.html">{esc(d['footer_terms'])}</a>
                 <a href="https://x.com/TimeScope_App" target="_blank" rel="noopener">X (Twitter)</a>
+                <a href="{YOUTUBE_CHANNEL_URL}" target="_blank" rel="noopener">YouTube</a>
                 <select class="lang-select" aria-label="Footer language" onchange="switchLocale(this)">
 {lang_opts}
                 </select>
@@ -488,6 +605,16 @@ def build_legal_body(lg: dict) -> str:
 
 def build_release_notes_body(rn: dict) -> str:
     blocks = []
+    ann = rn.get("announcement")
+    if ann:
+        blocks.append(
+            f"""                <div class="announcement-card">
+                    <span class="announcement-badge">{esc(ann['badge'])} · {esc(ann['date'])}</span>
+                    <h2>{esc(ann['title'])}</h2>
+                    <p>{esc(ann['body'])}</p>
+                    <a href="{VIDEO_URL}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">{esc(ann['cta_watch'])}</a>
+                </div>"""
+        )
     for rel in rn["releases"]:
         lis = "\n".join(f"                        <li>{esc(item)}</li>" for item in rel["items"])
         blocks.append(

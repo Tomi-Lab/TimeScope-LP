@@ -140,7 +140,14 @@
             "Simplified into clear Free and Pro tiers with Microsoft Store integration."
           ]
         }
-      ]
+      ],
+      "announcement": {
+        "badge": "Announcement",
+        "date": "2026-11-24",
+        "title": "Introducing the Official TimeScope Video",
+        "body": "We're excited to share the official introduction video for TimeScope! Discover how TimeScope helps you see your schedule from a bigger perspective, explore time across years, and select date ranges with ease. Watch the video on YouTube (English narration with 7 subtitle languages).",
+        "cta_watch": "Watch on YouTube"
+      }
     }
   },
   "ja-JP": {
@@ -284,7 +291,14 @@
             "Free 版と Pro 版のシンプルな2区分に整理し、Microsoft Store に対応しました。"
           ]
         }
-      ]
+      ],
+      "announcement": {
+        "badge": "お知らせ",
+        "date": "2026-11-24",
+        "title": "TimeScope 公式紹介動画を公開しました",
+        "body": "TimeScope の特長と使い方をわかりやすくまとめた公式紹介動画を公開しました。1か月表示から複数月への拡張、ドラッグでの即時日数カウント、システムトレイ常駐などを約2分半でご覧いただけます（英語音声・日本語を含む7言語字幕対応）。",
+        "cta_watch": "YouTube で視聴する"
+      }
     }
   },
   "zh-CN": {
@@ -428,7 +442,14 @@
             "简化为清晰的 Free 与 Pro 两档模式，并接入 Microsoft Store。"
           ]
         }
-      ]
+      ],
+      "announcement": {
+        "badge": "公告",
+        "date": "2026-11-24",
+        "title": "TimeScope 官方介绍视频正式发布",
+        "body": "我们很高兴为您带来 TimeScope 官方介绍视频！了解如何通过多月扩展视图、跨年滚动与即时天数统计，更清晰地规划每一段时光。欢迎前往 YouTube 观看（英语旁白，支持简体中文等 7 种语言字幕）。",
+        "cta_watch": "前往 YouTube 观看"
+      }
     }
   },
   "zh-TW": {
@@ -572,7 +593,14 @@
             "簡化為清晰的 Free 與 Pro 雙層級架構，並支援 Microsoft Store。"
           ]
         }
-      ]
+      ],
+      "announcement": {
+        "badge": "公告",
+        "date": "2026-11-24",
+        "title": "TimeScope 官方介紹影片正式上線",
+        "body": "我們很高興與您分享 TimeScope 官方介紹影片！了解如何透過多月擴展檢視、跨年捲動與即時天數統計，更清晰地掌握每段時光。歡迎前往 YouTube 觀看（英語旁白，支援繁體中文等 7 種語言字幕）。",
+        "cta_watch": "前往 YouTube 觀看"
+      }
     }
   },
   "de-DE": {
@@ -716,7 +744,14 @@
             "Klares Free/Pro-Modell mit Microsoft-Store-Integration eingeführt."
           ]
         }
-      ]
+      ],
+      "announcement": {
+        "badge": "Ankündigung",
+        "date": "2026-11-24",
+        "title": "Das offizielle TimeScope-Video ist da",
+        "body": "Wir freuen uns, das offizielle Einführungsvideo zu TimeScope zu präsentieren! Sehen Sie, wie Sie Zeiträume über mehrere Monate hinweg erfassen und Tage mühelos zählen können (englische Sprachausgabe mit Untertiteln in 7 Sprachen, inkl. Deutsch).",
+        "cta_watch": "Auf YouTube ansehen"
+      }
     }
   },
   "fr-FR": {
@@ -860,7 +895,14 @@
             "Modèle Free/Pro simplifié avec intégration Microsoft Store."
           ]
         }
-      ]
+      ],
+      "announcement": {
+        "badge": "Annonce",
+        "date": "2026-11-24",
+        "title": "Découvrez la vidéo officielle de TimeScope",
+        "body": "Nous sommes ravis de vous présenter la vidéo officielle de TimeScope ! Découvrez comment visualiser plusieurs mois à la fois et mesurer vos plages de dates en toute simplicité (narration en anglais avec sous-titres en 7 langues, dont le français).",
+        "cta_watch": "Regarder sur YouTube"
+      }
     }
   },
   "es-ES": {
@@ -1004,7 +1046,14 @@
             "Modelo Free y Pro simplificado con integración en Microsoft Store."
           ]
         }
-      ]
+      ],
+      "announcement": {
+        "badge": "Anuncio",
+        "date": "2026-11-24",
+        "title": "Presentamos el video oficial de TimeScope",
+        "body": "¡Nos entusiasma compartir el video de presentación oficial de TimeScope! Descubre cómo visualizar varios meses a la vez y medir rangos de fechas al instante (narración en inglés con subtítulos en 7 idiomas, incluido español).",
+        "cta_watch": "Ver en YouTube"
+      }
     }
   }
 }

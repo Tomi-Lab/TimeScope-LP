@@ -21,6 +21,7 @@
     <meta property="og:title" content="TimeScope – Visual Calendar | より広い視点で時間を見渡す Windows カレンダー">
     <meta property="og:description" content="複数月の同時表示や期間選択、日数の即時確認ができる、軽量な Windows デスクトップカレンダーです。">
     <meta property="og:image" content="https://gettimescope.com/assets/v2/timescope-ogp-v6.jpg">
+    <meta property="og:video" content="https://www.youtube-nocookie.com/embed/hHBjlHZ66SA">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="TimeScope – Visual Calendar | より広い視点で時間を見渡す Windows カレンダー">
     <meta name="twitter:description" content="複数月の同時表示や期間選択、日数の即時確認ができる、軽量な Windows デスクトップカレンダーです。">
@@ -29,7 +30,7 @@
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="../assets/v2/timescope_icon_rounded_256.png">
     <link rel="stylesheet" href="../assets/v2/styles.css">
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "TimeScope – Visual Calendar", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Windows 10, Windows 11", "url": "https://gettimescope.com/ja/", "downloadUrl": "https://apps.microsoft.com/detail/9NJR56D56R9F", "publisher": {"@type": "Organization", "name": "Tomi-lab"}, "offers": [{"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "TimeScope Free Edition"}, {"@type": "Offer", "price": "4.99", "priceCurrency": "USD", "description": "TimeScope Pro (One-time in-app purchase)"}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "TimeScope – Visual Calendar", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Windows 10, Windows 11", "url": "https://gettimescope.com/ja/", "downloadUrl": "https://apps.microsoft.com/detail/9NJR56D56R9F", "publisher": {"@type": "Organization", "name": "Tomi-lab"}, "offers": [{"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "TimeScope Free Edition"}, {"@type": "Offer", "price": "4.99", "priceCurrency": "USD", "description": "TimeScope Pro (One-time in-app purchase)"}]}, {"@type": "VideoObject", "name": "TimeScope – 時間の全体像を、ひと目で | 公式紹介動画", "description": "Windows 10 / 11 向けの純粋なビジュアルカレンダー TimeScope の公式紹介動画。複数月表示、即時日数カウント、システムトレイ常駐を解説します。", "thumbnailUrl": "https://gettimescope.com/assets/v2/intro-video-poster.webp", "uploadDate": "2026-11-24T00:00:00Z", "duration": "PT2M31S", "contentUrl": "https://youtu.be/hHBjlHZ66SA", "embedUrl": "https://www.youtube-nocookie.com/embed/hHBjlHZ66SA", "inLanguage": "en", "publisher": {"@type": "Organization", "name": "Tomi-lab"}}]}</script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T7HPX8ZJJ4"></script>
     <script>
@@ -115,6 +116,28 @@
                     <h3>Pro 版でさらに柔軟な時間の可視化</h3>
                     <p>複数期間の同時比較（マルチバンド）、マルチモニター表示先選択、カスタム休日・稼働日設定を買い切りで追加できます。</p>
                 </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>TimeScope の動きを動画で見る</h2>
+                    <p>複数月の俯瞰表示からドラッグでの即時日数カウントまで、TimeScope の特長を約2分半でご紹介します。</p>
+                </div>
+                <div class="video-wrap">
+                    <div class="video-frame-wrap" id="intro-video-container">
+                        <button type="button" class="video-poster-btn" id="intro-video-poster" aria-label="TimeScope 公式紹介動画を再生">
+                            <img src="../assets/v2/intro-video-poster.webp" alt="TimeScope 公式紹介動画 – 時間の全体像を、ひと目で" width="1280" height="720" loading="lazy">
+                            <span class="video-play-badge" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <p class="video-caption">公式紹介動画（2分31秒）· 英語音声・7言語字幕（日本語字幕対応）</p>
+                    <div class="video-actions">
+                        <a href="https://apps.microsoft.com/detail/9NJR56D56R9F" target="_blank" rel="noopener" class="btn btn-primary" data-cta="video">Microsoft Store で入手</a>
+                        <a href="https://youtu.be/hHBjlHZ66SA" target="_blank" rel="noopener" class="btn btn-secondary" id="video-yt-link">YouTube で見る</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -287,6 +310,7 @@
                 <a href="privacy.html">プライバシーポリシー</a>
                 <a href="terms.html">利用規約</a>
                 <a href="https://x.com/TimeScope_App" target="_blank" rel="noopener">X (Twitter)</a>
+                <a href="https://www.youtube.com/@TimeScopeApp" target="_blank" rel="noopener">YouTube</a>
                 <select class="lang-select" aria-label="Footer language" onchange="switchLocale(this)">
 <option value="../index.html" data-locale="en-US">English</option>
 <option value="../ja/" data-locale="ja-JP" selected>日本語</option>
@@ -312,9 +336,81 @@
       }
       document.querySelectorAll("[data-cta]").forEach(function(el) {
         el.addEventListener("click", function() {
-          track("store_cta_click", { cta_location: el.getAttribute("data-cta"), locale: CURRENT_LOCALE });
+          const loc = el.getAttribute("data-cta");
+          track("store_cta_click", { cta_location: loc, locale: CURRENT_LOCALE });
+          if (loc === "video") {
+            track("download_cta_after_video", { locale: CURRENT_LOCALE, video_id: "hHBjlHZ66SA" });
+          }
         });
       });
+      const ytLink = document.getElementById("video-yt-link");
+      if (ytLink) {
+        ytLink.addEventListener("click", function() {
+          track("intro_video_external_click", { locale: CURRENT_LOCALE, video_id: "hHBjlHZ66SA" });
+        });
+      }
+      const videoSection = document.getElementById("video");
+      if (videoSection && "IntersectionObserver" in window) {
+        let videoSeen = false;
+        new IntersectionObserver(function(entries) {
+          if (!videoSeen && entries[0].isIntersecting) {
+            videoSeen = true;
+            track("intro_video_impression", { locale: CURRENT_LOCALE, video_id: "hHBjlHZ66SA" });
+          }
+        }, { threshold: 0.35 }).observe(videoSection);
+      }
+      const posterBtn = document.getElementById("intro-video-poster");
+      const videoContainer = document.getElementById("intro-video-container");
+      if (posterBtn && videoContainer) {
+        let playTracked = false;
+        let completeTracked = false;
+        function firePlay() {
+          if (!playTracked) {
+            playTracked = true;
+            track("intro_video_play", { locale: CURRENT_LOCALE, video_id: "hHBjlHZ66SA" });
+          }
+        }
+        posterBtn.addEventListener("click", function() {
+          firePlay();
+          const iframe = document.createElement("iframe");
+          iframe.id = "intro-yt-iframe";
+          iframe.src = "https://www.youtube-nocookie.com/embed/hHBjlHZ66SA?autoplay=1&enablejsapi=1&rel=0";
+          iframe.title = "TimeScope – 時間の全体像を、ひと目で | 公式紹介動画";
+          iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+          iframe.allowFullscreen = true;
+          videoContainer.innerHTML = "";
+          videoContainer.appendChild(iframe);
+          function attachYTPlayer() {
+            if (window.YT && window.YT.Player) {
+              new window.YT.Player("intro-yt-iframe", {
+                events: {
+                  onStateChange: function(ev) {
+                    if (ev.data === window.YT.PlayerState.PLAYING) firePlay();
+                    if (ev.data === window.YT.PlayerState.ENDED && !completeTracked) {
+                      completeTracked = true;
+                      track("intro_video_complete", { locale: CURRENT_LOCALE, video_id: "hHBjlHZ66SA" });
+                    }
+                  }
+                }
+              });
+            }
+          }
+          if (window.YT && window.YT.Player) {
+            attachYTPlayer();
+          } else {
+            const prevReady = window.onYouTubeIframeAPIReady;
+            window.onYouTubeIframeAPIReady = function() {
+              if (typeof prevReady === "function") prevReady();
+              attachYTPlayer();
+            };
+            if (!document.querySelector('script[src="https://www.youtube.com/iframe_api"]')) {
+              const tag = document.createElement("script");
+              tag.src = "https://www.youtube.com/iframe_api";
+              document.head.appendChild(tag);
+            }
+          }
+        });
+      }
       const mainImg = document.getElementById("gallery-main-img");
       const capEl = document.getElementById("gallery-caption");
       document.querySelectorAll(".thumb-btn").forEach(function(btn) {

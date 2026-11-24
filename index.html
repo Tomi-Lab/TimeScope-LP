@@ -21,6 +21,7 @@
     <meta property="og:title" content="TimeScope – Visual Calendar | A Broader View of Time for Windows">
     <meta property="og:description" content="A lightweight Windows desktop calendar for viewing multiple months, selecting date ranges, and instantly checking their duration.">
     <meta property="og:image" content="https://gettimescope.com/assets/v2/timescope-ogp-v6.jpg">
+    <meta property="og:video" content="https://www.youtube-nocookie.com/embed/hHBjlHZ66SA">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="TimeScope – Visual Calendar | A Broader View of Time for Windows">
     <meta name="twitter:description" content="A lightweight Windows desktop calendar for viewing multiple months, selecting date ranges, and instantly checking their duration.">
@@ -29,7 +30,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="assets/v2/timescope_icon_rounded_256.png">
     <link rel="stylesheet" href="assets/v2/styles.css">
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "TimeScope – Visual Calendar", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Windows 10, Windows 11", "url": "https://gettimescope.com/", "downloadUrl": "https://apps.microsoft.com/detail/9NJR56D56R9F", "publisher": {"@type": "Organization", "name": "Tomi-lab"}, "offers": [{"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "TimeScope Free Edition"}, {"@type": "Offer", "price": "4.99", "priceCurrency": "USD", "description": "TimeScope Pro (One-time in-app purchase)"}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "TimeScope – Visual Calendar", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Windows 10, Windows 11", "url": "https://gettimescope.com/", "downloadUrl": "https://apps.microsoft.com/detail/9NJR56D56R9F", "publisher": {"@type": "Organization", "name": "Tomi-lab"}, "offers": [{"@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "TimeScope Free Edition"}, {"@type": "Offer", "price": "4.99", "priceCurrency": "USD", "description": "TimeScope Pro (One-time in-app purchase)"}]}, {"@type": "VideoObject", "name": "TimeScope – See More. Plan Better. | Official Introduction", "description": "Official introduction to TimeScope, a pure visual calendar for Windows 10 and 11 with multi-month views, instant day-count selection, and system tray access.", "thumbnailUrl": "https://gettimescope.com/assets/v2/intro-video-poster.webp", "uploadDate": "2026-11-24T00:00:00Z", "duration": "PT2M31S", "contentUrl": "https://youtu.be/hHBjlHZ66SA", "embedUrl": "https://www.youtube-nocookie.com/embed/hHBjlHZ66SA", "inLanguage": "en", "publisher": {"@type": "Organization", "name": "Tomi-lab"}}]}</script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-T7HPX8ZJJ4"></script>
     <script>
@@ -115,6 +116,28 @@
                     <h3>Visualize time more flexibly with Pro</h3>
                     <p>Unlock multi-band period comparison, multi-monitor display choice, and custom holidays &amp; workdays as an optional one-time upgrade.</p>
                 </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>See TimeScope in Action</h2>
+                    <p>Discover how TimeScope helps you see more of your time, explore date ranges, and plan with greater clarity.</p>
+                </div>
+                <div class="video-wrap">
+                    <div class="video-frame-wrap" id="intro-video-container">
+                        <button type="button" class="video-poster-btn" id="intro-video-poster" aria-label="Play official TimeScope introduction video">
+                            <img src="assets/v2/intro-video-poster.webp" alt="TimeScope Official Introduction Video – See More. Plan Better." width="1280" height="720" loading="lazy">
+                            <span class="video-play-badge" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <p class="video-caption">Official introduction (2:31) · English narration with subtitles in 7 languages.</p>
+                    <div class="video-actions">
+                        <a href="https://apps.microsoft.com/detail/9NJR56D56R9F" target="_blank" rel="noopener" class="btn btn-primary" data-cta="video">Get it from Microsoft Store</a>
+                        <a href="https://youtu.be/hHBjlHZ66SA" target="_blank" rel="noopener" class="btn btn-secondary" id="video-yt-link">Watch on YouTube</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -287,6 +310,7 @@
                 <a href="privacy.html">Privacy Policy</a>
                 <a href="terms.html">Terms of Service</a>
                 <a href="https://x.com/TimeScope_App" target="_blank" rel="noopener">X (Twitter)</a>
+                <a href="https://www.youtube.com/@TimeScopeApp" target="_blank" rel="noopener">YouTube</a>
                 <select class="lang-select" aria-label="Footer language" onchange="switchLocale(this)">
 <option value="/" data-locale="en-US" selected>English</option>
 <option value="ja/" data-locale="ja-JP">日本語</option>
@@ -312,9 +336,81 @@
       }
       document.querySelectorAll("[data-cta]").forEach(function(el) {
         el.addEventListener("click", function() {
-          track("store_cta_click", { cta_location: el.getAttribute("data-cta"), locale: CURRENT_LOCALE });
+          const loc = el.getAttribute("data-cta");
+          track("store_cta_click", { cta_location: loc, locale: CURRENT_LOCALE });
+          if (loc === "video") {
+            track("download_cta_after_video", { locale: CURRENT_LOCALE, video_id: "hHBjlHZ66SA" });
+          }
         });
       });
+      const ytLink = document.getElementById("video-yt-link");
+      if (ytLink) {
+        ytLink.addEventListener("click", function() {
+          track("intro_video_external_click", { locale: CURRENT_LOCALE, video_id: "hHBjlHZ66SA" });
+        });
+      }
+      const videoSection = document.getElementById("video");
+      if (videoSection && "IntersectionObserver" in window) {
+        let videoSeen = false;
+        new IntersectionObserver(function(entries) {
+          if (!videoSeen && entries[0].isIntersecting) {
+            videoSeen = true;
+            track("intro_video_impression", { locale: CURRENT_LOCALE, video_id: "hHBjlHZ66SA" });
+          }
+        }, { threshold: 0.35 }).observe(videoSection);
+      }
+      const posterBtn = document.getElementById("intro-video-poster");
+      const videoContainer = document.getElementById("intro-video-container");
+      if (posterBtn && videoContainer) {
+        let playTracked = false;
+        let completeTracked = false;
+        function firePlay() {
+          if (!playTracked) {
+            playTracked = true;
+            track("intro_video_play", { locale: CURRENT_LOCALE, video_id: "hHBjlHZ66SA" });
+          }
+        }
+        posterBtn.addEventListener("click", function() {
+          firePlay();
+          const iframe = document.createElement("iframe");
+          iframe.id = "intro-yt-iframe";
+          iframe.src = "https://www.youtube-nocookie.com/embed/hHBjlHZ66SA?autoplay=1&enablejsapi=1&rel=0";
+          iframe.title = "TimeScope – See More. Plan Better. | Official Introduction";
+          iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+          iframe.allowFullscreen = true;
+          videoContainer.innerHTML = "";
+          videoContainer.appendChild(iframe);
+          function attachYTPlayer() {
+            if (window.YT && window.YT.Player) {
+              new window.YT.Player("intro-yt-iframe", {
+                events: {
+                  onStateChange: function(ev) {
+                    if (ev.data === window.YT.PlayerState.PLAYING) firePlay();
+                    if (ev.data === window.YT.PlayerState.ENDED && !completeTracked) {
+                      completeTracked = true;
+                      track("intro_video_complete", { locale: CURRENT_LOCALE, video_id: "hHBjlHZ66SA" });
+                    }
+                  }
+                }
+              });
+            }
+          }
+          if (window.YT && window.YT.Player) {
+            attachYTPlayer();
+          } else {
+            const prevReady = window.onYouTubeIframeAPIReady;
+            window.onYouTubeIframeAPIReady = function() {
+              if (typeof prevReady === "function") prevReady();
+              attachYTPlayer();
+            };
+            if (!document.querySelector('script[src="https://www.youtube.com/iframe_api"]')) {
+              const tag = document.createElement("script");
+              tag.src = "https://www.youtube.com/iframe_api";
+              document.head.appendChild(tag);
+            }
+          }
+        });
+      }
       const mainImg = document.getElementById("gallery-main-img");
       const capEl = document.getElementById("gallery-caption");
       document.querySelectorAll(".thumb-btn").forEach(function(btn) {
