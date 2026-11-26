@@ -139,7 +139,7 @@
     "video_sub": "Discover how TimeScope helps you see more of your time, explore date ranges, and plan with greater clarity.",
     "video_play_label": "Play official TimeScope introduction video",
     "video_poster_alt": "TimeScope Official Introduction Video – See More. Plan Better.",
-    "video_caption": "Official introduction (2:31) · English narration with subtitles in 7 languages.",
+    "video_caption": "Official introduction (2:31) · Audio and subtitles available in 7 languages.",
     "video_cta_youtube": "Watch on YouTube",
     "video_schema_name": "TimeScope – See More. Plan Better. | Official Introduction",
     "video_schema_desc": "Official introduction to TimeScope, a pure visual calendar for Windows 10 and 11 with multi-month views, instant day-count selection, and system tray access."
@@ -284,7 +284,7 @@
     "video_sub": "複数月の俯瞰表示からドラッグでの即時日数カウントまで、TimeScope の特長を約2分半でご紹介します。",
     "video_play_label": "TimeScope 公式紹介動画を再生",
     "video_poster_alt": "TimeScope 公式紹介動画 – 時間の全体像を、ひと目で",
-    "video_caption": "公式紹介動画（2分31秒）· 英語音声・7言語字幕（日本語字幕対応）",
+    "video_caption": "公式紹介動画（2分31秒）· 日本語を含む7言語の音声・字幕に対応",
     "video_cta_youtube": "YouTube で見る",
     "video_schema_name": "TimeScope – 時間の全体像を、ひと目で | 公式紹介動画",
     "video_schema_desc": "Windows 10 / 11 向けの純粋なビジュアルカレンダー TimeScope の公式紹介動画。複数月表示、即時日数カウント、システムトレイ常駐を解説します。"
@@ -429,7 +429,7 @@
     "video_sub": "了解 TimeScope 如何帮您总览更长的时间跨度、快速测量日期区间，并更清晰地规划日程。",
     "video_play_label": "播放 TimeScope 官方介绍视频",
     "video_poster_alt": "TimeScope 官方介绍视频 – 看得更全，规划更佳",
-    "video_caption": "官方介绍视频（2分31秒）· 英语旁白，提供 7 种语言字幕（含简体中文）。",
+    "video_caption": "官方介绍视频（2分31秒）· 支持包含简体中文在内的 7 种语言配音与字幕。",
     "video_cta_youtube": "在 YouTube 上观看",
     "video_schema_name": "TimeScope – 看得更全，规划更佳 | 官方介绍",
     "video_schema_desc": "适用于 Windows 10 和 11 的纯可视化日历 TimeScope 官方介绍视频，展示多月视图、即时天数统计与系统托盘常驻体验。"
@@ -574,7 +574,7 @@
     "video_sub": "了解 TimeScope 如何協助您一覽更長的時間跨度、即時統計日期區間，並更清晰地進行規劃。",
     "video_play_label": "播放 TimeScope 官方介紹影片",
     "video_poster_alt": "TimeScope 官方介紹影片 – 看得更廣，規劃更好",
-    "video_caption": "官方介紹影片（2分31秒）· 英語旁白，提供 7 種語言字幕（含繁體中文）。",
+    "video_caption": "官方介紹影片（2分31秒）· 支援包含繁體中文在內的 7 種語言配音與字幕。",
     "video_cta_youtube": "在 YouTube 上觀看",
     "video_schema_name": "TimeScope – 看得更廣，規劃更好 | 官方介紹",
     "video_schema_desc": "專為 Windows 10 與 11 打造的純視覺化日曆 TimeScope 官方介紹影片，展示多月檢視、即時天數統計與系統匣常駐體驗。"
@@ -719,7 +719,7 @@
     "video_sub": "Erfahren Sie, wie TimeScope Ihnen hilft, Zeiträume schneller zu erfassen und klarer zu planen.",
     "video_play_label": "Offizielles Einführungsvideo zu TimeScope abspielen",
     "video_poster_alt": "TimeScope Offizielles Einführungsvideo – Mehr sehen. Besser planen.",
-    "video_caption": "Offizielles Einführungsvideo (2:31) · Englische Sprachausgabe mit Untertiteln in 7 Sprachen (inkl. Deutsch).",
+    "video_caption": "Offizielles Einführungsvideo (2:31) · Audio und Untertitel in 7 Sprachen verfügbar (inkl. Deutsch).",
     "video_cta_youtube": "Auf YouTube ansehen",
     "video_schema_name": "TimeScope – Mehr sehen. Besser planen. | Offizielle Vorstellung",
     "video_schema_desc": "Offizielle Vorstellung von TimeScope, dem rein visuellen Kalender für Windows 10 und 11 mit Mehrmonatsansicht, sofortiger Tageszählung und Zugriff über den Infobereich."
@@ -864,7 +864,7 @@
     "video_sub": "Voyez comment TimeScope vous aide à visualiser vos périodes, compter les jours et planifier plus clairement.",
     "video_play_label": "Lire la vidéo de présentation officielle de TimeScope",
     "video_poster_alt": "Vidéo de présentation officielle de TimeScope – Voir plus large. Mieux planifier.",
-    "video_caption": "Présentation officielle (2:31) · Narration en anglais avec sous-titres en 7 langues (dont le français).",
+    "video_caption": "Présentation officielle (2:31) · Audio et sous-titres disponibles en 7 langues (dont le français).",
     "video_cta_youtube": "Regarder sur YouTube",
     "video_schema_name": "TimeScope – Voir plus large. Mieux planifier. | Présentation officielle",
     "video_schema_desc": "Présentation officielle de TimeScope, un calendrier purement visuel pour Windows 10 et 11 avec vue multi-mois, comptage instantané et zone de notification."
@@ -1009,7 +1009,7 @@
     "video_sub": "Descubre cómo TimeScope te ayuda a visualizar más tiempo de un vistazo, medir rangos y planificar con claridad.",
     "video_play_label": "Reproducir el video de presentación oficial de TimeScope",
     "video_poster_alt": "Video oficial de TimeScope – Ve más allá. Planifica mejor.",
-    "video_caption": "Presentación oficial (2:31) · Narración en inglés con subtítulos en 7 idiomas (incluido español).",
+    "video_caption": "Presentación oficial (2:31) · Audio y subtítulos disponibles en 7 idiomas (incluido español).",
     "video_cta_youtube": "Ver en YouTube",
     "video_schema_name": "TimeScope – Ve más allá. Planifica mejor. | Presentación oficial",
     "video_schema_desc": "Presentación oficial de TimeScope, el calendario puramente visual para Windows 10 y 11 con vista multimensual, conteo instantáneo de días y bandeja del sistema."

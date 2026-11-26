@@ -131,7 +131,7 @@ def render_homepage(loc_key: str, d: dict, all_locales: dict) -> str:
                     "duration": "PT2M31S",
                     "contentUrl": VIDEO_URL,
                     "embedUrl": VIDEO_EMBED_URL,
-                    "inLanguage": "en",
+                    "inLanguage": ["en", "ja", "zh-CN", "zh-TW", "de", "fr", "es"],
                     "publisher": {"@type": "Organization", "name": "Tomi-lab"},
                 },
             ],
